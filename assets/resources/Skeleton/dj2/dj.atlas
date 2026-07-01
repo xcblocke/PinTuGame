@@ -1,0 +1,166 @@
+
+dj.png
+size: 1891, 1909
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+caidai/caidai_00000
+  rotate: false
+  xy: 378, 1728
+  size: 246, 179
+  orig: 764, 738
+  offset: 251, 290
+  index: -1
+caidai/caidai_00001
+  rotate: false
+  xy: 626, 1668
+  size: 260, 239
+  orig: 764, 738
+  offset: 230, 277
+  index: -1
+caidai/caidai_00002
+  rotate: false
+  xy: 888, 1608
+  size: 302, 299
+  orig: 764, 738
+  offset: 207, 258
+  index: -1
+caidai/caidai_00003
+  rotate: false
+  xy: 1529, 1557
+  size: 360, 350
+  orig: 764, 738
+  offset: 185, 241
+  index: -1
+caidai/caidai_00004
+  rotate: false
+  xy: 2, 1331
+  size: 414, 395
+  orig: 764, 738
+  offset: 165, 219
+  index: -1
+caidai/caidai_00005
+  rotate: false
+  xy: 1387, 1096
+  size: 486, 459
+  orig: 764, 738
+  offset: 143, 184
+  index: -1
+caidai/caidai_00006
+  rotate: false
+  xy: 2, 784
+  size: 517, 477
+  orig: 764, 738
+  offset: 129, 175
+  index: -1
+caidai/caidai_00007
+  rotate: false
+  xy: 521, 759
+  size: 542, 502
+  orig: 764, 738
+  offset: 119, 162
+  index: -1
+caidai/caidai_00008
+  rotate: false
+  xy: 1065, 568
+  size: 566, 526
+  orig: 764, 738
+  offset: 110, 148
+  index: -1
+caidai/caidai_00009
+  rotate: false
+  xy: 2, 214
+  size: 587, 543
+  orig: 764, 738
+  offset: 103, 136
+  index: -1
+caidai/caidai_00010
+  rotate: false
+  xy: 1225, 2
+  size: 609, 564
+  orig: 764, 738
+  offset: 97, 116
+  index: -1
+caidai/caidai_00012
+  rotate: false
+  xy: 591, 13
+  size: 632, 553
+  orig: 764, 738
+  offset: 86, 99
+  index: -1
+guang332
+  rotate: true
+  xy: 1192, 1573
+  size: 334, 335
+  orig: 382, 382
+  offset: 24, 24
+  index: -1
+henfu
+  rotate: false
+  xy: 418, 1263
+  size: 967, 308
+  orig: 967, 308
+  offset: 0, 0
+  index: -1
+zi1
+  rotate: true
+  xy: 96, 1823
+  size: 84, 92
+  orig: 84, 92
+  offset: 0, 0
+  index: -1
+zi2
+  rotate: true
+  xy: 2, 1825
+  size: 82, 92
+  orig: 82, 92
+  offset: 0, 0
+  index: -1
+zi3
+  rotate: true
+  xy: 284, 1817
+  size: 90, 92
+  orig: 90, 92
+  offset: 0, 0
+  index: -1
+zi4
+  rotate: true
+  xy: 190, 1818
+  size: 89, 92
+  orig: 89, 92
+  offset: 0, 0
+  index: -1
+
+dj_2.png
+size: 1225, 1268
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+caidai/caidai_00011
+  rotate: true
+  xy: 653, 2
+  size: 621, 570
+  orig: 764, 738
+  offset: 91, 108
+  index: -1
+caidai/caidai_00013
+  rotate: true
+  xy: 609, 625
+  size: 641, 587
+  orig: 764, 738
+  offset: 83, 92
+  index: -1
+caidai/caidai_00014
+  rotate: false
+  xy: 2, 9
+  size: 649, 595
+  orig: 764, 738
+  offset: 80, 84
+  index: -1
+caidai/caidai_00015
+  rotate: true
+  xy: 2, 606
+  size: 660, 605
+  orig: 764, 738
+  offset: 76, 70
+  index: -1

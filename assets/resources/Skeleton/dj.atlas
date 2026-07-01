@@ -1,0 +1,62 @@
+
+dj.png
+size: 410, 581
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+beiguang
+  rotate: false
+  xy: 2, 339
+  size: 401, 164
+  orig: 483, 240
+  offset: 41, 38
+  index: -1
+guang332
+  rotate: true
+  xy: 2, 3
+  size: 334, 335
+  orig: 382, 382
+  offset: 24, 24
+  index: -1
+xianguang
+  rotate: true
+  xy: 405, 2
+  size: 577, 3
+  orig: 629, 3
+  offset: 27, 0
+  index: -1
+xing
+  rotate: false
+  xy: 2, 541
+  size: 39, 38
+  orig: 44, 43
+  offset: 2, 2
+  index: -1
+zi1
+  rotate: true
+  xy: 43, 507
+  size: 72, 76
+  orig: 84, 92
+  offset: 5, 7
+  index: -1
+zi2
+  rotate: true
+  xy: 198, 506
+  size: 73, 75
+  orig: 82, 92
+  offset: 4, 8
+  index: -1
+zi3
+  rotate: true
+  xy: 121, 507
+  size: 72, 75
+  orig: 90, 92
+  offset: 9, 7
+  index: -1
+zi4
+  rotate: false
+  xy: 275, 505
+  size: 74, 74
+  orig: 89, 92
+  offset: 7, 8
+  index: -1

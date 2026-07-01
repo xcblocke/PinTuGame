@@ -1,0 +1,13 @@
+
+renwutixian.png
+size: 320,236
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+li
+  rotate: false
+  xy: 2, 2
+  size: 316, 232
+  orig: 363, 232
+  offset: 24, 0
+  index: -1

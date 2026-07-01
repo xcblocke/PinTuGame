@@ -1,0 +1,41 @@
+
+hb.png
+size: 1176, 1040
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+annui
+  rotate: false
+  xy: 261, 42
+  size: 219, 218
+  orig: 227, 227
+  offset: 4, 4
+  index: -1
+bei
+  rotate: false
+  xy: 594, 268
+  size: 580, 770
+  orig: 580, 770
+  offset: 0, 0
+  index: -1
+guangquan
+  rotate: false
+  xy: 2, 3
+  size: 257, 257
+  orig: 257, 257
+  offset: 0, 0
+  index: -1
+shang
+  rotate: false
+  xy: 2, 262
+  size: 590, 776
+  orig: 602, 788
+  offset: 6, 6
+  index: -1
+xia
+  rotate: false
+  xy: 594, 2
+  size: 580, 264
+  orig: 580, 264
+  offset: 0, 0
+  index: -1

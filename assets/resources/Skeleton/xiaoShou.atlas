@@ -1,0 +1,20 @@
+
+xiaoShou.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+shoupng
+  rotate: true
+  xy: 52, 2
+  size: 212, 215
+  orig: 212, 215
+  offset: 0, 0
+  index: -1
+yuan
+  rotate: false
+  xy: 2, 166
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
