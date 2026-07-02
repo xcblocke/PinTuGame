@@ -36,6 +36,8 @@ export default class loading extends cc.Component {
       return __generator(this, function (e) {
         switch (e.label) {
           case 0:
+            var duplicateLoading = this.node.getChildByName("for_loading copy");
+            duplicateLoading && (duplicateLoading.active = false);
             this.setLoadingLabel("正在初始化");
             if (this.showLogin) this.showLogin.active = false;
             if (this.loading) this.loading.active = true;
@@ -123,7 +125,7 @@ export default class loading extends cc.Component {
         this.progress.fillRange = e;
       }
       if (this.pro_label) {
-        this.pro_label.string = Math.floor(10000 * e) / 100 + "%";
+        this.pro_label.string = Math.floor(100 * e) + "%";
       }
     }
   }
