@@ -65,23 +65,12 @@ class _EngineUtil {
     cc.sys.localStorage.setItem(e, t);
   }
   httpErr(e, t, o = true) {
-    if (!o) {
-      this.error(e);
-      PageMgr.showPageByEnum(PageEnum.networkFailedPage, {
-        callback: t,
-        err: e
-      });
-      SdkHelper.reportData("httpErr", {
-        response: JSON.stringify(e)
-      });
-    }
-  }
-  reconnectSuc() {
-    EventMgr.trigger(GameEventType.PAGE_HIDE, "loadingPage");
-    EventMgr.trigger(GameEventType.CLOSE_RECONNECT);
-  }
-  reconnectFai() {
-    EventMgr.trigger(GameEventType.PAGE_HIDE, "loadingPage");
+    if (o) return;
+    this.error(e);
+    SdkHelper.reportData("httpErr", {
+      response: JSON.stringify(e)
+    });
+    this.showCocosToast3("网络错误，请重试");
   }
   getColor(e) {
     e.includes("#") || (e = "#" + e);
@@ -869,10 +858,7 @@ class _EngineUtil {
     console.log("🚀yxl ~ EngineUtil.ts:1027 ~ EngineUtil ~ netError ~ e:", JSON.stringify(e), e.message);
     console.error(e);
     if ("xhr.status0" != e.message && "onXhr.error" != e.message && 0 != e.http_status) return false;
-    this.reconnectFai();
-    this.httpErr(e, function () {
-      t();
-    }, true);
+    this.httpErr(e, t, false);
     return true;
   }
 }

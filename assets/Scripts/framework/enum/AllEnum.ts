@@ -32,9 +32,7 @@ export enum PropType {
 export var PageEnum = {
   debugPage: "debugPage",
   failPage: "failPage",
-  loadingPage: "loadingPage",
   luckRewardPage: "luckRewardPage",
-  networkFailedPage: "networkFailedPage",
   oppoAdPage: "oppoAdPage",
   propBuyPage: "propBuyPage",
   SettleWholeImgPage: "SettleWholeImgPage",

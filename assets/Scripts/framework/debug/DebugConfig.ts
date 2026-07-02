@@ -148,5 +148,5 @@ export var DebugConfig = [{
 }, {
   title: "页面展示",
   isOpen: false,
-  children: [y.createPage("luckRewardPage", PageEnum.luckRewardPage), y.createPage("SettlementPage", PageEnum.SettlementPage), y.createPage("SettleWholeImgPage", PageEnum.SettleWholeImgPage), y.createPage("WholeImgShowPage", PageEnum.WholeImgShowPage), y.createPage("propBuyPage", PageEnum.propBuyPage), y.createPage("SetUpPage", PageEnum.SetUpPage), y.createPage("failPage", PageEnum.failPage), y.createPage("loadingPage", PageEnum.loadingPage), y.createPage("networkFailedPage", PageEnum.networkFailedPage), y.createPage("oppoAdPage", PageEnum.oppoAdPage), y.createPage("webPage", PageEnum.webPage)]
+  children: [y.createPage("luckRewardPage", PageEnum.luckRewardPage), y.createPage("SettlementPage", PageEnum.SettlementPage), y.createPage("SettleWholeImgPage", PageEnum.SettleWholeImgPage), y.createPage("WholeImgShowPage", PageEnum.WholeImgShowPage), y.createPage("propBuyPage", PageEnum.propBuyPage), y.createPage("SetUpPage", PageEnum.SetUpPage), y.createPage("failPage", PageEnum.failPage), y.createPage("oppoAdPage", PageEnum.oppoAdPage), y.createPage("webPage", PageEnum.webPage)]
 }];

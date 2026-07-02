@@ -78,7 +78,6 @@ export default class Service {
                     const __async_this = l;
                     var n;
                     n = await __async_this.commonApiPost.call(__async_this, t, o);
-                    EventMgr.trigger(GameEventType.CLOSE_RECONNECT);
                     e(n);
                     return;
                 }, false);
