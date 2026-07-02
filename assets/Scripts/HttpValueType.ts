@@ -14,25 +14,25 @@
     lucky_step_force_flag: 0,
     is_no_ad_lottery: false,
     process_info: [{
-      msg: "秒到账",
+      msg: `gkey_114`,
       reward: 10,
       reward_type: "cash",
       score: 300,
       status: 1
     }, {
-      msg: "秒到账",
+      msg: `gkey_114`,
       reward: 120000,
       reward_type: "gold",
       score: 1000,
       status: 0
     }, {
-      msg: "大额奖励",
+      msg: `gkey_115`,
       reward: 5000,
       reward_type: "cash",
       score: 20000,
       status: 0
     }, {
-      msg: "全部提现",
+      msg: `gkey_116`,
       reward: 0,
       reward_type: "cash",
       score: 30000,
@@ -42,25 +42,25 @@
       code: 1,
       count: 0,
       limit: 2,
-      name: "重新出块",
+      name: `gkey_117`,
       used_times: 0
     }, {
       code: 2,
       count: 0,
       limit: 2,
-      name: "旋转方块",
+      name: `gkey_118`,
       used_times: 0
     }, {
       code: 3,
       count: 0,
       limit: 2,
-      name: "存储方块",
+      name: `gkey_119`,
       used_times: 0
     }, {
       code: 4,
       count: 0,
       limit: 1,
-      name: "复活",
+      name: `gkey_120`,
       used_times: 0
     }],
     reward_info: {
@@ -241,8 +241,8 @@
     big_scroll_xc_count: 20,
     bind_wx: 0,
     box_num: 0,
-    bubble_cash_balance: "集齐<color=#FF0000>5</c>个福字，可全部提现",
-    bubble_gold_balance: "再闯关<color=#FF0000>2次</c>，提升倍数",
+    bubble_cash_balance: `gkey_121??&value1==${5}`,
+    bubble_gold_balance: `gkey_122??&value1==${2}`,
     card_info: {
       card_100: 0,
       card_101: 0,
@@ -370,805 +370,805 @@
     conf_info: {
       card_conf: {
         1: {
-          name: "发财福",
+          name: `gkey_123`,
           quantity: 1,
           resPath: "facaifu",
           type: 1
         },
         2: {
-          name: "好运福",
+          name: `gkey_124`,
           quantity: 1,
           resPath: "haoyunfu",
           type: 1
         },
         3: {
-          name: "快乐福",
+          name: `gkey_125`,
           quantity: 1,
           resPath: "kuailefu",
           type: 1
         },
         4: {
-          name: "吉祥福",
+          name: `gkey_126`,
           quantity: 1,
           resPath: "jixiangfu",
           type: 1
         },
         5: {
-          name: "健康福",
+          name: `gkey_127`,
           quantity: 1,
           resPath: "jiankangfu",
           type: 1
         },
         6: {
-          name: "万能福",
+          name: `gkey_128`,
           quantity: 1,
           resPath: "wannengfu",
           type: 1
         },
         7: {
-          name: "万能福碎片",
+          name: `gkey_129`,
           quantity: 6,
           resPath: "wannengfuFragMent",
           type: 2
         },
         8: {
-          name: "现金100元（波动20%）",
+          name: `gkey_130??&value1==${100}&value2==${20}`,
           quantity: 10000,
           resPath: "",
           type: 3
         },
         9: {
-          name: "现金200元（波动20%）",
+          name: `gkey_130??&value1==${200}&value2==${20}`,
           quantity: 20000,
           resPath: "",
           type: 3
         },
         10: {
-          name: "红包50元（波动20%）",
+          name: `gkey_131??&value1==${50}&value2==${20}`,
           quantity: 5000,
           resPath: "",
           type: 4
         },
         11: {
-          name: "红包100元（波动20%）",
+          name: `gkey_131??&value1==${100}&value2==${20}`,
           quantity: 10000,
           resPath: "",
           type: 4
         },
         12: {
-          name: "道具1：回退一步",
+          name: `gkey_132??&value1==${1}`,
           quantity: 3,
           resPath: "prop_01",
           type: 5
         },
         13: {
-          name: "道具2：刷新",
+          name: `gkey_133??&value1==${2}`,
           quantity: 1,
           resPath: "prop_02",
           type: 5
         },
         14: {
-          name: "道具3：加瓶子",
+          name: `gkey_134??&value1==${3}`,
           quantity: 1,
           resPath: "prop_03",
           type: 5
         },
         15: {
-          name: "贺卡1",
+          name: `gkey_135??&value1==${1}`,
           quantity: 1,
           resPath: "greetingCard_01",
           type: 6
         },
         16: {
-          name: "贺卡2",
+          name: `gkey_135??&value1==${2}`,
           quantity: 1,
           resPath: "greetingCard_02",
           type: 6
         },
         17: {
-          name: "贺卡3",
+          name: `gkey_135??&value1==${3}`,
           quantity: 1,
           resPath: "greetingCard_03",
           type: 6
         },
         18: {
-          name: "贺卡4",
+          name: `gkey_135??&value1==${4}`,
           quantity: 1,
           resPath: "greetingCard_04",
           type: 6
         },
         19: {
-          name: "贺卡5",
+          name: `gkey_135??&value1==${5}`,
           quantity: 1,
           resPath: "greetingCard_05",
           type: 6
         },
         20: {
-          name: "贺卡6",
+          name: `gkey_135??&value1==${6}`,
           quantity: 1,
           resPath: "greetingCard_06",
           type: 6
         },
         21: {
-          name: "贺卡7",
+          name: `gkey_135??&value1==${7}`,
           quantity: 1,
           resPath: "greetingCard_07",
           type: 6
         },
         22: {
-          name: "贺卡8",
+          name: `gkey_135??&value1==${8}`,
           quantity: 1,
           resPath: "greetingCard_08",
           type: 6
         },
         23: {
-          name: "贺卡9",
+          name: `gkey_135??&value1==${9}`,
           quantity: 1,
           resPath: "greetingCard_09",
           type: 6
         },
         24: {
-          name: "贺卡10",
+          name: `gkey_135??&value1==${10}`,
           quantity: 1,
           resPath: "greetingCard_10",
           type: 6
         },
         25: {
-          name: "贺卡11",
+          name: `gkey_135??&value1==${11}`,
           quantity: 1,
           resPath: "greetingCard_11",
           type: 6
         },
         26: {
-          name: "贺卡12",
+          name: `gkey_135??&value1==${12}`,
           quantity: 1,
           resPath: "greetingCard_12",
           type: 6
         },
         27: {
-          name: "贺卡1-碎片1",
+          name: `gkey_136??&value1==${1}&value2==${1}`,
           quantity: 1,
           resPath: "01_1",
           type: 15
         },
         28: {
-          name: "贺卡1-碎片2",
+          name: `gkey_136??&value1==${1}&value2==${2}`,
           quantity: 1,
           resPath: "01_2",
           type: 15
         },
         29: {
-          name: "贺卡1-碎片3",
+          name: `gkey_136??&value1==${1}&value2==${3}`,
           quantity: 1,
           resPath: "01_3",
           type: 15
         },
         30: {
-          name: "贺卡1-碎片4",
+          name: `gkey_136??&value1==${1}&value2==${4}`,
           quantity: 1,
           resPath: "01_4",
           type: 15
         },
         31: {
-          name: "贺卡1-碎片5",
+          name: `gkey_136??&value1==${1}&value2==${5}`,
           quantity: 1,
           resPath: "01_5",
           type: 15
         },
         32: {
-          name: "贺卡1-碎片6",
+          name: `gkey_136??&value1==${1}&value2==${6}`,
           quantity: 1,
           resPath: "01_6",
           type: 15
         },
         33: {
-          name: "贺卡1-碎片7",
+          name: `gkey_136??&value1==${1}&value2==${7}`,
           quantity: 1,
           resPath: "01_7",
           type: 15
         },
         34: {
-          name: "贺卡1-碎片8",
+          name: `gkey_136??&value1==${1}&value2==${8}`,
           quantity: 1,
           resPath: "01_8",
           type: 15
         },
         35: {
-          name: "贺卡1-碎片9",
+          name: `gkey_136??&value1==${1}&value2==${9}`,
           quantity: 1,
           resPath: "01_9",
           type: 15
         },
         36: {
-          name: "贺卡2-碎片1",
+          name: `gkey_136??&value1==${2}&value2==${1}`,
           quantity: 1,
           resPath: "02_1",
           type: 16
         },
         37: {
-          name: "贺卡2-碎片2",
+          name: `gkey_136??&value1==${2}&value2==${2}`,
           quantity: 1,
           resPath: "02_2",
           type: 16
         },
         38: {
-          name: "贺卡2-碎片3",
+          name: `gkey_136??&value1==${2}&value2==${3}`,
           quantity: 1,
           resPath: "02_3",
           type: 16
         },
         39: {
-          name: "贺卡2-碎片4",
+          name: `gkey_136??&value1==${2}&value2==${4}`,
           quantity: 1,
           resPath: "02_4",
           type: 16
         },
         40: {
-          name: "贺卡2-碎片5",
+          name: `gkey_136??&value1==${2}&value2==${5}`,
           quantity: 1,
           resPath: "02_5",
           type: 16
         },
         41: {
-          name: "贺卡2-碎片6",
+          name: `gkey_136??&value1==${2}&value2==${6}`,
           quantity: 1,
           resPath: "02_6",
           type: 16
         },
         42: {
-          name: "贺卡2-碎片7",
+          name: `gkey_136??&value1==${2}&value2==${7}`,
           quantity: 1,
           resPath: "02_7",
           type: 16
         },
         43: {
-          name: "贺卡2-碎片8",
+          name: `gkey_136??&value1==${2}&value2==${8}`,
           quantity: 1,
           resPath: "02_8",
           type: 16
         },
         44: {
-          name: "贺卡2-碎片9",
+          name: `gkey_136??&value1==${2}&value2==${9}`,
           quantity: 1,
           resPath: "02_9",
           type: 16
         },
         45: {
-          name: "贺卡3-碎片1",
+          name: `gkey_136??&value1==${3}&value2==${1}`,
           quantity: 1,
           resPath: "03_1",
           type: 17
         },
         46: {
-          name: "贺卡3-碎片2",
+          name: `gkey_136??&value1==${3}&value2==${2}`,
           quantity: 1,
           resPath: "03_2",
           type: 17
         },
         47: {
-          name: "贺卡3-碎片3",
+          name: `gkey_136??&value1==${3}&value2==${3}`,
           quantity: 1,
           resPath: "03_3",
           type: 17
         },
         48: {
-          name: "贺卡3-碎片4",
+          name: `gkey_136??&value1==${3}&value2==${4}`,
           quantity: 1,
           resPath: "03_4",
           type: 17
         },
         49: {
-          name: "贺卡3-碎片5",
+          name: `gkey_136??&value1==${3}&value2==${5}`,
           quantity: 1,
           resPath: "03_5",
           type: 17
         },
         50: {
-          name: "贺卡3-碎片6",
+          name: `gkey_136??&value1==${3}&value2==${6}`,
           quantity: 1,
           resPath: "03_6",
           type: 17
         },
         51: {
-          name: "贺卡3-碎片7",
+          name: `gkey_136??&value1==${3}&value2==${7}`,
           quantity: 1,
           resPath: "03_7",
           type: 17
         },
         52: {
-          name: "贺卡3-碎片8",
+          name: `gkey_136??&value1==${3}&value2==${8}`,
           quantity: 1,
           resPath: "03_8",
           type: 17
         },
         53: {
-          name: "贺卡3-碎片9",
+          name: `gkey_136??&value1==${3}&value2==${9}`,
           quantity: 1,
           resPath: "03_9",
           type: 17
         },
         54: {
-          name: "贺卡4-碎片1",
+          name: `gkey_136??&value1==${4}&value2==${1}`,
           quantity: 1,
           resPath: "04_1",
           type: 18
         },
         55: {
-          name: "贺卡4-碎片2",
+          name: `gkey_136??&value1==${4}&value2==${2}`,
           quantity: 1,
           resPath: "04_2",
           type: 18
         },
         56: {
-          name: "贺卡4-碎片3",
+          name: `gkey_136??&value1==${4}&value2==${3}`,
           quantity: 1,
           resPath: "04_3",
           type: 18
         },
         57: {
-          name: "贺卡4-碎片4",
+          name: `gkey_136??&value1==${4}&value2==${4}`,
           quantity: 1,
           resPath: "04_4",
           type: 18
         },
         58: {
-          name: "贺卡4-碎片5",
+          name: `gkey_136??&value1==${4}&value2==${5}`,
           quantity: 1,
           resPath: "04_5",
           type: 18
         },
         59: {
-          name: "贺卡4-碎片6",
+          name: `gkey_136??&value1==${4}&value2==${6}`,
           quantity: 1,
           resPath: "04_6",
           type: 18
         },
         60: {
-          name: "贺卡4-碎片7",
+          name: `gkey_136??&value1==${4}&value2==${7}`,
           quantity: 1,
           resPath: "04_7",
           type: 18
         },
         61: {
-          name: "贺卡4-碎片8",
+          name: `gkey_136??&value1==${4}&value2==${8}`,
           quantity: 1,
           resPath: "04_8",
           type: 18
         },
         62: {
-          name: "贺卡4-碎片9",
+          name: `gkey_136??&value1==${4}&value2==${9}`,
           quantity: 1,
           resPath: "04_9",
           type: 18
         },
         63: {
-          name: "贺卡5-碎片1",
+          name: `gkey_136??&value1==${5}&value2==${1}`,
           quantity: 1,
           resPath: "05_1",
           type: 19
         },
         64: {
-          name: "贺卡5-碎片2",
+          name: `gkey_136??&value1==${5}&value2==${2}`,
           quantity: 1,
           resPath: "05_2",
           type: 19
         },
         65: {
-          name: "贺卡5-碎片3",
+          name: `gkey_136??&value1==${5}&value2==${3}`,
           quantity: 1,
           resPath: "05_3",
           type: 19
         },
         66: {
-          name: "贺卡5-碎片4",
+          name: `gkey_136??&value1==${5}&value2==${4}`,
           quantity: 1,
           resPath: "05_4",
           type: 19
         },
         67: {
-          name: "贺卡5-碎片5",
+          name: `gkey_136??&value1==${5}&value2==${5}`,
           quantity: 1,
           resPath: "05_5",
           type: 19
         },
         68: {
-          name: "贺卡5-碎片6",
+          name: `gkey_136??&value1==${5}&value2==${6}`,
           quantity: 1,
           resPath: "05_6",
           type: 19
         },
         69: {
-          name: "贺卡5-碎片7",
+          name: `gkey_136??&value1==${5}&value2==${7}`,
           quantity: 1,
           resPath: "05_7",
           type: 19
         },
         70: {
-          name: "贺卡5-碎片8",
+          name: `gkey_136??&value1==${5}&value2==${8}`,
           quantity: 1,
           resPath: "05_8",
           type: 19
         },
         71: {
-          name: "贺卡5-碎片9",
+          name: `gkey_136??&value1==${5}&value2==${9}`,
           quantity: 1,
           resPath: "05_9",
           type: 19
         },
         72: {
-          name: "贺卡6-碎片1",
+          name: `gkey_136??&value1==${6}&value2==${1}`,
           quantity: 1,
           resPath: "06_1",
           type: 20
         },
         73: {
-          name: "贺卡6-碎片2",
+          name: `gkey_136??&value1==${6}&value2==${2}`,
           quantity: 1,
           resPath: "06_2",
           type: 20
         },
         74: {
-          name: "贺卡6-碎片3",
+          name: `gkey_136??&value1==${6}&value2==${3}`,
           quantity: 1,
           resPath: "06_3",
           type: 20
         },
         75: {
-          name: "贺卡6-碎片4",
+          name: `gkey_136??&value1==${6}&value2==${4}`,
           quantity: 1,
           resPath: "06_4",
           type: 20
         },
         76: {
-          name: "贺卡6-碎片5",
+          name: `gkey_136??&value1==${6}&value2==${5}`,
           quantity: 1,
           resPath: "06_5",
           type: 20
         },
         77: {
-          name: "贺卡6-碎片6",
+          name: `gkey_136??&value1==${6}&value2==${6}`,
           quantity: 1,
           resPath: "06_6",
           type: 20
         },
         78: {
-          name: "贺卡6-碎片7",
+          name: `gkey_136??&value1==${6}&value2==${7}`,
           quantity: 1,
           resPath: "06_7",
           type: 20
         },
         79: {
-          name: "贺卡6-碎片8",
+          name: `gkey_136??&value1==${6}&value2==${8}`,
           quantity: 1,
           resPath: "06_8",
           type: 20
         },
         80: {
-          name: "贺卡6-碎片9",
+          name: `gkey_136??&value1==${6}&value2==${9}`,
           quantity: 1,
           resPath: "06_9",
           type: 20
         },
         81: {
-          name: "贺卡7-碎片1",
+          name: `gkey_136??&value1==${7}&value2==${1}`,
           quantity: 1,
           resPath: "07_1",
           type: 21
         },
         82: {
-          name: "贺卡7-碎片2",
+          name: `gkey_136??&value1==${7}&value2==${2}`,
           quantity: 1,
           resPath: "07_2",
           type: 21
         },
         83: {
-          name: "贺卡7-碎片3",
+          name: `gkey_136??&value1==${7}&value2==${3}`,
           quantity: 1,
           resPath: "07_3",
           type: 21
         },
         84: {
-          name: "贺卡7-碎片4",
+          name: `gkey_136??&value1==${7}&value2==${4}`,
           quantity: 1,
           resPath: "07_4",
           type: 21
         },
         85: {
-          name: "贺卡7-碎片5",
+          name: `gkey_136??&value1==${7}&value2==${5}`,
           quantity: 1,
           resPath: "07_5",
           type: 21
         },
         86: {
-          name: "贺卡7-碎片6",
+          name: `gkey_136??&value1==${7}&value2==${6}`,
           quantity: 1,
           resPath: "07_6",
           type: 21
         },
         87: {
-          name: "贺卡7-碎片7",
+          name: `gkey_136??&value1==${7}&value2==${7}`,
           quantity: 1,
           resPath: "07_7",
           type: 21
         },
         88: {
-          name: "贺卡7-碎片8",
+          name: `gkey_136??&value1==${7}&value2==${8}`,
           quantity: 1,
           resPath: "07_8",
           type: 21
         },
         89: {
-          name: "贺卡7-碎片9",
+          name: `gkey_136??&value1==${7}&value2==${9}`,
           quantity: 1,
           resPath: "07_9",
           type: 21
         },
         90: {
-          name: "贺卡8-碎片1",
+          name: `gkey_136??&value1==${8}&value2==${1}`,
           quantity: 1,
           resPath: "08_1",
           type: 22
         },
         91: {
-          name: "贺卡8-碎片2",
+          name: `gkey_136??&value1==${8}&value2==${2}`,
           quantity: 1,
           resPath: "08_2",
           type: 22
         },
         92: {
-          name: "贺卡8-碎片3",
+          name: `gkey_136??&value1==${8}&value2==${3}`,
           quantity: 1,
           resPath: "08_3",
           type: 22
         },
         93: {
-          name: "贺卡8-碎片4",
+          name: `gkey_136??&value1==${8}&value2==${4}`,
           quantity: 1,
           resPath: "08_4",
           type: 22
         },
         94: {
-          name: "贺卡8-碎片5",
+          name: `gkey_136??&value1==${8}&value2==${5}`,
           quantity: 1,
           resPath: "08_5",
           type: 22
         },
         95: {
-          name: "贺卡8-碎片6",
+          name: `gkey_136??&value1==${8}&value2==${6}`,
           quantity: 1,
           resPath: "08_6",
           type: 22
         },
         96: {
-          name: "贺卡8-碎片7",
+          name: `gkey_136??&value1==${8}&value2==${7}`,
           quantity: 1,
           resPath: "08_7",
           type: 22
         },
         97: {
-          name: "贺卡8-碎片8",
+          name: `gkey_136??&value1==${8}&value2==${8}`,
           quantity: 1,
           resPath: "08_8",
           type: 22
         },
         98: {
-          name: "贺卡8-碎片9",
+          name: `gkey_136??&value1==${8}&value2==${9}`,
           quantity: 1,
           resPath: "08_9",
           type: 22
         },
         99: {
-          name: "贺卡9-碎片1",
+          name: `gkey_136??&value1==${9}&value2==${1}`,
           quantity: 1,
           resPath: "09_1",
           type: 23
         },
         100: {
-          name: "贺卡9-碎片2",
+          name: `gkey_136??&value1==${9}&value2==${2}`,
           quantity: 1,
           resPath: "09_2",
           type: 23
         },
         101: {
-          name: "贺卡9-碎片3",
+          name: `gkey_136??&value1==${9}&value2==${3}`,
           quantity: 1,
           resPath: "09_3",
           type: 23
         },
         102: {
-          name: "贺卡9-碎片4",
+          name: `gkey_136??&value1==${9}&value2==${4}`,
           quantity: 1,
           resPath: "09_4",
           type: 23
         },
         103: {
-          name: "贺卡9-碎片5",
+          name: `gkey_136??&value1==${9}&value2==${5}`,
           quantity: 1,
           resPath: "09_5",
           type: 23
         },
         104: {
-          name: "贺卡9-碎片6",
+          name: `gkey_136??&value1==${9}&value2==${6}`,
           quantity: 1,
           resPath: "09_6",
           type: 23
         },
         105: {
-          name: "贺卡9-碎片7",
+          name: `gkey_136??&value1==${9}&value2==${7}`,
           quantity: 1,
           resPath: "09_7",
           type: 23
         },
         106: {
-          name: "贺卡9-碎片8",
+          name: `gkey_136??&value1==${9}&value2==${8}`,
           quantity: 1,
           resPath: "09_8",
           type: 23
         },
         107: {
-          name: "贺卡9-碎片9",
+          name: `gkey_136??&value1==${9}&value2==${9}`,
           quantity: 1,
           resPath: "09_9",
           type: 23
         },
         108: {
-          name: "贺卡10-碎片1",
+          name: `gkey_136??&value1==${10}&value2==${1}`,
           quantity: 1,
           resPath: "10_1",
           type: 24
         },
         109: {
-          name: "贺卡10-碎片2",
+          name: `gkey_136??&value1==${10}&value2==${2}`,
           quantity: 1,
           resPath: "10_2",
           type: 24
         },
         110: {
-          name: "贺卡10-碎片3",
+          name: `gkey_136??&value1==${10}&value2==${3}`,
           quantity: 1,
           resPath: "10_3",
           type: 24
         },
         111: {
-          name: "贺卡10-碎片4",
+          name: `gkey_136??&value1==${10}&value2==${4}`,
           quantity: 1,
           resPath: "10_4",
           type: 24
         },
         112: {
-          name: "贺卡10-碎片5",
+          name: `gkey_136??&value1==${10}&value2==${5}`,
           quantity: 1,
           resPath: "10_5",
           type: 24
         },
         113: {
-          name: "贺卡10-碎片6",
+          name: `gkey_136??&value1==${10}&value2==${6}`,
           quantity: 1,
           resPath: "10_6",
           type: 24
         },
         114: {
-          name: "贺卡10-碎片7",
+          name: `gkey_136??&value1==${10}&value2==${7}`,
           quantity: 1,
           resPath: "10_7",
           type: 24
         },
         115: {
-          name: "贺卡10-碎片8",
+          name: `gkey_136??&value1==${10}&value2==${8}`,
           quantity: 1,
           resPath: "10_8",
           type: 24
         },
         116: {
-          name: "贺卡10-碎片9",
+          name: `gkey_136??&value1==${10}&value2==${9}`,
           quantity: 1,
           resPath: "10_9",
           type: 24
         },
         117: {
-          name: "贺卡11-碎片1",
+          name: `gkey_136??&value1==${11}&value2==${1}`,
           quantity: 1,
           resPath: "11_1",
           type: 25
         },
         118: {
-          name: "贺卡11-碎片2",
+          name: `gkey_136??&value1==${11}&value2==${2}`,
           quantity: 1,
           resPath: "11_2",
           type: 25
         },
         119: {
-          name: "贺卡11-碎片3",
+          name: `gkey_136??&value1==${11}&value2==${3}`,
           quantity: 1,
           resPath: "11_3",
           type: 25
         },
         120: {
-          name: "贺卡11-碎片4",
+          name: `gkey_136??&value1==${11}&value2==${4}`,
           quantity: 1,
           resPath: "11_4",
           type: 25
         },
         121: {
-          name: "贺卡11-碎片5",
+          name: `gkey_136??&value1==${11}&value2==${5}`,
           quantity: 1,
           resPath: "11_5",
           type: 25
         },
         122: {
-          name: "贺卡11-碎片6",
+          name: `gkey_136??&value1==${11}&value2==${6}`,
           quantity: 1,
           resPath: "11_6",
           type: 25
         },
         123: {
-          name: "贺卡11-碎片7",
+          name: `gkey_136??&value1==${11}&value2==${7}`,
           quantity: 1,
           resPath: "11_7",
           type: 25
         },
         124: {
-          name: "贺卡11-碎片8",
+          name: `gkey_136??&value1==${11}&value2==${8}`,
           quantity: 1,
           resPath: "11_8",
           type: 25
         },
         125: {
-          name: "贺卡11-碎片9",
+          name: `gkey_136??&value1==${11}&value2==${9}`,
           quantity: 1,
           resPath: "11_9",
           type: 25
         },
         126: {
-          name: "贺卡12-碎片1",
+          name: `gkey_136??&value1==${12}&value2==${1}`,
           quantity: 1,
           resPath: "12_1",
           type: 26
         },
         127: {
-          name: "贺卡12-碎片2",
+          name: `gkey_136??&value1==${12}&value2==${2}`,
           quantity: 1,
           resPath: "12_2",
           type: 26
         },
         128: {
-          name: "贺卡12-碎片3",
+          name: `gkey_136??&value1==${12}&value2==${3}`,
           quantity: 1,
           resPath: "12_3",
           type: 26
         },
         129: {
-          name: "贺卡12-碎片4",
+          name: `gkey_136??&value1==${12}&value2==${4}`,
           quantity: 1,
           resPath: "12_4",
           type: 26
         },
         130: {
-          name: "贺卡12-碎片5",
+          name: `gkey_136??&value1==${12}&value2==${5}`,
           quantity: 1,
           resPath: "12_5",
           type: 26
         },
         131: {
-          name: "贺卡12-碎片6",
+          name: `gkey_136??&value1==${12}&value2==${6}`,
           quantity: 1,
           resPath: "12_6",
           type: 26
         },
         132: {
-          name: "贺卡12-碎片7",
+          name: `gkey_136??&value1==${12}&value2==${7}`,
           quantity: 1,
           resPath: "12_7",
           type: 26
         },
         133: {
-          name: "贺卡12-碎片8",
+          name: `gkey_136??&value1==${12}&value2==${8}`,
           quantity: 1,
           resPath: "12_8",
           type: 26
         },
         134: {
-          name: "贺卡12-碎片9",
+          name: `gkey_136??&value1==${12}&value2==${9}`,
           quantity: 1,
           resPath: "12_9",
           type: 26
@@ -1177,87 +1177,87 @@
       parameter_conf: {
         bigmoney_cash_get: {
           para_key: "bigmoney_cash_get",
-          para_meaning: "幸运弹窗领取现金",
+          para_meaning: `gkey_137`,
           para_value: 5000
         },
         bigmoney_cash_only: {
           para_key: "bigmoney_cash_only",
-          para_meaning: "幸运弹窗现金不领取",
+          para_meaning: `gkey_138`,
           para_value: 500
         },
         bigmoney_cash_show: {
           para_key: "bigmoney_cash_show",
-          para_meaning: "幸运弹窗展示现金（波动10%）",
+          para_meaning: `gkey_139??&value1==${10}`,
           para_value: 5000
         },
         bigmoney_envelope_show: {
           para_key: "bigmoney_envelope_show",
-          para_meaning: "幸运弹窗展示红包",
+          para_meaning: `gkey_140`,
           para_value: 300000
         },
         bigmoney_showtime: {
           para_key: "bigmoney_showtime",
-          para_meaning: "幸运奖励展示条件计数（操作次数）",
+          para_meaning: `gkey_141`,
           para_value: 9
         },
         cash_up_2: {
           para_key: "cash_up_2",
-          para_meaning: "奖励强弹频率（幸运+通关）",
+          para_meaning: `gkey_142`,
           para_value: 4
         },
         envelope_limit: {
           para_key: "envelope_limit",
-          para_meaning: "红包分成计算上限",
+          para_meaning: `gkey_143`,
           para_value: 25
         },
         levelup_cash_get: {
           para_key: "levelup_cash_get",
-          para_meaning: "通关弹窗领取现金",
+          para_meaning: `gkey_144`,
           para_value: 8000
         },
         levelup_cash_only: {
           para_key: "levelup_cash_only",
-          para_meaning: "通关弹窗不领取",
+          para_meaning: `gkey_145`,
           para_value: 800
         },
         levelup_cash_show: {
           para_key: "levelup_cash_show",
-          para_meaning: "通关弹窗显示现金（波动10%）",
+          para_meaning: `gkey_146??&value1==${10}`,
           para_value: 8000
         },
         levelup_envelope_show: {
           para_key: "levelup_envelope_show",
-          para_meaning: "通关弹窗显示红包",
+          para_meaning: `gkey_147`,
           para_value: 500000
         },
         merge_need_num: {
           para_key: "merge_need_num",
-          para_meaning: "合成万能福所需碎片数",
+          para_meaning: `gkey_148`,
           para_value: 200
         },
         one_cash_reward: {
           para_key: "one_cash_reward",
-          para_meaning: "完成1组奖励现金（第4关开始）",
+          para_meaning: `gkey_149??&value1==${1}&value2==${4}`,
           para_value: 10
         },
         one_red_reward: {
           para_key: "one_red_reward",
-          para_meaning: "完成1组奖励红包（第4关开始）",
+          para_meaning: `gkey_150??&value1==${1}&value2==${4}`,
           para_value: 1
         },
         pass_1_ad_cash: {
           para_key: "pass_1_ad_cash",
-          para_meaning: "第1关通关现金奖励",
+          para_meaning: `gkey_151??&value1==${1}`,
           para_value: 10
         },
         pass_2_ad_cash: {
           para_key: "pass_2_ad_cash",
-          para_meaning: "第2关通关现金奖励",
+          para_meaning: `gkey_151??&value1==${2}`,
           para_value: 5
         },
         pass_3_ad_cash: {
           para_key: "pass_3_ad_cash",
-          para_meaning: "第3关通关现金奖励",
+          para_meaning: `gkey_151??&value1==${3}`,
           para_value: 7
         }
       }
@@ -1266,13 +1266,13 @@
     create_time: "2026-01-27 16:36:58",
     cueernt_level_url: "http://wlpgt-mddth.chongui.com/levels/level_5.json",
     diamond_num: 0,
-    extract_cash_desc: "1.由于微信支付需要实名制,非实名用户账号无法支持提现,请务必将提现的微信号进行实名认证;\n\n2.由于微信官方要求，单笔提现金额最低为0.1元;\n\n3.提现申请一般是秒到账,如果突发意外情况,也会在1-3个工作日内审核到账,请耐心等待;\n\n4.用户达成提现要求即可提现到账,为保障全体用户利益,对有作弊嫌疑的用户,需经过审核验证或者满足活跃条件才可全部提现,否则不能提现;\n\n5.若发现用户有恶意作弊行为,一律封禁账号并扣除账户所有余额。",
-    extract_desc: "1.由于微信支付需要实名制,非实名用户账号无法支持提现,请务必将提现的微信号进行实名认证;\n\n2.由于微信官方要求，单笔提现金额最低为0.1元;\n\n3.提现申请一般是秒到账,如果突发意外情况,也会在1-3个工作日内审核到账,请耐心等待;\n\n4.用户达成提现要求即可提现到账,为保障全体用户利益,对有作弊嫌疑的用户,需经过审核验证或者满足活跃条件才可全部提现,否则不能提现;\n\n5.若发现用户有恶意作弊行为,一律封禁账号并扣除账户所有余额。",
+    extract_cash_desc: `gkey_152??&value1==${1}&value2==${2}&value3==${0.1}&value4==${3}&value5==${1}&value6==${-3}&value7==${4}&value8==${5}`,
+    extract_desc: `gkey_152??&value1==${1}&value2==${2}&value3==${0.1}&value4==${3}&value5==${1}&value6==${-3}&value7==${4}&value8==${5}`,
     extract_status: 3,
     finishNum: 4,
     free_lottery_flag: 1,
     game_level: 5,
-    gender: "保密",
+    gender: `gkey_069`,
     gold_balance: 37426,
     guide_step_new: 6,
     headimgurl: "",
@@ -1290,11 +1290,11 @@
     prop_info: [{
       code: 2,
       count: 2,
-      name: "刷新"
+      name: `gkey_153`
     }, {
       code: 1,
       count: 2,
-      name: "指定炮台"
+      name: `gkey_154`
     }],
     reco_switch: 1,
     safe_guide: 70,

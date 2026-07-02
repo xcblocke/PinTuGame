@@ -22,7 +22,7 @@ export default class PlayerDataMgr {
   createtime = "";
   nickname = "";
   headimgurl = "";
-  gender = "保密";
+  gender = `gkey_069`;
   bindphone = 0;
   bindwx = 0;
   gameTime = 0;

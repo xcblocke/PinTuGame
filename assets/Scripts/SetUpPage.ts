@@ -63,9 +63,9 @@ export default class SetUpPage extends BasePage {
   }
   onEnable() {
     super.onEnable.call(this);
-    this.helpLb.string = PlayerDataSys.isTencent() ? "客服通道" : "帮助中心";
+    this.helpLb.string = PlayerDataSys.isTencent() ? `gkey_260` : `gkey_032`;
     var t = "xiaomi" == SdkHelper.getChannelName().toLowerCase();
-    this.adLb.string = t ? "个性化广告" : "个性化推荐";
+    this.adLb.string = t ? `gkey_261` : `gkey_029`;
     this.comeinTime = new Date().getTime();
     SdkHelper.reportData("b_entry_page", {
       act_page: "setting_page"
@@ -91,7 +91,7 @@ export default class SetUpPage extends BasePage {
     }
   }
   nameFormat(e) {
-    for (var t = e.split(""), o = t.length, n = 0, i = "", a = "", r = new RegExp("[一-龥]+"), c = 0; c < o; c++) {
+    for (var t = e.split(""), o = t.length, n = 0, i = "", a = "", r = new RegExp(`gkey_092`), c = 0; c < o; c++) {
       var s = t[c];
       if (r.test(s)) {
         n += 2;
@@ -218,7 +218,7 @@ export default class SetUpPage extends BasePage {
     EventMgr.trigger(GameEventType.PAGE_SHOW, {
       name: "webPage",
       data: {
-        title: "帮助中心",
+        title: `gkey_032`,
         url: CUSTOMER_SERVICE
       }
     });
@@ -228,7 +228,7 @@ export default class SetUpPage extends BasePage {
     EventMgr.trigger(GameEventType.PAGE_SHOW, {
       name: "webPage",
       data: {
-        title: "关于我们",
+        title: `gkey_033`,
         url: PlayerDataSys.getUserAgreementUrl(0)
       }
     });
@@ -240,7 +240,7 @@ export default class SetUpPage extends BasePage {
     EventMgr.trigger(GameEventType.PAGE_SHOW, {
       name: "webPage",
       data: {
-        title: "用户协议",
+        title: `gkey_030`,
         url: e,
         index: 0
       },
@@ -256,7 +256,7 @@ export default class SetUpPage extends BasePage {
     EventMgr.trigger(GameEventType.PAGE_SHOW, {
       name: "webPage",
       data: {
-        title: "隐私政策",
+        title: `gkey_262`,
         url: e,
         index: 1
       },
@@ -270,7 +270,7 @@ export default class SetUpPage extends BasePage {
     this._hide();
   }
   remove() {
-    EngineUtil.showCocosToast2("该功能已关闭");
+    EngineUtil.showCocosToast2(`gkey_263`);
   }
   logout() {
     PageMgr.clear();

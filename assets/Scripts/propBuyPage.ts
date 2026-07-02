@@ -11,13 +11,13 @@ const {
 } = cc._decorator;
 var i;
 (i = {})[PropType.helpCombine] = {
-  config: "自动帮你拼出部分图案",
-  titlte: "帮你拼",
+  config: `gkey_233`,
+  titlte: `gkey_234`,
   reportName: AdRewardType.helpCombine
 };
 i[PropType.wholeImage] = {
-  config: "点击查看完整图片",
-  titlte: "整图",
+  config: `gkey_021`,
+  titlte: `gkey_235`,
   reportName: AdRewardType.wholeImage
 };
 var v = i;

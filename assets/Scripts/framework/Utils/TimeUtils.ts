@@ -14,7 +14,7 @@ export default class TimeUtils {
   }
   static getDate2() {
     var e = new Date();
-    return e.getFullYear() + "年" + (e.getMonth() + 1).toString().padStart(2, "0") + "月" + e.getDate().toString().padStart(2, "0") + "日";
+    return `gkey_109??&value1==${e.getFullYear()}&value2==${(e.getMonth() + 1).toString().padStart(2, "0")}&value3==${e.getDate().toString().padStart(2, "0")}`;
   }
   static getTargetTimestamp(e = 0, t = 0, o = 0) {
     var n = new Date(new Date().toLocaleDateString()).getTime();
@@ -59,10 +59,10 @@ export default class TimeUtils {
       }
     }
     var a = "";
-    t > 0 && (a = Math.floor(t) + "秒");
-    o > 0 && (a = Math.floor(o) + "分" + a);
-    n > 0 && (a = Math.floor(n) + "小时" + a);
-    i > 0 && (a = Math.floor(i) + "天" + a);
+    t > 0 && (a = `gkey_110??&value1==${Math.floor(t)}`);
+    o > 0 && (a = `gkey_111??&value1==${Math.floor(o)}` + a);
+    n > 0 && (a = `gkey_112??&value1==${Math.floor(n)}` + a);
+    i > 0 && (a = `gkey_113??&value1==${Math.floor(i)}` + a);
     return a;
   }
   static getDateString() {

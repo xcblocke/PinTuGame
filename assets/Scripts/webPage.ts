@@ -46,16 +46,16 @@ export default class webPage extends BasePage {
     this.agreementForce(t, n);
   }
   agreementForce(e, t = false) {
-    if ("实名认证规则" != e) {
+    if (`gkey_272` != e) {
       var o = "";
-      if ("用户协议" == e) {
+      if (`gkey_030` == e) {
         o = "user";
         if (t) {
           cc.sys.localStorage.setItem("user_LastAgreement", this.webView.url);
           return;
         }
       } else {
-        if ("隐私政策" != e) return;
+        if (`gkey_262` != e) return;
         o = "privacy";
         if (t) {
           cc.sys.localStorage.setItem("user_LastPrivacy", this.webView.url);
@@ -70,7 +70,7 @@ export default class webPage extends BasePage {
     }
   }
   webCall() {
-    SdkHelper.showToast("网络异常，请检查网络~");
+    SdkHelper.showToast(`gkey_273`);
   }
   close() {
     AudioManager.getInstance().playMusic("btntouch");

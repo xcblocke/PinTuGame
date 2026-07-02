@@ -10,7 +10,7 @@ export default class decorator {
         for (var n = [], s = 0; s < arguments.length; s++) n[s] = arguments[s];
         t && AudioManager.getInstance().playBtn();
         if (!CommonUtil.onAwait(i + o, e)) return l.apply(this, n);
-        EngineUtil.showCocosToast3("点击过快，请稍后再试");
+        EngineUtil.showCocosToast3(`gkey_068`);
       };
       return s;
     };

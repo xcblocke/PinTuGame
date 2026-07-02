@@ -53,7 +53,7 @@ export default class SettleWholeImgPage extends BasePage {
     });
     this.nowIsFavorite = !this.nowIsFavorite;
     this.likeNode.active = this.nowIsFavorite;
-    EngineUtil.showCocosToast3(this.nowIsFavorite ? "收藏成功" : "取消收藏");
+    EngineUtil.showCocosToast3(this.nowIsFavorite ? `gkey_258` : `gkey_259`);
     return;
   }
   @decorator.Debounce(1000)

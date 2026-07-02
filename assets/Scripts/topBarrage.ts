@@ -66,9 +66,9 @@ export default class topBarrage extends cc.Component {
       n = e.amount;
     this.top_head.getComponent(cc.Sprite).spriteFrame = null;
     t && EngineUtil.loaderHead(t, this.top_head);
-    this.top_desc.string = "提现了<color=#FF0000FF>" + n + "</color>元，微信打款已到账";
+    this.top_desc.string = `gkey_264??&value1==${n}`;
     this.top_name.string = o;
-    this.top_count.string = n + "元";
+    this.top_count.string = `gkey_265??&value1==${n}`;
     this.top_date.string = EngineUtil.formatDateStr(new Date().getTime());
     this.showTop();
   }

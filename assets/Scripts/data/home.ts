@@ -21,11 +21,11 @@ export default class home extends cc.Component {
   changeGameModel() {
     if (this.gameModel == r.RedModel) {
       this.gameModel = r.NumModel;
-      this.modelLabel.string = "数字模式";
+      this.modelLabel.string = `gkey_064`;
       gameData.debugData.isOpenMingma = true;
     } else {
       this.gameModel = r.RedModel;
-      this.modelLabel.string = "红包模式";
+      this.modelLabel.string = `gkey_065`;
       gameData.debugData.isOpenMingma = false;
     }
   }

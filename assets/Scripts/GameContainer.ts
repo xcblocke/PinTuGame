@@ -65,7 +65,7 @@ export default class GameContainer extends cc.Component {
     this.galleryRedNode.active = !!e.new_gallery_flag;
     this.isWin = false;
     this.isShowWin = false;
-    this.levelText.string = "第" + e.game_level + "关";
+    this.levelText.string = `gkey_037??&value1==${e.game_level}`;
     t = Math.sqrt(e.profile.level_info.img_split);
     o = await gameData.getLoadLevelData(e.profile.current_level_url);
     this.bgContainer.init(t, t);

@@ -28,14 +28,14 @@ GuideConfig[GuideEnum.commonHighlight] = {
   isRepeat: true
 };
 GuideConfig[GuideEnum.gameGuide1] = {
-  des: a("拖动碎片") + "即可完成交换，快拼好整张图片吧",
+  des: `gkey_086??&value1==${a("拖动碎片")}`,
   audioName: "",
   unBindClose: true,
   textPosition: "top",
   reportName: "game_guide_1"
 };
 GuideConfig[GuideEnum.gamePropGuide] = {
-  des: "遇到难关，可以" + a("使用道具") + "哦",
+  des: `gkey_087??&value1==${a("使用道具")}`,
   audioName: "",
   isBlackClose: true,
   textPosition: "center",
@@ -43,13 +43,13 @@ GuideConfig[GuideEnum.gamePropGuide] = {
 };
 GuideConfig[GuideEnum.welcomeGuideTip] = {};
 GuideConfig[GuideEnum.redShow1] = {
-  des: "每次观看视频获得的红包，都可以在这里提现",
+  des: `gkey_088`,
   isBlackClose: true,
   audioName: "",
   reportName: "red_wd_guide_1"
 };
 GuideConfig[GuideEnum.redShow2] = {
-  des: "通关越多，提现比例越高！",
+  des: `gkey_089`,
   isBlackClose: true,
   audioName: "",
   reportName: "red_wd_guide_2"
@@ -59,13 +59,13 @@ GuideConfig[GuideEnum.redShow3] = {
   isUnShowText: true
 };
 GuideConfig[GuideEnum.redShow4] = {
-  des: "金额满" + a("0.1元") + "可提现，\n预计再闯" + a("2关") + "即可满足，\n95%的用户已提现成功哟～",
+  des: `gkey_090??&value1==${a("0.1元")}&value2==${a("2关")}`,
   isBlackClose: true,
   scale: 1,
   audioName: ""
 };
 GuideConfig[GuideEnum.activeGuideClick] = {
-  des: "点击" + a("进度条") + "，即可查看" + a("活跃度") + "相关信息",
+  des: `gkey_091??&value1==${a("进度条")}&value2==${a("活跃度")}`,
   textPosition: "center",
   isBlackClose: true,
   audioName: "",

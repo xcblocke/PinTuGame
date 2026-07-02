@@ -31,7 +31,7 @@ export default class luckRewardPage extends BasePage {
     this.unVideoBtnNode.active = false;
     this.wxLabel.string = MakeMnGlobalData.getCashBalanceWithUnit(null === (t = MakeMnGlobalData.submitGameData) || void 0 === t ? void 0 : t.show_xc_video_reward, "");
     this.hbLabel.string = MakeMnGlobalData.getGoldBalanceWithUnit(MakeMnGlobalData.luckyRewardNum, "");
-    this.onlyLabel.string = "只要" + MakeMnGlobalData.getCashBalanceWithUnit(MakeMnGlobalData.luckyRewardOnlyNum, "元现金");
+    this.onlyLabel.string = `gkey_155??&value1==${MakeMnGlobalData.getCashBalanceWithUnit(MakeMnGlobalData.luckyRewardOnlyNum, "元现金")}`;
     this.spine.node.opacity = 0;
     AudioManager.instance.playMusic("luckReward");
   }

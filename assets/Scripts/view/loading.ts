@@ -7,6 +7,7 @@ import GlobalDataSys from "../framework/controller/GlobalDataSys";
 import { Res } from "../common/ResourcesManager";
 import { gameData } from "../data/GameData";
 import LocalData from "../game/cyll/LocalData";
+import i18 from "../framework/LanguageMgr";
 const {
   ccclass,
   property
@@ -25,6 +26,10 @@ export default class loading extends cc.Component {
   pro_label: cc.Label = null;
   @property(cc.Node)
   proIconNode: cc.Node = null;
+
+  @property(cc.JsonAsset)
+  languageJson: cc.JsonAsset = null;
+
   totalNum = [0];
   setLoadingLabel(e) {
     if (this.loadingLabel) {
@@ -32,13 +37,14 @@ export default class loading extends cc.Component {
     }
   }
   onLoad() {
+    i18.init(this.languageJson.json,cc.sys.languageCode)
     return __awaiter(this, void 0, void 0, function () {
       return __generator(this, function (e) {
         switch (e.label) {
           case 0:
             var duplicateLoading = this.node.getChildByName("for_loading copy");
             duplicateLoading && (duplicateLoading.active = false);
-            this.setLoadingLabel("正在初始化");
+            this.setLoadingLabel(`gkey_267`);
             if (this.showLogin) this.showLogin.active = false;
             if (this.loading) this.loading.active = true;
             AudioManager.getInstance().init();
@@ -60,11 +66,11 @@ export default class loading extends cc.Component {
   }
   async bootstrap() {
     try {
-      this.setLoadingLabel("正在加载配置");
+      this.setLoadingLabel(`gkey_268`);
       this.setProgress(0.2);
       var configRes = await BaseSystem.getSystemConfig({});
       GlobaldataMgr.init(configRes.data);
-      this.setLoadingLabel("正在初始化用户数据");
+      this.setLoadingLabel(`gkey_269`);
       this.setProgress(0.4);
       var loginRes = await BaseSystem.touristsLogin({});
       PlayerDataSys.initUserId(loginRes.data);
@@ -76,12 +82,12 @@ export default class loading extends cc.Component {
       await this.loadScene();
     } catch (error) {
       console.error("loading bootstrap error", error);
-      this.setLoadingLabel("加载失败，请重试");
+      this.setLoadingLabel(`gkey_270`);
     }
   }
   loadScene() {
     var e = this;
-    this.setLoadingLabel("正在加载场景");
+    this.setLoadingLabel(`gkey_271`);
     AudioManager.getInstance().initNativeUrl();
     var t = "mainScene";
     var o = gameData.loadRemoteLevelData(PlayerDataSys.playerInfo.cueernt_level_url);

@@ -63,9 +63,9 @@ export default class Service {
             if (-101 == s.code) {
                 SdkHelper.reportData("network_error", {
                     requestUrl: t,
-                    message: "超时了" + s.message
+                    message: `gkey_236??&value1==${s.message}`
                 });
-                EngineUtil.showCocosToast3("网络超时了，请重试");
+                EngineUtil.showCocosToast3(`gkey_237`);
                 return r(s);
             }
             if (-100 == s.code) {
@@ -73,7 +73,7 @@ export default class Service {
                     requestUrl: t,
                     message: s.message
                 });
-                EngineUtil.showCocosToast3("网络错误，请重试");
+                EngineUtil.showCocosToast3(`gkey_094`);
                 return EngineUtil.httpErr(s.message, async function () {
                     const __async_this = l;
                     var n;
@@ -146,22 +146,22 @@ export default class Service {
                 "tongdun_info": "{\"action\": \"activate\"}"
             },
             "ecp": 0,
-            "message": "成功"
+            "message": `gkey_238`
         });
         // return Service.commonApiPost(RequestType.GetSystemConfig, t);
     }
 
     static autoLogin(t) {
-        return Promise.resolve({"code": -1010, "data": {}, "ecp": 0, "message": "yid错误或不存在"});
+        return Promise.resolve({"code": -1010, "data": {}, "ecp": 0, "message": `gkey_239`});
         // return Service.commonApiPost(RequestType.AutoLogin, t);
     }
 
     static touristsLogin(t) {
         return Promise.resolve({
             "code": 1,
-            "data": {"user_id": "13637261", "user_name": "游客13637261", "yid": "13637261_8132415152"},
+            "data": {"user_id": "13637261", "user_name": `gkey_108??&value1==${13637261}`, "yid": "13637261_8132415152"},
             "ecp": 0,
-            "message": "注册成功"
+            "message": `gkey_240`
         });
         // return Service.commonApiPost(RequestType.TouristLogin, t);
     }
@@ -260,11 +260,11 @@ export default class Service {
         return [{
             code: 1,
             count: 3,
-            name: "帮忙拼"
+            name: `gkey_241`
         }, {
             code: 2,
             count: 3,
-            name: "整图"
+            name: `gkey_235`
         }];
     }
 
@@ -328,8 +328,8 @@ export default class Service {
             big_cash_guide: 10,
             big_scroll_xc_count: 20,
             bind_wx: 0,
-            bubble_cash_balance: "通过<color=#E62F2FFF>本关</c>，全部提现",
-            bubble_gold_balance: "通过本关，<color=#E62F2FFF>可1倍提现</c>",
+            bubble_cash_balance: `gkey_242`,
+            bubble_gold_balance: `gkey_243??&value1==${1}`,
             cash_balance: 0,
             conf_info: {
                 cash_extract_conf: {},
@@ -337,69 +337,69 @@ export default class Service {
                 parameter_conf: {
                     bigmoney_cash_only: {
                         para_key: "bigmoney_cash_only",
-                        para_meaning: "幸运弹窗现金不领取",
+                        para_meaning: `gkey_138`,
                         para_value: 500
                     },
                     bigmoney_envelope_show: {
                         para_key: "bigmoney_envelope_show",
-                        para_meaning: "幸运弹窗展示红包",
+                        para_meaning: `gkey_140`,
                         para_value: 300000
                     },
                     bigmoney_gold_only: {
                         para_key: "bigmoney_gold_only",
-                        para_meaning: "幸运弹窗金币不领取",
+                        para_meaning: `gkey_244`,
                         para_value: 30
                     },
                     bigmoney_showtime: {
                         para_key: "bigmoney_showtime",
-                        para_meaning: "幸运奖励展示条件计数",
+                        para_meaning: `gkey_245`,
                         para_value: 9
                     },
                     cash_up_2: {
                         para_key: "cash_up_2",
-                        para_meaning: "奖励强弹频率",
+                        para_meaning: `gkey_246`,
                         para_value: 4
                     },
                     levelup_cash_only: {
                         para_key: "levelup_cash_only",
-                        para_meaning: "通关弹窗不领取现金",
+                        para_meaning: `gkey_247`,
                         para_value: 800
                     },
                     levelup_envelope_show: {
                         para_key: "levelup_envelope_show",
-                        para_meaning: "通关弹窗显示红包",
+                        para_meaning: `gkey_147`,
                         para_value: 5000
                     },
                     merge_need_num: {
                         para_key: "merge_need_num",
-                        para_meaning: "合成所需数量",
+                        para_meaning: `gkey_248`,
                         para_value: 200
                     },
                     pass_1_ad_cash: {
                         para_key: "pass_1_ad_cash",
-                        para_meaning: "第1关通关现金奖励",
+                        para_meaning: `gkey_151??&value1==${1}`,
                         para_value: 1000
                     },
                     pass_2_ad_cash: {
                         para_key: "pass_2_ad_cash",
-                        para_meaning: "第2关通关现金奖励",
+                        para_meaning: `gkey_151??&value1==${2}`,
                         para_value: 1000
                     }
                 }
             },
-            create_city: "多伦多",
+            create_city: `gkey_249`,
             create_time: "2020-01-01 00:00:00",
             cueernt_level_url: profile.current_level_url,
             diamond_num: 0,
-            extract_cash_desc: "1.由于微信支付需要实名制,非实名用户账号无法支持提现,请务必将提现的微信号进行实名认证;\n\n2.由于微信官方要求，单笔提现金额最低为0.1元;\n\n3.提现申请一般是秒到账,如果突发意外情况,也会在1-3个工作日内审核到账,请耐心等待;\n\n4.用户达成提现要求即可提现到账,为保障全体用户利益,对有作弊嫌疑的用户,需经过审核验证或者满足活跃条件才可全部提现,否则不能提现;\n\n5.若发现用户有恶意作弊行为,一律封禁账号并扣除账户所有余额。",
-            extract_desc: "1.由于微信支付需要实名制,非实名用户账号无法支持提现,请务必将提现的微信号进行实名认证;\n\n2.由于微信官方要求，单笔提现金额最低为0.1元;\n\n3.提现申请一般是秒到账,如果突发意外情况,也会在1-3个工作日内审核到账,请耐心等待;\n\n4.用户达成提现要求即可提现到账,为保障全体用户利益,对有作弊嫌疑的用户,需经过审核验证或者满足活跃条件才可全部提现,否则不能提现;\n\n5.若发现用户有恶意作弊行为,一律封禁账号并扣除账户所有余额。",
+            extract_cash_desc: `gkey_152??&value1==${1}&value2==${2}&value3==${0.1}&value4==${3}&value5==${1}&value6==${-3}&value7==${4}&value8==${5}`,
+            extract_desc: `gkey_152??&value1==${1}&value2==${2}&value3==${0.1}&value4==${3}&value5==${1}&value6==${-3}&value7==${4}&value8==${5}`,
             extract_status: 0,
             finishNum: index,
             free_lottery_flag: 1,
             gallery_count_one_limit: 5,
             gallery_count_two_limit: 30,
             game_level: currentLevel,
-            gender: "保密",
+            gender: `gkey_069`,
             gold_balance: 0,
             guide_step_new: 0,
             headimgurl: "",
@@ -423,8 +423,8 @@ export default class Service {
 
     static buildOfflineStartGameData(profile, index) {
         return {
-            bubble_cash_balance: "通过<color=#E62F2FFF>本关</c>，全部提现",
-            bubble_gold_balance: "通过本关，<color=#E62F2FFF>可1倍提现</c>",
+            bubble_cash_balance: `gkey_242`,
+            bubble_gold_balance: `gkey_243??&value1==${1}`,
             cash_balance: 0,
             combine_extract_amount_dict: {},
             extract_banner_conf: {
@@ -441,23 +441,23 @@ export default class Service {
             new_gallery_flag: 0,
             process_info: {
                 level_reward_list: [{
-                    desc: "自动提现",
+                    desc: `gkey_250`,
                     level: 1,
                     type: "cash"
                 }, {
-                    desc: "自动提现",
+                    desc: `gkey_250`,
                     level: 2,
                     type: "cash"
                 }, {
-                    desc: "红包提现",
+                    desc: `gkey_251`,
                     level: 3,
                     type: "gold"
                 }, {
-                    desc: "任务提现",
+                    desc: `gkey_252`,
                     level: 4,
                     type: "cash"
                 }, {
-                    desc: "全部提现",
+                    desc: `gkey_116`,
                     level: 5,
                     type: "cash"
                 }],
@@ -476,8 +476,8 @@ export default class Service {
         const successCount = currentIndex + (isPass ? 1 : 0);
         return {
             activity_num: 2100,
-            bubble_cash_balance: "通过<color=#E62F2FFF>本关</c>，全部提现",
-            bubble_gold_balance: "通过本关，<color=#E62F2FFF>可1倍提现</c>",
+            bubble_cash_balance: `gkey_242`,
+            bubble_gold_balance: `gkey_243??&value1==${1}`,
             cash_balance: 0,
             cash_reward: 0,
             extract_status: 0,
@@ -506,7 +506,7 @@ export default class Service {
                     prop_info: propInfo
                 },
                 ecp: 0,
-                message: "未知道具"
+                message: `gkey_253`
             });
         }
         if (propItem.count <= 0) {
@@ -516,7 +516,7 @@ export default class Service {
                     prop_info: propInfo
                 },
                 ecp: 0,
-                message: "道具不足"
+                message: `gkey_254`
             });
         }
         return Promise.resolve({
@@ -525,7 +525,7 @@ export default class Service {
                 prop_info: this.changeOfflinePropCount(code, -1)
             },
             ecp: 0,
-            message: "成功"
+            message: `gkey_238`
         });
     }
 
@@ -546,7 +546,7 @@ export default class Service {
                 prop_info: propInfo
             },
             ecp: 0,
-            message: "成功"
+            message: `gkey_238`
         });
     }
 
@@ -559,7 +559,7 @@ export default class Service {
             code: 1,
             data: this.buildOfflineUserInfoData(profile, index),
             ecp: 0,
-            message: "成功"
+            message: `gkey_238`
         });
     }
 
@@ -576,7 +576,7 @@ export default class Service {
             code: 1,
             data: this.buildOfflineStartGameData(profile, index),
             ecp: 0,
-            message: "成功"
+            message: `gkey_238`
         });
     }
 
@@ -589,7 +589,7 @@ export default class Service {
             code: 1,
             data: this.buildOfflineSubmitGameData(currentIndex, isPass),
             ecp: 0,
-            message: "成功"
+            message: `gkey_238`
         });
     }
 
@@ -602,7 +602,7 @@ export default class Service {
     }
 
     static updateGuideInfo(t) {
-        return Promise.resolve({"code": 1, "data": {}, "ecp": 0, "message": "成功"});
+        return Promise.resolve({"code": 1, "data": {}, "ecp": 0, "message": `gkey_238`});
 
         // return Service.commonApiPost(RequestType.UpdateGuideInfo, t);
     }
@@ -617,9 +617,9 @@ export default class Service {
             "code": 1, "data": {
                 "dm_info": [{
                     "image": "",
-                    "msg": "<color=#FFFCE1>恭喜</c><color=#FBDD19>心***大</c><color=#FFFCE1>，使用提现倍数50倍成功提现</c><color=#FBDD19>4766.0元</c>"
+                    "msg": `gkey_255??&value1==${50}&value2==${4766.0}`
                 }], "size": 1
-            }, "ecp": 0, "message": "成功"
+            }, "ecp": 0, "message": `gkey_238`
         });
         // return Service.commonApiPost(RequestType.ScrollMsg, t);
     }
@@ -703,7 +703,7 @@ export default class Service {
                 "true_money": 0
             }],
             "ecp": 0,
-            "message": "成功"
+            "message": `gkey_238`
         });
         // return Service.commonApiPost(RequestType.taskList, null);
     }
@@ -754,10 +754,10 @@ export default class Service {
                 "dm_info": [{
                     "amount": 442.51,
                     "image": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaELPARmfBrVETflLm5pBozo3uryZkY2d6XF3JQicDiaITzqxrNcpFO0ciaeD6zgtFEia7vgYOIDFBHRibpj3sZX5j8jMH4B44iafszj5vibsAJoEfpYRA/132",
-                    "msg": "提现了442.51元，微信打款已到账",
+                    "msg": `gkey_256??&value1==${442.51}`,
                     "name": "ᵉ***ᵉ"
                 }], "size": 1
-            }, "ecp": 0, "message": "成功"
+            }, "ecp": 0, "message": `gkey_238`
         });
         // return Service.commonApiPost(RequestType.GetBigMsg, null);
     }
@@ -970,7 +970,7 @@ export default class Service {
                     "sign_up_day_limit": 30,
                     "status": 0
                 }]
-            }, "ecp": 0, "message": "成功"
+            }, "ecp": 0, "message": `gkey_238`
         });
         // return Service.commonApiPost(RequestType.signIn, null);
     }

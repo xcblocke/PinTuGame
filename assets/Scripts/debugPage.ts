@@ -47,7 +47,7 @@ export default class debugPage extends BasePage {
   }
   async passClick() {
     if (isNaN(Number(this.passLevelEditBox.string))) {
-      EngineUtil.showCocosToast3("关卡号不合法");
+      EngineUtil.showCocosToast3(`gkey_067`);
       return;
     }
     await Service.commonRequest(RequestType.setLevel, {

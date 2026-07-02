@@ -49,7 +49,7 @@ export default class SettlementPage extends BasePage {
     }
     this.wxLabel.string = MakeMnGlobalData.getCashBalanceWithUnit(o, "");
     this.hbLabel.string = MakeMnGlobalData.getGoldBalanceWithUnit(MakeMnGlobalData.settlementShowNum, "");
-    this.onlyWxLabel.string = "只要" + MakeMnGlobalData.getCashBalanceWithUnit(n) + "现金";
+    this.onlyWxLabel.string = `gkey_257??&value1==${MakeMnGlobalData.getCashBalanceWithUnit(n)}`;
     this.spine.node.opacity = 0;
     this.videoBtnNode.active = false;
     this.unVideoBtnNode.active = false;

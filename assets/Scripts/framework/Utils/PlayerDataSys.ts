@@ -45,7 +45,7 @@ class _PlayerDataSys extends PlayerDataMgr {
       this.createtime = l;
       this.gender = i;
       this.headimgurl = p || "https://thirdwx.qlogo.cn/mmopen/vi_32/JrN4b6WVb5xtuuticYA1y9Wnv3KQPBUShsWKY1ibHg3NMf9r8MMvjH4Jrial6td6ibUteOzSUYGChGGoPtzibE669Ng/132";
-      this.nickname = u || "游客1248152";
+      this.nickname = u || `gkey_108??&value1==${1248152}`;
       this.guide_step_new = BigInt(g) || BigInt(0);
       var y = LocalData.getInstance().getDebugData();
       y && (gameData.debugData = y);
@@ -83,7 +83,7 @@ class _PlayerDataSys extends PlayerDataMgr {
       n = e.headimgurl,
       i = e.nickname;
     this.bindphone = t || 0;
-    this.gender = o || "保密";
+    this.gender = o || `gkey_069`;
     this.headimgurl = n || "";
     this.nickname = i || "";
     this.bindwx = 1;

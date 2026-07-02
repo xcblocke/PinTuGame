@@ -99,7 +99,7 @@ class f {
   getCashBalance(e = this.cashBalance) {
     return this.getCNCashNum(e);
   }
-  getCashBalanceWithUnit(e = this.cashBalance, t = "元") {
+  getCashBalanceWithUnit(e = this.cashBalance, t = `gkey_013`) {
     return this.getCNCashNum(e) + t;
   }
   setUserCashBalance(e, t = true) {
@@ -116,7 +116,7 @@ class f {
   getGoldBalance(e = this.goldBalance) {
     return this.getCNGoldBalanceNum(e);
   }
-  getGoldBalanceWithUnit(e = this.goldBalance, t = "元") {
+  getGoldBalanceWithUnit(e = this.goldBalance, t = `gkey_013`) {
     return this.getCNGoldBalanceNum(e) + t;
   }
   setUserGoldBalance(e, t = true) {

@@ -17,7 +17,7 @@ UiNodeTypeMap[UiNodeType.RICH_TEXT] = cc.RichText;
 UiNodeTypeMap[UiNodeType.NODE] = cc.Node;
 export var UiNodeTypeMap = UiNodeTypeMap;
 @ccclass
-@menu("自动获取ui节点")
+@menu(`gkey_054`)
 export default class UiNode extends cc.Component {
   _uiNodes = new Map();
   _uiLabels = new Map();

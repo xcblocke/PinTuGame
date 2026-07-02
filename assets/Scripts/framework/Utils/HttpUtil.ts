@@ -50,7 +50,7 @@ export default class HttpUtil {
                             }
                             a(l);
                         } else {
-                            console.log("返回数据不存在");
+                            console.log(`gkey_107`);
                             c({
                                 code: -1,
                                 message: "返回数据不存在",

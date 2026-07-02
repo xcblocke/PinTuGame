@@ -83,7 +83,7 @@ class AnimeTweenConfig {
   repeatTimes: number = 1;
 }
 @ccclass
-@menu("动画组件")
+@menu(`gkey_052`)
 export default class AnimeTween extends cc.Component {
   @property({
     type: [AnimeTweenConfig]

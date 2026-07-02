@@ -70,7 +70,7 @@ class _EngineUtil {
     SdkHelper.reportData("httpErr", {
       response: JSON.stringify(e)
     });
-    this.showCocosToast3("网络错误，请重试");
+    this.showCocosToast3(`gkey_094`);
   }
   getColor(e) {
     e.includes("#") || (e = "#" + e);
@@ -270,7 +270,7 @@ class _EngineUtil {
     var o = new Date(e);
     return "" + o.getFullYear() + t + (o.getMonth() + 1) + t + o.getDate();
   }
-  formatDateStr(e, t = "年", o = "月", n = "日") {
+  formatDateStr(e, t = `gkey_095`, o = `gkey_096`, n = `gkey_097`) {
     var i = new Date(e);
     return "" + i.getFullYear() + t + (i.getMonth() + 1) + o + i.getDate() + n;
   }
@@ -300,8 +300,8 @@ class _EngineUtil {
     });
   }
   nameFormat(e, t = 12) {
-    if (!e) return "用户不存在";
-    for (var o = e.split(""), n = o.length, i = 0, a = "", r = "", c = new RegExp("[一-龥]+"), s = 0; s < n; s++) {
+    if (!e) return `gkey_098`;
+    for (var o = e.split(""), n = o.length, i = 0, a = "", r = "", c = new RegExp(`gkey_092`), s = 0; s < n; s++) {
       var l = o[s];
       if (c.test(l)) {
         i += 2;
@@ -371,7 +371,7 @@ class _EngineUtil {
     });
   }
   subUserName(e, t = 8) {
-    return e ? "" != e && e.length > t ? e.substring(0, t) : e : "用户不存在";
+    return e ? "" != e && e.length > t ? e.substring(0, t) : e : `gkey_098`;
   }
   hexToColor(e) {
     e = e.replace(/^#/, "");
@@ -637,10 +637,10 @@ class _EngineUtil {
     };
     try {
       SdkHelper.reportData("event_error_test", {
-        msgg: "视频开始播放"
+        msgg: `gkey_099`
       });
       AudioManager.getInstance().playNativeMusic("video_big_reward");
-      SdkHelper.showForceToast("看完广告<br><font color='#F74708'>领取大额奖励</font>");
+      SdkHelper.showForceToast(`gkey_100`);
       PageMgr.openEventBlock("playVideoCommon");
       CommonReport.instance.reportGameAdPlay({
         page_id: e,
@@ -654,7 +654,7 @@ class _EngineUtil {
       await this.sleep(5000);
       if (!i.isOk) {
         SdkHelper.reportData("event_error_test", {
-          msgg: "触发超时回调"
+          msgg: `gkey_101`
         });
         this.success(e, t, false, o, n, r, c, i);
       }
@@ -669,14 +669,14 @@ class _EngineUtil {
   success(e, t = 0, o = true, r?, c = false, l = 0, u = {}, p = null) {
     var d = this;
     if (p.isOk) SdkHelper.reportData("event_error_test", {
-      msgg: "重新触发了"
+      msgg: `gkey_102`
     });else {
       SdkHelper.reportData("event_error_test", {
-        msgg: "视频回调成功"
+        msgg: `gkey_103`
       });
       PageMgr.closeEventBlock("playVideoCommon");
       p.isOk = true;
-      o || SdkHelper.showForceToast("未看完广告<br><font color='#F74708'>只领取了少量奖励</font>");
+      o || SdkHelper.showForceToast(`gkey_104`);
       PageMgr.closeEventBlock("playVideoCommon");
       CommonReport.instance.reportGameAdPlay({
         page_id: e,
@@ -838,10 +838,10 @@ class _EngineUtil {
     return o;
   }
   formatDateToChineseDateTime(e) {
-    return e.getFullYear() + "年" + String(e.getMonth() + 1).padStart(2, "0") + "月" + String(e.getDate()).padStart(2, "0") + "日 " + String(e.getHours()).padStart(2, "0") + ":" + String(e.getMinutes()).padStart(2, "0") + ":" + String(e.getSeconds()).padStart(2, "0");
+    return `gkey_105??&value1==${e.getFullYear()}&value2==${String(e.getMonth() + 1).padStart(2, "0")}&value4==${String(e.getDate()).padStart(2, "0")}&value5==${String(e.getHours()).padStart(2, "0")}&value6==${String(e.getMinutes()).padStart(2, "0")}` + String(e.getSeconds()).padStart(2, "0");
   }
   formatDateToChineseDateTimeNoSeconds(e) {
-    return e.getFullYear() + "年" + String(e.getMonth() + 1).padStart(2, "0") + "月" + String(e.getDate()).padStart(2, "0") + "日 " + String(e.getHours()).padStart(2, "0") + ":" + String(e.getMinutes()).padStart(2, "0");
+    return `gkey_106??&value1==${e.getFullYear()}&value2==${String(e.getMonth() + 1).padStart(2, "0")}&value4==${String(e.getDate()).padStart(2, "0")}&value5==${String(e.getHours()).padStart(2, "0")}` + String(e.getMinutes()).padStart(2, "0");
   }
   async showAdByRule(e) {
     if (PlayerDataSys.isOppoReviewer()) {

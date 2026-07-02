@@ -181,7 +181,7 @@ export default class AdManager {
       ad_type: e.ad_type
     });
     this.doVideoFail(e);
-    SdkHelper.showToast("拉取广告出错，领取失败");
+    SdkHelper.showToast(`gkey_093`);
   }
   doVideoFail(e) {
     var t = this;

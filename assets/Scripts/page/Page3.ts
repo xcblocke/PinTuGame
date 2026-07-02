@@ -53,9 +53,9 @@ export default class Page3 extends PageBase {
       var p = this.bookData[i];
       a.name = "" + p.id;
       a.getChildByName("ly").getChildByName("labName").getComponent(cc.Label).string = p.name;
-      a.getChildByName("ly").getChildByName("auth").getComponent(cc.Label).string = "【作者】：" + p.author;
+      a.getChildByName("ly").getChildByName("auth").getComponent(cc.Label).string = `gkey_230??&value1==${p.author}`;
       var f = Math.floor(30 * Math.random() + 70);
-      a.getChildByName("labDesc").getComponent(cc.Label).string = "推荐值: " + f + "%";
+      a.getChildByName("labDesc").getComponent(cc.Label).string = `gkey_231??&value1==${f}`;
       p.randomNum = f;
       EngineUtil.setNodeSprieFrame(a.getChildByName("image_side"), resBasePath + "book/" + p.img);
       cc.find("a_quanshu/lb", a).getComponent(cc.Label).string = "" + (i + 1);
@@ -80,8 +80,8 @@ export default class Page3 extends PageBase {
       return t.id === e;
     });
     this.detailItem.getChildByName("ly").getChildByName("labName").getComponent(cc.Label).string = t.name;
-    this.detailItem.getChildByName("ly").getChildByName("auth").getComponent(cc.Label).string = "【作者】：" + t.author;
-    this.detailItem.getChildByName("labDesc").getComponent(cc.Label).string = "推荐值: " + t.randomNum + "%";
+    this.detailItem.getChildByName("ly").getChildByName("auth").getComponent(cc.Label).string = `gkey_230??&value1==${t.author}`;
+    this.detailItem.getChildByName("labDesc").getComponent(cc.Label).string = `gkey_231??&value1==${t.randomNum}`;
     EngineUtil.setNodeSprieFrame(this.detailItem.getChildByName("image_side"), resBasePath + "book/" + t.img);
     this.detailDesLb.string = t.desc;
   }
