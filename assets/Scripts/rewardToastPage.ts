@@ -104,12 +104,20 @@ export default class rewardToastPage extends BasePage {
     }).start();
     await EngineUtil.sleep(1000 * (0.05 * t + 0.1));
     o = false;
+    var r = GlobalApp.MakeMnProcessComp;
+    if (!r) {
+      if (!o) {
+        o = true;
+        this._hide();
+      }
+      return;
+    }
     if (this.cashReward > 0) {
-      EngineUtil.setNodeToTop(GlobalApp.MakeMnProcessComp.cashNode);
+      r.cashNode && EngineUtil.setNodeToTop(r.cashNode);
       (async function () {
         const __async_this = d;
-        await GlobalApp.MakeMnProcessComp.cashAddChangeAnim(__async_this.cashReward, __async_this.cashIconNode.worldPosition);
-        EngineUtil.recoverNodeToTop(GlobalApp.MakeMnProcessComp.cashNode);
+        await r.cashAddChangeAnim(__async_this.cashReward, __async_this.cashIconNode.worldPosition);
+        r.cashNode && EngineUtil.recoverNodeToTop(r.cashNode);
         if (!o) {
           o = true;
           __async_this._hide();
@@ -118,11 +126,11 @@ export default class rewardToastPage extends BasePage {
       }).call(d);
     }
     if (this.goldReward > 0) {
-      EngineUtil.setNodeToTop(GlobalApp.MakeMnProcessComp.goldNode);
+      r.goldNode && EngineUtil.setNodeToTop(r.goldNode);
       (async function () {
         const __async_this = d;
-        await GlobalApp.MakeMnProcessComp.goldAddChangeAnim(__async_this.goldReward, __async_this.goldIconNode.worldPosition);
-        EngineUtil.recoverNodeToTop(GlobalApp.MakeMnProcessComp.goldNode);
+        await r.goldAddChangeAnim(__async_this.goldReward, __async_this.goldIconNode.worldPosition);
+        r.goldNode && EngineUtil.recoverNodeToTop(r.goldNode);
         if (!o) {
           o = true;
           __async_this._hide();

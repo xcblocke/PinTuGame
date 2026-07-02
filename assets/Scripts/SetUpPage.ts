@@ -42,11 +42,23 @@ export default class SetUpPage extends BasePage {
   @property(cc.Node)
   demoNode: cc.Node = null;
   comeinTime = 0;
+  hasBarrageNode() {
+    return !!(GlobalApp.GameMain && GlobalApp.GameMain.node && cc.find("unGameNode/barrageTip_move", GlobalApp.GameMain.node));
+  }
+  hideBarrageSettingIfNeeded() {
+    if (this.hasBarrageNode() || !this.dmImg) {
+      return;
+    }
+    var e = this.dmImg.node.parent;
+    e && (e.active = false);
+  }
   start() {
     this.demoNode.active = gameData.isOpenDemo;
+    this.hideBarrageSettingIfNeeded();
   }
   _init(t) {
     super._init.call(this, t);
+    this.hideBarrageSettingIfNeeded();
     this.setInfo();
   }
   onEnable() {
@@ -73,8 +85,10 @@ export default class SetUpPage extends BasePage {
     this.soundImg.spriteFrame = this.turnImgs[Number(AudioManager.getInstance().getAudioState())];
     this.gxhImg.spriteFrame = this.turnImgs[PlayerDataSys.reco_switch];
     this.zdImg.spriteFrame = this.turnImgs[Number(AudioManager.getInstance().getVibratorState())];
-    var e = EngineUtil.localStorageGetItem("barrageIsOpen", "open");
-    this.dmImg.spriteFrame = "open" == e ? this.turnImgs[1] : this.turnImgs[0];
+    if (this.hasBarrageNode() && this.dmImg) {
+      var e = EngineUtil.localStorageGetItem("barrageIsOpen", "open");
+      this.dmImg.spriteFrame = "open" == e ? this.turnImgs[1] : this.turnImgs[0];
+    }
   }
   nameFormat(e) {
     for (var t = e.split(""), o = t.length, n = 0, i = "", a = "", r = new RegExp("[一-龥]+"), c = 0; c < o; c++) {
@@ -152,6 +166,9 @@ export default class SetUpPage extends BasePage {
     }).catch(function () {});
   }
   touchDM() {
+    if (!this.hasBarrageNode()) {
+      return;
+    }
     AudioManager.getInstance().playMusic("btntouch");
     var e = EngineUtil.localStorageGetItem("barrageIsOpen", "open");
     EngineUtil.localStorageSetItem("barrageIsOpen", "open" == e ? "close" : "open");

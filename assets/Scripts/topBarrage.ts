@@ -38,10 +38,13 @@ export default class topBarrage extends cc.Component {
     this.bigInfos.unshift(e);
   }
   show() {
-    var e = this;
+    if (!this.node || !this.node.isValid) {
+      return;
+    }
     if (this.bigInfos.length) {
       this.createOne();
     } else {
+      var e = this;
       GameSystem.getBigMsg().then(function (t) {
         if (t && 1 == t.code) {
           var o = t.data.dm_info;
@@ -54,6 +57,9 @@ export default class topBarrage extends cc.Component {
     }
   }
   createOne() {
+    if (!this.node || !this.node.isValid || !this.top_desc) {
+      return;
+    }
     var e = this.bigInfos.shift(),
       t = e.image,
       o = (e.msg, e.name),
@@ -67,6 +73,9 @@ export default class topBarrage extends cc.Component {
     this.showTop();
   }
   showTop() {
+    if (!this.node || !this.node.isValid || !this.caidai || !this.caidai1) {
+      return;
+    }
     var e = this,
       t = this.node.y = cc.winSize.height / 2 + 220;
     this.node.stopAllActions();

@@ -119,21 +119,28 @@ class _GameSystem {
   gotoGoldWithdraw(e) {
     return Service.gotoGoldWithdraw(e);
   }
+  async handleSubmitGameAfter(e, t = null, o = false) {
+    MakeMnGlobalData.submitGameDataInit(e);
+    var n = GlobalApp.MakeMnProcessComp;
+    if (!n) {
+      return;
+    }
+    if (MakeMnGlobalData.startGameData && MakeMnGlobalData.startGameData.game_level > 2) {
+      await n.goldAddChangeAnim(e.gold_reward, t);
+      await n.cashAddChangeAnim(e.cash_reward, t);
+    }
+    if (!o) {
+      n.goldBubbleTip = e.bubble_gold_balance;
+      n.cashBubbleTip = e.bubble_cash_balance;
+    }
+  }
   async submitGame(e, t = null) {
-    var o = this;
-    return new Promise(function (n, r) {
-      Service.submitGame({
-        is_tg: e,
-        sync_data: ""
-      }).then(async function (r) {
-        const __async_this = o;
-        await GlobalApp.MakeMnProcessComp.excuteSubmitGameAfter(r.data, t, e);
-        n(r.data);
-        return;
-      }).catch(function (e) {
-        r(e);
-      });
+    var o = await Service.submitGame({
+      is_tg: e,
+      sync_data: ""
     });
+    await this.handleSubmitGameAfter(o.data, t, e);
+    return o.data;
   }
   useProp(e) {
     var t = e.code;
@@ -168,19 +175,16 @@ class _GameSystem {
     return e;
   }
   async clearBlock(e = null) {
-    var t = this;
     if (gameData.isOpenDemo) {
       LocalData.getInstance().setUserCashData(MakeMnGlobalData.goldBalance);
-      GlobalApp.MakeMnProcessComp.goldChangeAnim(MakeMnGlobalData.goldBalance + this.getGoldReward(), e);
+      var t = GlobalApp.MakeMnProcessComp;
+      if (t) {
+        await t.goldChangeAnim(MakeMnGlobalData.goldBalance + this.getGoldReward(), e);
+      }
       gameData.isOpenDemo && gameData.debugData.isOpenAutoGet && PageMgr.openEventBlock("clearBlock");
       return;
     }
-    return new Promise(function () {
-      t.submitGame(0, e).then(async function () {
-        const __async_this = t;
-        return;
-      });
-    });
+    await this.submitGame(0, e);
   }
   getCashReward(e) {
     var t = 0;

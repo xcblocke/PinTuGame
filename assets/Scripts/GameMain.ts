@@ -45,17 +45,17 @@ export default class GameMain extends cc.Component {
   }
   onLoad() {
     GlobalApp.GameMain = this;
-    EventMgr.listen(GameEventType.STOP_GAME_TIME, this.stopUpdateGameTime, this);
-    EventMgr.listen(GameEventType.START_GAME_TIME, this.startUpdateGameTime, this);
+    EventMgr.listen(GameEventType.STOP_GAME_TIME, this.stopUpdateGameTime, this, null);
+    EventMgr.listen(GameEventType.START_GAME_TIME, this.startUpdateGameTime, this, null);
     "1" == EngineUtil.localStorageGetItem("bg_audio", "1") && AudioManager.getInstance().openBg();
-    this.hideRemovedFeaturesUI();
   }
-  hideRemovedFeaturesUI() {
-    ["unGameNode/barrageTip_move", "unGameNode/topBarrage"].forEach(function (e) {
-      var t = cc.find(e, GlobalApp.GameMain.node);
+  hideNodeIfExists(e) {
+    try {
+      var t = cc.find(e, this.node);
       t && (t.active = false);
-    });
+    } catch (o) {}
   }
+  
   @decorator.Debounce(2000)
   restartGame() {
     gameData.restart_times++;
@@ -133,23 +133,17 @@ export default class GameMain extends cc.Component {
     return;
   }
   async startgame(e = 0) {
-    var t;
-    var o = this;
-    await (null === (t = this.makeMnProcessComp) || void 0 === t ? void 0 : t.excuteRequestStartGameBefore());
-    return new Promise(async function (t) {
-      const __async_this_1 = o;
-      var o_local = __async_this_1;
-      GameSystem.startGame(e).then(async function (e) {
-        const __async_this = o_local;
-        await __async_this.makeMnProcessComp.excuteRequestStartGameAfter(e.data);
-        CommonReport.instance.reportGameStart();
-        await __async_this.initGameData(e.data);
-        await __async_this.makeMnProcessComp.excuteAfterStartGame(e.data);
-        t(null);
-        return;
-      });
-      return;
-    });
+    var t = this.makeMnProcessComp;
+    if (t) {
+      await t.excuteRequestStartGameBefore();
+    }
+    var o = await GameSystem.startGame(e);
+    if (t) {
+      await t.excuteRequestStartGameAfter(o.data);
+      await t.excuteAfterStartGame(o.data);
+    }
+    CommonReport.instance.reportGameStart();
+    await this.initGameData(o.data);
   }
   stopUpdateGameTime() {
     this.unschedule(this.updateGameTime);

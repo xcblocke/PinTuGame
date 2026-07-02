@@ -15,12 +15,18 @@ export default class barrageTip_move extends cc.Component {
   itemPool = new cc.NodePool();
   randomIndex = 0;
   onLoad() {
-    EventMgr.listen(GameEventType.UPDATE_DANMU, this.setOpen, this);
+    if (!this.node || !this.node.isValid) {
+      return;
+    }
+    EventMgr.listen(GameEventType.UPDATE_DANMU, this.setOpen, this, null);
   }
   onDestroy() {
     EventMgr.ignore(GameEventType.UPDATE_DANMU, this.setOpen, this);
   }
   setOpen() {
+    if (!this.node || !this.node.isValid) {
+      return;
+    }
     if ("open" == EngineUtil.localStorageGetItem("barrageIsOpen", "open")) {
       this.show();
     } else {
@@ -28,6 +34,9 @@ export default class barrageTip_move extends cc.Component {
     }
   }
   onEnable() {
+    if (!this.node || !this.node.isValid) {
+      return;
+    }
     if ("open" == EngineUtil.localStorageGetItem("barrageIsOpen", "open")) {
       this.show();
     } else {
@@ -35,17 +44,26 @@ export default class barrageTip_move extends cc.Component {
     }
   }
   show() {
-    this.node.active = true;
+    this.node && this.node.isValid && (this.node.active = true);
   }
   hide() {
-    this.node.active = false;
+    this.node && this.node.isValid && (this.node.active = false);
   }
   start() {
+    if (!this.node || !this.node.isValid || !this.text) {
+      return;
+    }
     this.requestMsg(this.initView.bind(this));
   }
   requestMsg(e) {
     var t = this;
+    if (!this.node || !this.node.isValid) {
+      return;
+    }
     GameSystem.getScrollMsg().then(function (o) {
+      if (!t.node || !t.node.isValid) {
+        return;
+      }
       if (o && 1 == o.code) {
         var n = o.data;
         if (n && n.size > 0) {
@@ -71,6 +89,9 @@ export default class barrageTip_move extends cc.Component {
     });
   }
   initView(e) {
+    if (!this.node || !this.node.isValid || !this.text) {
+      return;
+    }
     e && e.length && (this.standbyArr = this.standbyArr.concat(e));
     this.createByTime();
     this.schedule(this.createByTime, 20);
@@ -82,6 +103,9 @@ export default class barrageTip_move extends cc.Component {
   createItem() {
     var e = this,
       t = this.standbyArr.shift();
+    if (!this.node || !this.node.isValid || !this.text) {
+      return;
+    }
     if (t) {
       var o = this.itemPool.get() || cc.instantiate(this.text);
       this.randomIndex >= 100 && (this.randomIndex = 0);
@@ -101,13 +125,20 @@ export default class barrageTip_move extends cc.Component {
     }
   }
   setItemString(e, t) {
+    if (!e || !t) {
+      return;
+    }
     var o = e.getChildByName("user_head"),
-      n = e.getChildByName("desc").getComponent(cc.RichText),
-      i = o.getChildByName("mask").getChildByName("head").getComponent(cc.Sprite),
+      s = e.getChildByName("desc"),
+      n = s ? s.getComponent(cc.RichText) : null,
+      i = o && o.getChildByName("mask") ? o.getChildByName("mask").getChildByName("head").getComponent(cc.Sprite) : null,
       a = t.image,
       r = t.msg;
+    if (!n) {
+      return;
+    }
     n.string = r;
-    a && EngineUtil.loadRemoteImg(a).then(function (e) {
+    a && i && EngineUtil.loadRemoteImg(a).then(function (e) {
       e && (i.spriteFrame = new cc.SpriteFrame(e));
     }).catch(function () {});
   }
