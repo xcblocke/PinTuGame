@@ -148,11 +148,5 @@ export var DebugConfig = [{
 }, {
   title: "页面展示",
   isOpen: false,
-  children: [y.createPage("ActCheckPage", PageEnum.ActCheckPage), y.createPage("ActLargeWithdrawPage", PageEnum.ActLargeWithdrawPage), y.createPage("ActTipPage", PageEnum.ActTipPage), y.createPage("AutoCombinePage", PageEnum.AutoCombinePage), y.createPage("AutoProcessPage", PageEnum.AutoProcessPage), y.createPage("AutoWithdrawPage", PageEnum.AutoWithdrawPage), y.createPage("Cash1000Page", PageEnum.Cash1000Page), y.createPage("CashbackPage", PageEnum.CashbackPage), y.createPage("CombineCashPage", PageEnum.CombineCashPage), y.createPage("goldSuccPage", PageEnum.goldSuccPage), y.createPage("gradeCashPage", PageEnum.gradeCashPage), y.createPage("LevelStartPage", PageEnum.LevelStartPage), y.createPage("luckRewardPage", PageEnum.luckRewardPage), y.createPage("rewardToastPage", PageEnum.rewardToastPage), y.createPage("SettlementPage", PageEnum.SettlementPage), y.createPage("signInPage", PageEnum.signInPage), y.createPage("taskPage", PageEnum.taskPage), y.createPage("wdSuccPage2", PageEnum.wdSuccPage2), y.createPage("WithdrawRefundPage", PageEnum.WithdrawRefundPage), y.createPage("CollecImgPage", PageEnum.CollecImgPage, {
-    step: 1
-  }), y.createPage("CollecImgPage1", PageEnum.CollecImgPage, {
-    step: 2
-  }), y.createPage("CollecImgPage2", PageEnum.CollecImgPage, {
-    step: 3
-  })]
+  children: [y.createPage("luckRewardPage", PageEnum.luckRewardPage), y.createPage("SettlementPage", PageEnum.SettlementPage), y.createPage("SettleWholeImgPage", PageEnum.SettleWholeImgPage), y.createPage("WholeImgShowPage", PageEnum.WholeImgShowPage), y.createPage("propBuyPage", PageEnum.propBuyPage), y.createPage("SetUpPage", PageEnum.SetUpPage), y.createPage("failPage", PageEnum.failPage), y.createPage("loadingPage", PageEnum.loadingPage), y.createPage("networkFailedPage", PageEnum.networkFailedPage), y.createPage("oppoAdPage", PageEnum.oppoAdPage), y.createPage("webPage", PageEnum.webPage)]
 }];

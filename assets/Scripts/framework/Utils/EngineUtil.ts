@@ -719,27 +719,13 @@ class _EngineUtil {
           1 == gameData.startgameData.game_level && (t.data.cash_reward = MakeMnGlobalData.pass1CashReward);
           2 == gameData.startgameData.game_level && (t.data.cash_reward = MakeMnGlobalData.pass2CashReward);
         }
-        await PageMgr.showPageByEnum(PageEnum.rewardToastPage, Object.assign(Object.assign({}, u), {
-          goldReward: t.data.gold_reward,
-          cashReward: t.data.cash_reward
-        }));
         null == r || r(t.data);
         return;
       });
     }
   }
   async videoSuccess(e, t = {}) {
-    if (!(0 == e.cash_reward || 0 == e.gold_reward)) {
-      await PageMgr.showPageByEnum(PageEnum.rewardToastPage, Object.assign({
-        goldReward: e.gold_reward,
-        cashReward: e.cash_reward,
-        cashBalance: e.cash_balance,
-        goldBalance: e.gold_balance
-      }, t));
-      return;
-    } else {
-      return;
-    }
+    return;
   }
   updateFlyBalance() {}
   async noWatchVideo(e, t = {}) {

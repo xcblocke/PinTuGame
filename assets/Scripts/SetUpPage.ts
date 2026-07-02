@@ -215,18 +215,22 @@ export default class SetUpPage extends BasePage {
   customerService() {
     AudioManager.getInstance().playMusic("btntouch");
     SdkHelper.reportData("click_help_center");
-    var e = CUSTOMER_SERVICE;
     EventMgr.trigger(GameEventType.PAGE_SHOW, {
-      name: "helpCenterPage",
+      name: "webPage",
       data: {
-        url: e
+        title: "帮助中心",
+        url: CUSTOMER_SERVICE
       }
     });
   }
   aboutUs() {
     AudioManager.getInstance().playMusic("btntouch");
     EventMgr.trigger(GameEventType.PAGE_SHOW, {
-      name: "aboutPage"
+      name: "webPage",
+      data: {
+        title: "关于我们",
+        url: PlayerDataSys.getUserAgreementUrl(0)
+      }
     });
   }
   userAgreement() {
@@ -266,9 +270,7 @@ export default class SetUpPage extends BasePage {
     this._hide();
   }
   remove() {
-    EventMgr.trigger(GameEventType.PAGE_SHOW, {
-      name: "removeUserPage"
-    });
+    EngineUtil.showCocosToast2("该功能已关闭");
   }
   logout() {
     PageMgr.clear();
