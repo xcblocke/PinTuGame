@@ -52,6 +52,8 @@ export default class GameContainer extends cc.Component {
     GlobalApp.GameContainer = this;
     this.propComp.node.scale = 0;
     this.levelText.string = "";
+    this.handBookBtn && (this.handBookBtn.active = false);
+    this.galleryRedNode && (this.galleryRedNode.active = false);
     return;
   }
   start() {}
@@ -108,10 +110,6 @@ export default class GameContainer extends cc.Component {
           nodes: [this.propComp.node]
         });
       }
-    }
-    if (Object.keys(MakeMnGlobalData.infoType.login_add_prop_conf).length > 0) {
-      await PageMgr.showPageByEnum(PageEnum.DayLoginGiftPage);
-      MakeMnGlobalData.infoType.login_add_prop_conf = {};
     }
     return;
   }

@@ -48,6 +48,13 @@ export default class GameMain extends cc.Component {
     EventMgr.listen(GameEventType.STOP_GAME_TIME, this.stopUpdateGameTime, this);
     EventMgr.listen(GameEventType.START_GAME_TIME, this.startUpdateGameTime, this);
     "1" == EngineUtil.localStorageGetItem("bg_audio", "1") && AudioManager.getInstance().openBg();
+    this.hideRemovedFeaturesUI();
+  }
+  hideRemovedFeaturesUI() {
+    ["unGameNode/barrageTip_move", "unGameNode/topBarrage"].forEach(function (e) {
+      var t = cc.find(e, GlobalApp.GameMain.node);
+      t && (t.active = false);
+    });
   }
   @decorator.Debounce(2000)
   restartGame() {

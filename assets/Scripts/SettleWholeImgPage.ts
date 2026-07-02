@@ -58,29 +58,11 @@ export default class SettleWholeImgPage extends BasePage {
   }
   @decorator.Debounce(1000)
   close() {
-    var e = this;
     AudioManager.instance.playBtn();
     cc.tween(GlobalApp.GameMain.node).to(0.1, {
       opacity: 255
     }).start();
-    cc.tween(this.titleNode).to(0.1, {
-      opacity: 0
-    }).start();
-    cc.tween(this.btnNode).to(0.1, {
-      opacity: 0
-    }).start();
-    var t = GlobalApp.GameContainer.bookNode.worldPosition.add(cc.v3(0, 20, 0));
-    this.spineSkeleton.node.active = false;
-    cc.tween(this.imgNode.children[0]).to(0.2, {
-      scale: 0.9
-    }).delay(0.1).to(0.5, {
-      scale: 0.1,
-      position: t
-    }, Object.assign({}, Constants.bezierOpts2(this.imgNode.children[0], cc.Vec3.ZERO, t, 1, cc.v3(200, 500, 0)))).to(0.1, {
-      scale: 0
-    }).call(function () {
-      e._hide();
-    }).start();
+    this._hide();
   }
   async _onShow() {
     var t,
@@ -114,7 +96,6 @@ export default class SettleWholeImgPage extends BasePage {
           if ("show" == t.animation.name) {
             e.titleNode.active = true;
             e.btnNode.active = true;
-            e.unlikeNode.active = true;
           }
         });
       }).start();

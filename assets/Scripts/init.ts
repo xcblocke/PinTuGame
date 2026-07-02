@@ -1,4 +1,4 @@
-import HotUpdate from "./framework/Event/HotUpdate";
+// import HotUpdate from "./framework/Event/HotUpdate";
 const {
   ccclass,
   property
@@ -61,8 +61,8 @@ if (!cc.Node.prototype.getChildByPath) {
 @ccclass
 export default class init extends cc.Component {
   onLoad() {
-    HotUpdate.getInstance().getBaseVersion();
-    if (HotUpdate.getInstance().isOnlineRelease()) {
+    // HotUpdate.getInstance().getBaseVersion();
+    if (false) {
       console.log = function () {};
       console.warn = function () {};
       console.info = function () {};

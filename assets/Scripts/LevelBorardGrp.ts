@@ -48,16 +48,7 @@ export class LevelBorardGrp extends cc.Component {
   }
   @decorator.Debounce(500)
   clickBoard() {
-    var e = MakeMnGlobalData.startGameData.process_info.step;
-    1 == e && PageMgr.showPageByEnum(PageEnum.wdPage, {
-      startPosition: this.node.worldPosition
-    });
-    2 == e && PageMgr.showPageByEnum(PageEnum.ActLargeWithdrawPage, {
-      startPosition: this.node.worldPosition
-    });
-    3 != e && 4 != e || PageMgr.showPageByEnum(PageEnum.HandBookPage, {
-      startPosition: this.node.worldPosition
-    });
+    return;
   }
   init(e) {
     var t = e.process_info.step;
