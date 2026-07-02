@@ -1,1098 +1,1372 @@
 [
     {
         "key": "gkey_000",
-        "zh": "开启固定金币"
+        "zh": "开启固定金币",
+        "en": "Enable Fixed Coins"
     },
     {
         "key": "gkey_001",
-        "zh": "最低金额"
+        "zh": "最低金额",
+        "en": "Minimum Amount"
     },
     {
         "key": "gkey_002",
-        "zh": "最高金额"
+        "zh": "最高金额",
+        "en": "Maximum Amount"
     },
     {
         "key": "gkey_003",
-        "zh": "关闭固定金币"
+        "zh": "关闭固定金币",
+        "en": "Disable Fixed Coins"
     },
     {
         "key": "gkey_004",
-        "zh": "下次金额"
+        "zh": "下次金额",
+        "en": "Next Amount"
     },
     {
         "key": "gkey_005",
-        "zh": "明码标价"
+        "zh": "明码标价",
+        "en": "Clear Pricing"
     },
     {
         "key": "gkey_006",
-        "zh": "明码标价金额"
+        "zh": "明码标价金额",
+        "en": "Clear Pricing Amount"
     },
     {
         "key": "gkey_007",
-        "zh": "设置金额单位为:分\n例如:设置xxx_1会得到xxx_2元\n想得到xxx_3元设置 最高金额和最低金额 都为xxx_4\n【最小值-最大值 设置同一个数，就是固定金额】\n【最小值-最大值 设置两个不同数，就是随机金额】\n"
+        "zh": "设置金额单位为:分\n例如:设置xxx_1会得到xxx_2元\n想得到xxx_3元设置 最高金额和最低金额 都为xxx_4\n【最小值-最大值 设置同一个数，就是固定金额】\n【最小值-最大值 设置两个不同数，就是随机金额】\n",
+        "en": "Set amount unit to: cents\nFor example: setting xxx_1 will give xxx_2 yuan\nTo get xxx_3 yuan, set both Maximum Amount and Minimum Amount to xxx_4\n[Setting Min-Max to the same number means fixed amount]\n[Setting Min-Max to two different numbers means random amount]\n"
     },
     {
         "key": "gkey_008",
-        "zh": "自动到账"
+        "zh": "自动到账",
+        "en": "Auto Transfer"
     },
     {
         "key": "gkey_009",
-        "zh": "关闭"
+        "zh": "关闭",
+        "en": "Close"
     },
     {
         "key": "gkey_010",
-        "zh": "保存并关闭"
+        "zh": "保存并关闭",
+        "en": "Save and Close"
     },
     {
         "key": "gkey_011",
-        "zh": "跳指定关"
+        "zh": "跳指定关",
+        "en": "Jump to Specified Level"
     },
     {
         "key": "gkey_012",
-        "zh": "跳关"
+        "zh": "跳关",
+        "en": "Skip Level"
     },
     {
         "key": "gkey_013",
-        "zh": "元"
+        "zh": "元",
+        "en": "Yuan"
     },
     {
         "key": "gkey_014",
-        "zh": "开心收下"
+        "zh": "开心收下",
+        "en": "Gladly Accept"
     },
     {
         "key": "gkey_015",
-        "zh": "只要xxx_1元现金"
+        "zh": "只要xxx_1元现金",
+        "en": "Only xxx_1 Yuan Cash"
     },
     {
         "key": "gkey_016",
-        "zh": "点击继续会跳转到广告页面"
+        "zh": "点击继续会跳转到广告页面",
+        "en": "Clicking Continue will redirect to the ad page"
     },
     {
         "key": "gkey_017",
-        "zh": "广告提示"
+        "zh": "广告提示",
+        "en": "Ad Prompt"
     },
     {
         "key": "gkey_018",
-        "zh": "取消"
+        "zh": "取消",
+        "en": "Cancel"
     },
     {
         "key": "gkey_019",
-        "zh": "继续"
+        "zh": "继续",
+        "en": "Continue"
     },
     {
         "key": "gkey_020",
-        "zh": "获得道具 xxxx_1"
+        "zh": "获得道具 xxxx_1",
+        "en": "Obtained Item xxxx_1"
     },
     {
         "key": "gkey_021",
-        "zh": "点击查看完整图片"
+        "zh": "点击查看完整图片",
+        "en": "Tap to View Full Image"
     },
     {
         "key": "gkey_022",
-        "zh": "去领奖"
+        "zh": "去领奖",
+        "en": "Claim Prize"
     },
     {
         "key": "gkey_023",
-        "zh": "设置"
+        "zh": "设置",
+        "en": "Settings"
     },
     {
         "key": "gkey_024",
-        "zh": "用户"
+        "zh": "用户",
+        "en": "User"
     },
     {
         "key": "gkey_025",
-        "zh": "音乐"
+        "zh": "音乐",
+        "en": "Music"
     },
     {
         "key": "gkey_026",
-        "zh": "弹幕"
+        "zh": "弹幕",
+        "en": "Bullet Chat"
     },
     {
         "key": "gkey_027",
-        "zh": "震动"
+        "zh": "震动",
+        "en": "Vibration"
     },
     {
         "key": "gkey_028",
-        "zh": "音效"
+        "zh": "音效",
+        "en": "Sound Effects"
     },
     {
         "key": "gkey_029",
-        "zh": "个性化推荐"
+        "zh": "个性化推荐",
+        "en": "Personalized Recommendations"
     },
     {
         "key": "gkey_030",
-        "zh": "用户协议"
+        "zh": "用户协议",
+        "en": "User Agreement"
     },
     {
         "key": "gkey_031",
-        "zh": "隐私协议"
+        "zh": "隐私协议",
+        "en": "Privacy Policy"
     },
     {
         "key": "gkey_032",
-        "zh": "帮助中心"
+        "zh": "帮助中心",
+        "en": "Help Center"
     },
     {
         "key": "gkey_033",
-        "zh": "关于我们"
+        "zh": "关于我们",
+        "en": "About Us"
     },
     {
         "key": "gkey_034",
-        "zh": "重新开始"
+        "zh": "重新开始",
+        "en": "Restart"
     },
     {
         "key": "gkey_035",
-        "zh": "退出登录"
+        "zh": "退出登录",
+        "en": "Log Out"
     },
     {
         "key": "gkey_036",
-        "zh": "点击空白处关闭"
+        "zh": "点击空白处关闭",
+        "en": "Tap Blank Area to Close"
     },
     {
         "key": "gkey_037",
-        "zh": "第xxx_1关"
+        "zh": "第xxx_1关",
+        "en": "Level xxx_1"
     },
     {
         "key": "gkey_038",
-        "zh": "新解锁"
+        "zh": "新解锁",
+        "en": "Newly Unlocked"
     },
     {
         "key": "gkey_039",
-        "zh": "困难关卡"
+        "zh": "困难关卡",
+        "en": "Difficult Level"
     },
     {
         "key": "gkey_040",
-        "zh": "移"
+        "zh": "移",
+        "en": "Move"
     },
     {
         "key": "gkey_041",
-        "zh": "缩"
+        "zh": "缩",
+        "en": "Zoom"
     },
     {
         "key": "gkey_042",
-        "zh": "开始xxx_1"
+        "zh": "开始xxx_1",
+        "en": "Start xxx_1"
     },
     {
         "key": "gkey_043",
-        "zh": "关"
+        "zh": "关",
+        "en": "Level"
     },
     {
         "key": "gkey_044",
-        "zh": "触发"
+        "zh": "触发",
+        "en": "Trigger"
     },
     {
         "key": "gkey_045",
-        "zh": "点击炮台，可以将其移动到战斗位置，只有第一行的炮台可以移动哦只有第一行的炮台可以移动哦"
+        "zh": "点击炮台，可以将其移动到战斗位置，只有第一行的炮台可以移动哦只有第一行的炮台可以移动哦",
+        "en": "Tap a turret to move it to a battle position. Only turrets in the first row can be moved. Only turrets in the first row can be moved."
     },
     {
         "key": "gkey_046",
-        "zh": " 我已经阅读并同意"
+        "zh": " 我已经阅读并同意",
+        "en": " I have read and agree to"
     },
     {
         "key": "gkey_047",
-        "zh": "《用户协议》"
+        "zh": "《用户协议》",
+        "en": "User Agreement"
     },
     {
         "key": "gkey_048",
-        "zh": "及"
+        "zh": "及",
+        "en": "and"
     },
     {
         "key": "gkey_049",
-        "zh": "《隐私协议》"
+        "zh": "《隐私协议》",
+        "en": "Privacy Policy"
     },
     {
         "key": "gkey_050",
-        "zh": "抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防上当受骗\n适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活"
+        "zh": "抵制不良游戏，拒绝盗版游戏，注意自我保护，谨防上当受骗\n适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活",
+        "en": "Resist bad games, reject pirated games, protect yourself, and beware of scams.\nModerate gaming benefits the mind, addiction harms the body. Arrange your time wisely and enjoy a healthy life."
     },
     {
         "key": "gkey_051",
-        "zh": "本公司积极履行《网络游戏行业防沉迷自律公约》，根据国家新闻出版署《关于防止未\n成年人防沉迷网络游戏的通知》《关于进一步严格管理切实防止未成年人沉迷网络游戏\n的通知》所有用户必须用本人身份信息进行实名登记，未成年人将纳入防沉迷限制。"
+        "zh": "本公司积极履行《网络游戏行业防沉迷自律公约》，根据国家新闻出版署《关于防止未\n成年人防沉迷网络游戏的通知》《关于进一步严格管理切实防止未成年人沉迷网络游戏\n的通知》所有用户必须用本人身份信息进行实名登记，未成年人将纳入防沉迷限制。",
+        "en": "Our company actively complies with the \"Self-discipline Convention on Anti-Addiction in the Online Game Industry.\" According to the National Press and Publication Administration's \"Notice on Preventing Minors from Becoming Addicted to Online Games\" and the \"Notice on Further Strict Management to Effectively Prevent Minors from Becoming Addicted to Online Games,\" all users must register with their real identity information. Minors will be subject to anti-addiction restrictions."
     },
     {
         "key": "gkey_052",
-        "zh": "动画组件"
+        "zh": "动画组件",
+        "en": "Animation Component"
     },
     {
         "key": "gkey_053",
-        "zh": "添加按钮统一音效"
+        "zh": "添加按钮统一音效",
+        "en": "Add Unified Button Sound Effect"
     },
     {
         "key": "gkey_054",
-        "zh": "自动获取ui节点"
+        "zh": "自动获取ui节点",
+        "en": "Auto-Fetch UI Nodes"
     },
     {
         "key": "gkey_055",
-        "zh": "拼图小知识"
+        "zh": "拼图小知识",
+        "en": "Jigsaw Trivia"
     },
     {
         "key": "gkey_056",
-        "zh": "拼图小贴士"
+        "zh": "拼图小贴士",
+        "en": "Jigsaw Tips"
     },
     {
         "key": "gkey_057",
-        "zh": "收藏"
+        "zh": "收藏",
+        "en": "Favorites"
     },
     {
         "key": "gkey_058",
-        "zh": "我的"
+        "zh": "我的",
+        "en": "My"
     },
     {
         "key": "gkey_059",
-        "zh": "有关拼图的知识"
+        "zh": "有关拼图的知识",
+        "en": "Knowledge About Jigsaw Puzzles"
     },
     {
         "key": "gkey_060",
-        "zh": "\"每天推荐xxx_1条拼图小知识\""
+        "zh": "\"每天推荐xxx_1条拼图小知识\"",
+        "en": "\"xxx_1 jigsaw trivia tips recommended daily\""
     },
     {
         "key": "gkey_061",
-        "zh": "有关拼图的小贴士"
+        "zh": "有关拼图的小贴士",
+        "en": "Tips About Jigsaw Puzzles"
     },
     {
         "key": "gkey_062",
-        "zh": "\"每天推荐xxx_1条拼图小贴士\""
+        "zh": "\"每天推荐xxx_1条拼图小贴士\"",
+        "en": "\"xxx_1 jigsaw tips recommended daily\""
     },
     {
         "key": "gkey_063",
-        "zh": "'免责声明xxx_1xxx_2xxx_3\n\nxxx_4、本网站部分文章信息来源于网络转载是出于传\n递更多信息之目的,并不意味着赞同其观点或证实\n其内容的真实性。如其他媒体、网站或个人从本网\n下载使用,必须保留本网注明的\"稿件来源\",并自\n负版权等法律责任。如对稿件内容有疑议,请及时\n与我们联系。\n\nxxx_5、本网站致力于提供合理、准确、完整、客观的\n资讯信息,但不能保证全部信息的合理性、准确性\n和完整性,且不对因信息的不合理、不准确或遗漏\n导致的任何损失或损害承担责任。本网站所有信息\n仅供参考,不做交易和服务的根据,如自行使用本网\n资料发生偏差,本站概不负责,亦不负任何法律责任。\n\nxxx_6、凡本网站转载的所有的文章、图片、音频视频\n文件等资料的版权归原版权所有人所有,本站采用\n的非本站原创文章及图片等内容无法和版权者联系,\n如果本网所选内容的文章或图片的作者或版权所有\n者认为其作品不宜上网供大家浏览,或不应无偿使用,\n请及时用电子邮件(malin@zlyq.net.cn)通知我们,\n以迅速采取适当措施,避免给双方造成不必要的经济\n损失。\n\nxxx_7、对于已经授权本站独家使用提供给本站资料的版\n权所有人的文章、图片等资料,如需转载使用,需取得\n本站和版权所有人的同意。\n\nxxx_8、任何由于黑客攻击、计算机病毒侵入或发作、\n因政府管制而造成的暂时性关闭等影响网络正常\n经营的不可抗力而造成的损失,本网站均得免责。\n由于与本网站链接的其它网站所造成之个人资料\n泄露及由此而导致的任何法律争议和后果,本网站\n均得免责。\n\nxxx_9、本网站如因系统维护或升级而需暂停服务时,将\n事先公告。若因线路及非本公司控制范围外的硬件\n故障或其它不可抗力而导致暂停服务,于暂停服务期\n间造成的一切不便与损失,本网站不负任何责任。\n\nxxx_10、本网站使用者因为违反本声明的规定而触犯中\n华人民共和国法律的,一切后果自己负责,本网站不\n承担任何责任。\n\nxxx_11、凡以任何方式登陆本网站或直接、间接使用本\n网站资料者,视为自愿接受本网站声明的约束。\n\nxxx_12、本声明未涉及的问题参见国家有关法律法规,当\n本声明与国家法律法规冲突时,以国家法律法规\n为准。\n\nxxx_13、本网站如无意中侵犯了哪个媒体或个人的知识\n产权,请发邮件或来电告之,本网站将立即给予删除。\n\nxxx_14、本网站的主旨是\"只有记录,不做评述\",如因网友\n留言或评论而产生的不良影响,本网站均得免责。'"
+        "zh": "'免责声明xxx_1xxx_2xxx_3\n\nxxx_4、本网站部分文章信息来源于网络转载是出于传\n递更多信息之目的,并不意味着赞同其观点或证实\n其内容的真实性。如其他媒体、网站或个人从本网\n下载使用,必须保留本网注明的\"稿件来源\",并自\n负版权等法律责任。如对稿件内容有疑议,请及时\n与我们联系。\n\nxxx_5、本网站致力于提供合理、准确、完整、客观的\n资讯信息,但不能保证全部信息的合理性、准确性\n和完整性,且不对因信息的不合理、不准确或遗漏\n导致的任何损失或损害承担责任。本网站所有信息\n仅供参考,不做交易和服务的根据,如自行使用本网\n资料发生偏差,本站概不负责,亦不负任何法律责任。\n\nxxx_6、凡本网站转载的所有的文章、图片、音频视频\n文件等资料的版权归原版权所有人所有,本站采用\n的非本站原创文章及图片等内容无法和版权者联系,\n如果本网所选内容的文章或图片的作者或版权所有\n者认为其作品不宜上网供大家浏览,或不应无偿使用,\n请及时用电子邮件(malin@zlyq.net.cn)通知我们,\n以迅速采取适当措施,避免给双方造成不必要的经济\n损失。\n\nxxx_7、对于已经授权本站独家使用提供给本站资料的版\n权所有人的文章、图片等资料,如需转载使用,需取得\n本站和版权所有人的同意。\n\nxxx_8、任何由于黑客攻击、计算机病毒侵入或发作、\n因政府管制而造成的暂时性关闭等影响网络正常\n经营的不可抗力而造成的损失,本网站均得免责。\n由于与本网站链接的其它网站所造成之个人资料\n泄露及由此而导致的任何法律争议和后果,本网站\n均得免责。\n\nxxx_9、本网站如因系统维护或升级而需暂停服务时,将\n事先公告。若因线路及非本公司控制范围外的硬件\n故障或其它不可抗力而导致暂停服务,于暂停服务期\n间造成的一切不便与损失,本网站不负任何责任。\n\nxxx_10、本网站使用者因为违反本声明的规定而触犯中\n华人民共和国法律的,一切后果自己负责,本网站不\n承担任何责任。\n\nxxx_11、凡以任何方式登陆本网站或直接、间接使用本\n网站资料者,视为自愿接受本网站声明的约束。\n\nxxx_12、本声明未涉及的问题参见国家有关法律法规,当\n本声明与国家法律法规冲突时,以国家法律法规\n为准。\n\nxxx_13、本网站如无意中侵犯了哪个媒体或个人的知识\n产权,请发邮件或来电告之,本网站将立即给予删除。\n\nxxx_14、本网站的主旨是\"只有记录,不做评述\",如因网友\n留言或评论而产生的不良影响,本网站均得免责。'",
+        "en": "'Disclaimer xxx_1xxx_2xxx_3\n\nxxx_4. Some articles on this website are sourced from online reprints for the purpose of disseminating more information, and do not imply endorsement of their views or verification of their content accuracy. If other media, websites, or individuals download and use content from this website, they must retain the source attribution as indicated and bear legal responsibilities such as copyright. If you have any doubts about the content, please contact us promptly.\n\nxxx_5. This website is committed to providing reasonable, accurate, complete, and objective information, but cannot guarantee the completeness, accuracy, or reasonableness of all information, and assumes no responsibility for any loss or damage caused by unreasonable, inaccurate, or omitted information. All information on this website is for reference only and is not a basis for transactions or services. Any deviation arising from the use of this website's materials is solely the user's responsibility, and this website assumes no liability.\n\nxxx_6. The copyright of all articles, images, audio, video, and other materials reproduced on this website belongs to the original copyright owners. If the selected articles or images' authors or copyright owners believe their works should not be displayed online or should not be used for free, please notify us via email (malin@zlyq.net.cn) so that we can take appropriate measures promptly and avoid unnecessary economic losses to both parties.\n\nxxx_7. For articles, images, and other materials whose copyright owners have granted exclusive rights to this website, any reproduction or use requires consent from both this website and the copyright owner.\n\nxxx_8. This website is not liable for any losses caused by force majeure events such as hacker attacks, computer viruses, government regulations resulting in temporary closures, or other events affecting normal network operations. This website is also not liable for personal data leaks or any legal disputes arising from links to other websites.\n\nxxx_9. If this website needs to suspend services for system maintenance or upgrades, an announcement will be made in advance. In the event of service suspension due to line failures, hardware faults beyond our control, or other force majeure, this website assumes no responsibility for any inconvenience or loss during the suspension period.\n\nxxx_10. Users of this website who violate the terms of this disclaimer and thereby contravene the laws of the People's Republic of China bear all consequences themselves, and this website assumes no responsibility.\n\nxxx_11. Anyone who accesses this website or uses its materials directly or indirectly is deemed to have voluntarily accepted the terms of this disclaimer.\n\nxxx_12. Matters not covered by this disclaimer shall be governed by relevant national laws and regulations. In the event of any conflict between this disclaimer and national laws, national laws shall prevail.\n\nxxx_13. If this website unintentionally infringes upon the intellectual property of any media or individual, please notify us by email or phone, and we will remove the content immediately.\n\nxxx_14. The principle of this website is \"only record, no commentary.\" This website is not liable for any adverse effects arising from user comments or feedback.'"
     },
     {
         "key": "gkey_064",
-        "zh": "数字模式"
+        "zh": "数字模式",
+        "en": "Number Mode"
     },
     {
         "key": "gkey_065",
-        "zh": "红包模式"
+        "zh": "红包模式",
+        "en": "Red Packet Mode"
     },
     {
         "key": "gkey_066",
-        "zh": "错误:xxx_1"
+        "zh": "错误:xxx_1",
+        "en": "Error: xxx_1"
     },
     {
         "key": "gkey_067",
-        "zh": "关卡号不合法"
+        "zh": "关卡号不合法",
+        "en": "Invalid Level Number"
     },
     {
         "key": "gkey_068",
-        "zh": "点击过快，请稍后再试"
+        "zh": "点击过快，请稍后再试",
+        "en": "Clicking too fast, please try again later"
     },
     {
         "key": "gkey_069",
-        "zh": "保密"
+        "zh": "保密",
+        "en": "Confidential"
     },
     {
         "key": "gkey_070",
-        "zh": "删除用户"
+        "zh": "删除用户",
+        "en": "Delete User"
     },
     {
         "key": "gkey_071",
-        "zh": "确认删除"
+        "zh": "确认删除",
+        "en": "Confirm Deletion"
     },
     {
         "key": "gkey_072",
-        "zh": "基础测试"
+        "zh": "基础测试",
+        "en": "Basic Test"
     },
     {
         "key": "gkey_073",
-        "zh": "跳到第二阶段前一关"
+        "zh": "跳到第二阶段前一关",
+        "en": "Jump to Level Before Phase 2"
     },
     {
         "key": "gkey_074",
-        "zh": "跳N关文本"
+        "zh": "跳N关文本",
+        "en": "Skip N Levels Text"
     },
     {
         "key": "gkey_075",
-        "zh": "跳N关"
+        "zh": "跳N关",
+        "en": "Skip N Levels"
     },
     {
         "key": "gkey_076",
-        "zh": "跳xxx_1关"
+        "zh": "跳xxx_1关",
+        "en": "Skip xxx_1 Levels"
     },
     {
         "key": "gkey_077",
-        "zh": "广告开关"
+        "zh": "广告开关",
+        "en": "Ad Toggle"
     },
     {
         "key": "gkey_078",
-        "zh": "广告已关"
+        "zh": "广告已关",
+        "en": "Ads Disabled"
     },
     {
         "key": "gkey_079",
-        "zh": "广告已开"
+        "zh": "广告已开",
+        "en": "Ads Enabled"
     },
     {
         "key": "gkey_080",
-        "zh": "对局时间"
+        "zh": "对局时间",
+        "en": "Match Time"
     },
     {
         "key": "gkey_081",
-        "zh": "重开游戏"
+        "zh": "重开游戏",
+        "en": "Restart Game"
     },
     {
         "key": "gkey_082",
-        "zh": "跳指定关文本"
+        "zh": "跳指定关文本",
+        "en": "Jump to Specified Level Text"
     },
     {
         "key": "gkey_083",
-        "zh": "跳到xxx_1关"
+        "zh": "跳到xxx_1关",
+        "en": "Jump to Level xxx_1"
     },
     {
         "key": "gkey_084",
-        "zh": "页面展示"
+        "zh": "页面展示",
+        "en": "Page Display"
     },
     {
         "key": "gkey_085",
-        "zh": "展开"
+        "zh": "展开",
+        "en": "Expand"
     },
     {
         "key": "gkey_086",
-        "zh": "xxx_1即可完成交换，快拼好整张图片吧"
+        "zh": "xxx_1即可完成交换，快拼好整张图片吧",
+        "en": "xxx_1 to complete the swap, hurry and piece together the whole picture"
     },
     {
         "key": "gkey_087",
-        "zh": "遇到难关，可以xxx_1哦"
+        "zh": "遇到难关，可以xxx_1哦",
+        "en": "Stuck on a tough level? You can xxx_1"
     },
     {
         "key": "gkey_088",
-        "zh": "每次观看视频获得的红包，都可以在这里提现"
+        "zh": "每次观看视频获得的红包，都可以在这里提现",
+        "en": "Red packets earned from watching videos can be withdrawn here"
     },
     {
         "key": "gkey_089",
-        "zh": "通关越多，提现比例越高！"
+        "zh": "通关越多，提现比例越高！",
+        "en": "The more levels you complete, the higher your withdrawal rate!"
     },
     {
         "key": "gkey_090",
-        "zh": "金额满xxx_1可提现，\n预计再闯xxx_2即可满足，\n95%的用户已提现成功哟～"
+        "zh": "金额满xxx_1可提现，\n预计再闯xxx_2即可满足，\n95%的用户已提现成功哟～",
+        "en": "Withdraw when your balance reaches xxx_1.\nEstimated xxx_2 more levels to go.\n95% of users have successfully withdrawn!"
     },
     {
         "key": "gkey_091",
-        "zh": "点击xxx_1，即可查看xxx_2相关信息"
+        "zh": "点击xxx_1，即可查看xxx_2相关信息",
+        "en": "Tap xxx_1 to view information about xxx_2"
     },
     {
         "key": "gkey_092",
-        "zh": "[一-龥]+"
+        "zh": "[一-龥]+",
+        "en": "[一-龥]+"
     },
     {
         "key": "gkey_093",
-        "zh": "拉取广告出错，领取失败"
+        "zh": "拉取广告出错，领取失败",
+        "en": "Ad retrieval failed, claim unsuccessful"
     },
     {
         "key": "gkey_094",
-        "zh": "网络错误，请重试"
+        "zh": "网络错误，请重试",
+        "en": "Network error, please try again"
     },
     {
         "key": "gkey_095",
-        "zh": "年"
+        "zh": "年",
+        "en": "Year"
     },
     {
         "key": "gkey_096",
-        "zh": "月"
+        "zh": "月",
+        "en": "Month"
     },
     {
         "key": "gkey_097",
-        "zh": "日"
+        "zh": "日",
+        "en": "Day"
     },
     {
         "key": "gkey_098",
-        "zh": "用户不存在"
+        "zh": "用户不存在",
+        "en": "User does not exist"
     },
     {
         "key": "gkey_099",
-        "zh": "视频开始播放"
+        "zh": "视频开始播放",
+        "en": "Video Started Playing"
     },
     {
         "key": "gkey_100",
-        "zh": "看完广告<br><fontcolor='#F74708'>领取大额奖励</font>"
+        "zh": "看完广告<br><fontcolor='#F74708'>领取大额奖励</font>",
+        "en": "Watch the ad to the end<br><fontcolor='#F74708'>Claim a Big Reward</font>"
     },
     {
         "key": "gkey_101",
-        "zh": "触发超时回调"
+        "zh": "触发超时回调",
+        "en": "Trigger Timeout Callback"
     },
     {
         "key": "gkey_102",
-        "zh": "重新触发了"
+        "zh": "重新触发了",
+        "en": "Re-triggered"
     },
     {
         "key": "gkey_103",
-        "zh": "视频回调成功"
+        "zh": "视频回调成功",
+        "en": "Video Callback Successful"
     },
     {
         "key": "gkey_104",
-        "zh": "未看完广告<br><fontcolor='#F74708'>只领取了少量奖励</font>"
+        "zh": "未看完广告<br><fontcolor='#F74708'>只领取了少量奖励</font>",
+        "en": "Ad not fully watched<br><fontcolor='#F74708'>Only collected a small reward</font>"
     },
     {
         "key": "gkey_105",
-        "zh": "xxx_1年xxx_2xxx_3月xxx_4日xxx_5:xxx_6:"
+        "zh": "xxx_1年xxx_2xxx_3月xxx_4日xxx_5:xxx_6:",
+        "en": "xxx_1/xxx_2/xxx_3 xxx_4:xxx_5:"
     },
     {
         "key": "gkey_106",
-        "zh": "xxx_1年xxx_2xxx_3月xxx_4日xxx_5:"
+        "zh": "xxx_1年xxx_2xxx_3月xxx_4日xxx_5:",
+        "en": "xxx_1/xxx_2/xxx_3 xxx_4:"
     },
     {
         "key": "gkey_107",
-        "zh": "返回数据不存在"
+        "zh": "返回数据不存在",
+        "en": "Returned data does not exist"
     },
     {
         "key": "gkey_108",
-        "zh": "\"游客xxx_1\""
+        "zh": "\"游客xxx_1\"",
+        "en": "\"Guest xxx_1\""
     },
     {
         "key": "gkey_109",
-        "zh": "xxx_1年xxx_2xxx_3月xxx_4日"
+        "zh": "xxx_1年xxx_2xxx_3月xxx_4日",
+        "en": "xxx_1/xxx_2/xxx_3"
     },
     {
         "key": "gkey_110",
-        "zh": "xxx_1秒"
+        "zh": "xxx_1秒",
+        "en": "xxx_1 seconds"
     },
     {
         "key": "gkey_111",
-        "zh": "xxx_1分"
+        "zh": "xxx_1分",
+        "en": "xxx_1 minutes"
     },
     {
         "key": "gkey_112",
-        "zh": "xxx_1小时"
+        "zh": "xxx_1小时",
+        "en": "xxx_1 hours"
     },
     {
         "key": "gkey_113",
-        "zh": "xxx_1天"
+        "zh": "xxx_1天",
+        "en": "xxx_1 days"
     },
     {
         "key": "gkey_114",
-        "zh": "秒到账"
+        "zh": "秒到账",
+        "en": "Instant Transfer"
     },
     {
         "key": "gkey_115",
-        "zh": "大额奖励"
+        "zh": "大额奖励",
+        "en": "Big Reward"
     },
     {
         "key": "gkey_116",
-        "zh": "全部提现"
+        "zh": "全部提现",
+        "en": "Withdraw All"
     },
     {
         "key": "gkey_117",
-        "zh": "重新出块"
+        "zh": "重新出块",
+        "en": "Regenerate Blocks"
     },
     {
         "key": "gkey_118",
-        "zh": "旋转方块"
+        "zh": "旋转方块",
+        "en": "Rotate Blocks"
     },
     {
         "key": "gkey_119",
-        "zh": "存储方块"
+        "zh": "存储方块",
+        "en": "Store Blocks"
     },
     {
         "key": "gkey_120",
-        "zh": "复活"
+        "zh": "复活",
+        "en": "Revive"
     },
     {
         "key": "gkey_121",
-        "zh": "\"集齐<color=#FF0000>xxx_1</c>个福字，可全部提现\""
+        "zh": "\"集齐<color=#FF0000>xxx_1</c>个福字，可全部提现\"",
+        "en": "\"Collect <color=#FF0000>xxx_1</c> Fu characters to withdraw all\""
     },
     {
         "key": "gkey_122",
-        "zh": "\"再闯关<color=#FF0000>xxx_1次</c>，提升倍数\""
+        "zh": "\"再闯关<color=#FF0000>xxx_1次</c>，提升倍数\"",
+        "en": "\"Complete <color=#FF0000>xxx_1 more levels</c> to increase multiplier\""
     },
     {
         "key": "gkey_123",
-        "zh": "发财福"
+        "zh": "发财福",
+        "en": "Fortune Fu"
     },
     {
         "key": "gkey_124",
-        "zh": "好运福"
+        "zh": "好运福",
+        "en": "Good Luck Fu"
     },
     {
         "key": "gkey_125",
-        "zh": "快乐福"
+        "zh": "快乐福",
+        "en": "Happiness Fu"
     },
     {
         "key": "gkey_126",
-        "zh": "吉祥福"
+        "zh": "吉祥福",
+        "en": "Auspicious Fu"
     },
     {
         "key": "gkey_127",
-        "zh": "健康福"
+        "zh": "健康福",
+        "en": "Health Fu"
     },
     {
         "key": "gkey_128",
-        "zh": "万能福"
+        "zh": "万能福",
+        "en": "Universal Fu"
     },
     {
         "key": "gkey_129",
-        "zh": "万能福碎片"
+        "zh": "万能福碎片",
+        "en": "Universal Fu Shard"
     },
     {
         "key": "gkey_130",
-        "zh": "\"现金xxx_1元（波动xxx_2%）\""
+        "zh": "\"现金xxx_1元（波动xxx_2%）\"",
+        "en": "\"Cash xxx_1 Yuan (Fluctuation xxx_2%)\""
     },
     {
         "key": "gkey_131",
-        "zh": "\"红包xxx_1元（波动xxx_2%）\""
+        "zh": "\"红包xxx_1元（波动xxx_2%）\"",
+        "en": "\"Red Packet xxx_1 Yuan (Fluctuation xxx_2%)\""
     },
     {
         "key": "gkey_132",
-        "zh": "\"道具xxx_1：回退一步\""
+        "zh": "\"道具xxx_1：回退一步\"",
+        "en": "\"Item xxx_1: Undo One Step\""
     },
     {
         "key": "gkey_133",
-        "zh": "\"道具xxx_1：刷新\""
+        "zh": "\"道具xxx_1：刷新\"",
+        "en": "\"Item xxx_1: Refresh\""
     },
     {
         "key": "gkey_134",
-        "zh": "\"道具xxx_1：加瓶子\""
+        "zh": "\"道具xxx_1：加瓶子\"",
+        "en": "\"Item xxx_1: Add Bottle\""
     },
     {
         "key": "gkey_135",
-        "zh": "\"贺卡xxx_1\""
+        "zh": "\"贺卡xxx_1\"",
+        "en": "\"Greeting Card xxx_1\""
     },
     {
         "key": "gkey_136",
-        "zh": "\"贺卡xxx_1-碎片xxx_2\""
+        "zh": "\"贺卡xxx_1-碎片xxx_2\"",
+        "en": "\"Greeting Card xxx_1 - Shard xxx_2\""
     },
     {
         "key": "gkey_137",
-        "zh": "幸运弹窗领取现金"
+        "zh": "幸运弹窗领取现金",
+        "en": "Lucky Popup Claim Cash"
     },
     {
         "key": "gkey_138",
-        "zh": "幸运弹窗现金不领取"
+        "zh": "幸运弹窗现金不领取",
+        "en": "Lucky Popup Cash Not Claimed"
     },
     {
         "key": "gkey_139",
-        "zh": "\"幸运弹窗展示现金（波动xxx_1%）\""
+        "zh": "\"幸运弹窗展示现金（波动xxx_1%）\"",
+        "en": "\"Lucky Popup Show Cash (Fluctuation xxx_1%)\""
     },
     {
         "key": "gkey_140",
-        "zh": "幸运弹窗展示红包"
+        "zh": "幸运弹窗展示红包",
+        "en": "Lucky Popup Show Red Packet"
     },
     {
         "key": "gkey_141",
-        "zh": "幸运奖励展示条件计数（操作次数）"
+        "zh": "幸运奖励展示条件计数（操作次数）",
+        "en": "Lucky Reward Display Condition Count (Operations)"
     },
     {
         "key": "gkey_142",
-        "zh": "奖励强弹频率（幸运+通关）"
+        "zh": "奖励强弹频率（幸运+通关）",
+        "en": "Reward Forced Popup Frequency (Lucky + Level Clear)"
     },
     {
         "key": "gkey_143",
-        "zh": "红包分成计算上限"
+        "zh": "红包分成计算上限",
+        "en": "Red Packet Split Calculation Cap"
     },
     {
         "key": "gkey_144",
-        "zh": "通关弹窗领取现金"
+        "zh": "通关弹窗领取现金",
+        "en": "Level Clear Popup Claim Cash"
     },
     {
         "key": "gkey_145",
-        "zh": "通关弹窗不领取"
+        "zh": "通关弹窗不领取",
+        "en": "Level Clear Popup Not Claimed"
     },
     {
         "key": "gkey_146",
-        "zh": "\"通关弹窗显示现金（波动xxx_1%）\""
+        "zh": "\"通关弹窗显示现金（波动xxx_1%）\"",
+        "en": "\"Level Clear Popup Show Cash (Fluctuation xxx_1%)\""
     },
     {
         "key": "gkey_147",
-        "zh": "通关弹窗显示红包"
+        "zh": "通关弹窗显示红包",
+        "en": "Level Clear Popup Show Red Packet"
     },
     {
         "key": "gkey_148",
-        "zh": "合成万能福所需碎片数"
+        "zh": "合成万能福所需碎片数",
+        "en": "Shards Needed to Synthesize Universal Fu"
     },
     {
         "key": "gkey_149",
-        "zh": "\"完成xxx_1组奖励现金（第xxx_2关开始）\""
+        "zh": "\"完成xxx_1组奖励现金（第xxx_2关开始）\"",
+        "en": "\"Complete xxx_1 sets to earn Cash Reward (Starting from Level xxx_2)\""
     },
     {
         "key": "gkey_150",
-        "zh": "\"完成xxx_1组奖励红包（第xxx_2关开始）\""
+        "zh": "\"完成xxx_1组奖励红包（第xxx_2关开始）\"",
+        "en": "\"Complete xxx_1 sets to earn Red Packet Reward (Starting from Level xxx_2)\""
     },
     {
         "key": "gkey_151",
-        "zh": "\"第xxx_1关通关现金奖励\""
+        "zh": "\"第xxx_1关通关现金奖励\"",
+        "en": "\"Level xxx_1 Clear Cash Reward\""
     },
     {
         "key": "gkey_152",
-        "zh": "\"xxx_1.由于微信支付需要实名制,非实名用户账号无法支持提现,请务必将提现的微信号进行实名认证;\n\nxxx_2.由于微信官方要求，单笔提现金额最低为xxx_3元;\n\nxxx_4.提现申请一般是秒到账,如果突发意外情况,也会在xxx_5xxx_6个工作日内审核到账,请耐心等待;\n\nxxx_7.用户达成提现要求即可提现到账,为保障全体用户利益,对有作弊嫌疑的用户,需经过审核验证或者满足活跃条件才可全部提现,否则不能提现;\n\nxxx_8.若发现用户有恶意作弊行为,一律封禁账号并扣除账户所有余额。\""
+        "zh": "\"xxx_1.由于微信支付需要实名制,非实名用户账号无法支持提现,请务必将提现的微信号进行实名认证;\n\nxxx_2.由于微信官方要求，单笔提现金额最低为xxx_3元;\n\nxxx_4.提现申请一般是秒到账,如果突发意外情况,也会在xxx_5xxx_6个工作日内审核到账,请耐心等待;\n\nxxx_7.用户达成提现要求即可提现到账,为保障全体用户利益,对有作弊嫌疑的用户,需经过审核验证或者满足活跃条件才可全部提现,否则不能提现;\n\nxxx_8.若发现用户有恶意作弊行为,一律封禁账号并扣除账户所有余额。\"",
+        "en": "\"xxx_1. Due to WeChat Pay's real-name requirement, non-real-name user accounts cannot support withdrawals. Please ensure that the WeChat account used for withdrawal has completed real-name verification.\n\nxxx_2. As per WeChat Pay's official requirements, the minimum single withdrawal amount is xxx_3 Yuan.\n\nxxx_4. Withdrawal requests are generally processed instantly. In case of unexpected issues, they will be reviewed and credited within xxx_5 to xxx_6 business days. Please be patient.\n\nxxx_7. Users who meet the withdrawal requirements can withdraw funds. To protect the interests of all users, accounts suspected of cheating must pass verification or meet activity conditions before full withdrawal; otherwise, withdrawal is not allowed.\n\nxxx_8. If malicious cheating is detected, the account will be banned and all balance will be deducted.\""
     },
     {
         "key": "gkey_153",
-        "zh": "刷新"
+        "zh": "刷新",
+        "en": "Refresh"
     },
     {
         "key": "gkey_154",
-        "zh": "指定炮台"
+        "zh": "指定炮台",
+        "en": "Assign Turret"
     },
     {
         "key": "gkey_155",
-        "zh": "只要xxx_1"
+        "zh": "只要xxx_1",
+        "en": "Only xxx_1"
     },
     {
         "key": "gkey_156",
-        "zh": "拼图的起源"
+        "zh": "拼图的起源",
+        "en": "Origin of Jigsaw Puzzles"
     },
     {
         "key": "gkey_157",
-        "zh": "'拼图（JigsawPuzzle）起源于xxx_1年代的英国。当时一位名叫约翰·斯皮尔斯伯里的地图商人，将地图贴在硬木板上并沿国界切割成小块，作为地理教学工具出售。这种\"解剖地图\"大受欢迎，后来人们把各种图画也做成可拼合的小块，拼图便从教具演变为风靡全球的益智娱乐。'"
+        "zh": "'拼图（JigsawPuzzle）起源于xxx_1年代的英国。当时一位名叫约翰·斯皮尔斯伯里的地图商人，将地图贴在硬木板上并沿国界切割成小块，作为地理教学工具出售。这种\"解剖地图\"大受欢迎，后来人们把各种图画也做成可拼合的小块，拼图便从教具演变为风靡全球的益智娱乐。'",
+        "en": "'Jigsaw puzzles originated in xxx_1s Britain. A map merchant named John Spilsbury pasted maps onto hardwood boards and cut them into small pieces along country borders, selling them as geography teaching tools. These \"dissected maps\" became very popular, and later people turned various pictures into interlocking pieces, transforming puzzles from teaching aids into a globally beloved pastime.'"
     },
     {
         "key": "gkey_158",
-        "zh": "拼图的种类"
+        "zh": "拼图的种类",
+        "en": "Types of Jigsaw Puzzles"
     },
     {
         "key": "gkey_159",
-        "zh": "\"拼图按片数可分为入门级（几十片）、标准级（xxx_1～xxx_2片）、进阶级（xxx_3片以上）和巨型拼图（上万片）。按材质有纸板拼图、木质拼图、磁性拼图等。按主题有风景、名画、动漫、地图、照片定制等。还有立体拼图、球形拼图、异形拼图等特殊类型，满足不同爱好者的需求。\""
+        "zh": "\"拼图按片数可分为入门级（几十片）、标准级（xxx_1～xxx_2片）、进阶级（xxx_3片以上）和巨型拼图（上万片）。按材质有纸板拼图、木质拼图、磁性拼图等。按主题有风景、名画、动漫、地图、照片定制等。还有立体拼图、球形拼图、异形拼图等特殊类型，满足不同爱好者的需求。\"",
+        "en": "\"Jigsaw puzzles can be categorized by piece count: beginner (dozens of pieces), standard (xxx_1–xxx_2 pieces), advanced (xxx_3+ pieces), and giant puzzles (tens of thousands of pieces). By material: cardboard, wooden, magnetic, etc. By theme: landscapes, famous paintings, anime, maps, custom photos, etc. There are also 3D puzzles, spherical puzzles, and shaped puzzles to suit different preferences.\""
     },
     {
         "key": "gkey_160",
-        "zh": "拼图对大脑的益处"
+        "zh": "拼图对大脑的益处",
+        "en": "Benefits of Jigsaw Puzzles for the Brain"
     },
     {
         "key": "gkey_161",
-        "zh": "拼图能锻炼空间想象力、手眼协调和专注力。在寻找正确拼块、比对形状与图案的过程中，会激活大脑的短期记忆与逻辑推理。长期拼图有助于延缓认知衰退、减轻压力，并带来完成时的成就感。因此拼图常被用于儿童早教、康复训练和成人休闲益智。"
+        "zh": "拼图能锻炼空间想象力、手眼协调和专注力。在寻找正确拼块、比对形状与图案的过程中，会激活大脑的短期记忆与逻辑推理。长期拼图有助于延缓认知衰退、减轻压力，并带来完成时的成就感。因此拼图常被用于儿童早教、康复训练和成人休闲益智。",
+        "en": "Jigsaw puzzles improve spatial imagination, hand-eye coordination, and concentration. Searching for the right piece and matching shapes and patterns activate short-term memory and logical reasoning. Regular puzzling helps delay cognitive decline, reduce stress, and provides a sense of accomplishment upon completion. That's why they are often used in early childhood education, rehabilitation, and adult leisure."
     },
     {
         "key": "gkey_162",
-        "zh": "世界最大拼图纪录"
+        "zh": "世界最大拼图纪录",
+        "en": "World Record Largest Jigsaw Puzzle"
     },
     {
         "key": "gkey_163",
-        "zh": "'目前世界上片数最多的商业拼图由西班牙品牌Educa推出，名为\"无与伦比\"，共xxx_1片，拼完成品长约xxx_2米。完成这样一幅拼图往往需要数月甚至数年。许多拼图爱好者以挑战高片数、大尺寸拼图为目标，并会装裱展示自己的成果。'"
+        "zh": "'目前世界上片数最多的商业拼图由西班牙品牌Educa推出，名为\"无与伦比\"，共xxx_1片，拼完成品长约xxx_2米。完成这样一幅拼图往往需要数月甚至数年。许多拼图爱好者以挑战高片数、大尺寸拼图为目标，并会装裱展示自己的成果。'",
+        "en": "'The world's largest commercially available jigsaw puzzle in piece count is produced by the Spanish brand Educa, titled \"Unmatched,\" with xxx_1 pieces and a completed length of approximately xxx_2 meters. Completing such a puzzle often takes months or even years. Many puzzle enthusiasts aim to challenge themselves with high-piece-count, large puzzles and frame their finished works for display.'"
     },
     {
         "key": "gkey_164",
-        "zh": "拼图术语小科普"
+        "zh": "拼图术语小科普",
+        "en": "Jigsaw Puzzle Terminology"
     },
     {
         "key": "gkey_165",
-        "zh": "\"刀模\"指切割拼块的模具，刀模不同会导致拼块形状各异；\"咬合\"指拼块之间卡紧的程度，咬合好的拼图拎起一角不易散落；\"屑多\"指切割时产生的纸屑，高品质拼图会减少屑多。了解这些术语有助于挑选适合自己的拼图产品。"
+        "zh": "\"刀模\"指切割拼块的模具，刀模不同会导致拼块形状各异；\"咬合\"指拼块之间卡紧的程度，咬合好的拼图拎起一角不易散落；\"屑多\"指切割时产生的纸屑，高品质拼图会减少屑多。了解这些术语有助于挑选适合自己的拼图产品。",
+        "en": "\"Die-cut\" refers to the mold used to cut puzzle pieces; different dies produce different piece shapes. \"Interlock\" refers to how tightly pieces fit together; good interlock prevents the puzzle from falling apart when lifted by a corner. \"Dust\" refers to paper dust generated during cutting; high-quality puzzles have less dust. Knowing these terms helps in choosing the right puzzle product."
     },
     {
         "key": "gkey_166",
-        "zh": "名画与拼图"
+        "zh": "名画与拼图",
+        "en": "Famous Paintings and Jigsaw Puzzles"
     },
     {
         "key": "gkey_167",
-        "zh": "许多世界名画被制成拼图，如梵高的《星空》、莫奈的《睡莲》、葛饰北斋的《神奈川冲浪里》等。拼名画拼图既能欣赏艺术，又能通过亲手\"重组\"画作加深对构图与色彩的理解。完成后的装裱也能成为家中独特的装饰。"
+        "zh": "许多世界名画被制成拼图，如梵高的《星空》、莫奈的《睡莲》、葛饰北斋的《神奈川冲浪里》等。拼名画拼图既能欣赏艺术，又能通过亲手\"重组\"画作加深对构图与色彩的理解。完成后的装裱也能成为家中独特的装饰。",
+        "en": "Many world-famous paintings have been turned into jigsaw puzzles, such as Van Gogh's \"Starry Night,\" Monet's \"Water Lilies,\" and Hokusai's \"The Great Wave off Kanagawa.\" Puzzling famous paintings allows you to appreciate art while deepening your understanding of composition and color through hands-on \"reassembly.\" Framing the completed puzzle can also make a unique home decoration."
     },
     {
         "key": "gkey_168",
-        "zh": "立体拼图"
+        "zh": "立体拼图",
+        "en": "3D Puzzles"
     },
     {
         "key": "gkey_169",
-        "zh": "立体拼图将平面拼图拓展到三维，常见题材有建筑（如埃菲尔铁塔、大本钟）、地球仪、动物、交通工具等。拼装过程需要理解立体结构与受力，完成后既是摆件也是成果展示。木质立体拼图无需胶水，靠卡扣和结构固定，深受手工爱好者喜爱。"
+        "zh": "立体拼图将平面拼图拓展到三维，常见题材有建筑（如埃菲尔铁塔、大本钟）、地球仪、动物、交通工具等。拼装过程需要理解立体结构与受力，完成后既是摆件也是成果展示。木质立体拼图无需胶水，靠卡扣和结构固定，深受手工爱好者喜爱。",
+        "en": "3D puzzles extend flat puzzles into three dimensions. Common themes include architecture (e.g., Eiffel Tower, Big Ben), globes, animals, vehicles, etc. Assembly requires understanding of 3D structure and balance. Once completed, they serve as both ornaments and display pieces. Wooden 3D puzzles require no glue, relying on interlocking and structural fittings, and are loved by craft enthusiasts."
     },
     {
         "key": "gkey_170",
-        "zh": "拼图与亲子时光"
+        "zh": "拼图与亲子时光",
+        "en": "Jigsaw Puzzles and Family Time"
     },
     {
         "key": "gkey_171",
-        "zh": "拼图是很好的亲子活动。幼儿可从大块、少片的启蒙拼图开始，培养观察与动手能力；学龄儿童可挑战片数更多的拼图，家长从旁协助、一起讨论策略。共同完成一幅拼图能增进沟通、培养耐心，并留下共同的成就感与回忆。"
+        "zh": "拼图是很好的亲子活动。幼儿可从大块、少片的启蒙拼图开始，培养观察与动手能力；学龄儿童可挑战片数更多的拼图，家长从旁协助、一起讨论策略。共同完成一幅拼图能增进沟通、培养耐心，并留下共同的成就感与回忆。",
+        "en": "Jigsaw puzzles are great for family bonding. Toddlers can start with large-piece, low-count puzzles to develop observation and motor skills. School-age children can take on larger puzzles with parental guidance and strategy discussions. Completing a puzzle together improves communication, cultivates patience, and creates shared memories and a sense of achievement."
     },
     {
         "key": "gkey_172",
-        "zh": "拼图的保存与展示"
+        "zh": "拼图的保存与展示",
+        "en": "Preserving and Displaying Jigsaw Puzzles"
     },
     {
         "key": "gkey_173",
-        "zh": "拼完成后可用专用拼图胶（正面涂胶）或透明膜固定，再装进画框挂墙展示。不装裱的拼图可平放保存，上面垫板后整体翻转，或分块装入袋中。避免阳光直射和潮湿，可延长色彩和纸板寿命。许多人会标注完成日期与片数，作为纪念。"
+        "zh": "拼完成后可用专用拼图胶（正面涂胶）或透明膜固定，再装进画框挂墙展示。不装裱的拼图可平放保存，上面垫板后整体翻转，或分块装入袋中。避免阳光直射和潮湿，可延长色彩和纸板寿命。许多人会标注完成日期与片数，作为纪念。",
+        "en": "After completing a puzzle, use special puzzle glue (applied to the front) or transparent film to fix it, then frame it and hang it on the wall. Puzzles not framed can be stored flat, flipped with a board on top, or bagged in sections. Avoid direct sunlight and moisture to extend the life of colors and cardboard. Many people note the completion date and piece count as a memento."
     },
     {
         "key": "gkey_174",
-        "zh": "拼图品牌简史"
+        "zh": "拼图品牌简史",
+        "en": "Brief History of Jigsaw Puzzle Brands"
     },
     {
         "key": "gkey_175",
-        "zh": "除了起源地英国，德国、西班牙、美国、日本等国都有知名拼图品牌。如德国的Ravensburger（睿思）、西班牙的Educa、美国的BuffaloGames、日本的Tenyo（天洋）等，各有特色：有的以咬合和印刷见长，有的以创意与联名主题著称，拼图爱好者可根据喜好选择。"
+        "zh": "除了起源地英国，德国、西班牙、美国、日本等国都有知名拼图品牌。如德国的Ravensburger（睿思）、西班牙的Educa、美国的BuffaloGames、日本的Tenyo（天洋）等，各有特色：有的以咬合和印刷见长，有的以创意与联名主题著称，拼图爱好者可根据喜好选择。",
+        "en": "Besides the UK, where puzzles originated, countries like Germany, Spain, the USA, and Japan have renowned puzzle brands. Examples include Ravensburger (Germany), Educa (Spain), Buffalo Games (USA), and Tenyo (Japan), each with unique strengths—some excelling in interlock and print quality, others known for creative and licensed themes. Puzzle enthusiasts can choose according to their preferences."
     },
     {
         "key": "gkey_176",
-        "zh": "拼图技巧：先边后中"
+        "zh": "拼图技巧：先边后中",
+        "en": "Puzzle Tip: Edges First, Then Center"
     },
     {
         "key": "gkey_177",
-        "zh": "最常见的拼图策略是\"先拼边框，再填中间\"。先把所有带直边的拼块挑出拼好外框，确定画面范围和四边，再按颜色或明显图案分区逐块填充。遇到困难区域可对照参考图，或先跳过，等周围拼好后再用形状和颜色反推。"
+        "zh": "最常见的拼图策略是\"先拼边框，再填中间\"。先把所有带直边的拼块挑出拼好外框，确定画面范围和四边，再按颜色或明显图案分区逐块填充。遇到困难区域可对照参考图，或先跳过，等周围拼好后再用形状和颜色反推。",
+        "en": "The most common puzzle strategy is \"edges first, then fill the middle.\" First, pick out all pieces with straight edges to form the border, establishing the picture boundaries. Then, fill in sections by color or obvious patterns. For difficult areas, refer to the reference image or skip them and use shape and color clues to deduce later."
     },
     {
         "key": "gkey_178",
-        "zh": "拼图与减压"
+        "zh": "拼图与减压",
+        "en": "Jigsaw Puzzles and Stress Relief"
     },
     {
         "key": "gkey_179",
-        "zh": "拼图时人会进入一种专注、心流的状态，暂时抛开杂念，只关注眼前的形状与图案。这种重复而有目标的活动能降低焦虑、舒缓压力，且不需要电子屏幕，适合作为晚间或周末的放松方式。拼图也被用于正念练习和轻度解压。"
+        "zh": "拼图时人会进入一种专注、心流的状态，暂时抛开杂念，只关注眼前的形状与图案。这种重复而有目标的活动能降低焦虑、舒缓压力，且不需要电子屏幕，适合作为晚间或周末的放松方式。拼图也被用于正念练习和轻度解压。",
+        "en": "Puzzling induces a state of focus and flow, temporarily setting aside distractions to concentrate on shapes and patterns. This repetitive, goal-oriented activity reduces anxiety and relieves stress, and doesn't require a screen, making it a great evening or weekend relaxation method. Puzzles are also used in mindfulness practice and gentle decompression."
     },
     {
         "key": "gkey_180",
-        "zh": "定制个人拼图"
+        "zh": "定制个人拼图",
+        "en": "Custom Personal Jigsaw Puzzles"
     },
     {
         "key": "gkey_181",
-        "zh": "现在很多商家提供\"照片定制拼图\"：上传个人照片（如全家福、旅行照、宠物照），即可制成专属拼图。片数从几十到上千可选，是很有意义的礼物或纪念品。拼自己的照片时，既熟悉又新鲜，完成后的装裱也更具个人意义。"
+        "zh": "现在很多商家提供\"照片定制拼图\"：上传个人照片（如全家福、旅行照、宠物照），即可制成专属拼图。片数从几十到上千可选，是很有意义的礼物或纪念品。拼自己的照片时，既熟悉又新鲜，完成后的装裱也更具个人意义。",
+        "en": "Many retailers now offer \"photo-customized puzzles\": upload personal photos (like family portraits, travel shots, pet photos) to create a unique puzzle. Piece counts range from dozens to thousands, making them meaningful gifts or souvenirs. Puzzling your own photos feels familiar yet fresh, and the framed result carries personal significance."
     },
     {
         "key": "gkey_182",
-        "zh": "异形拼图"
+        "zh": "异形拼图",
+        "en": "Shaped Jigsaw Puzzles"
     },
     {
         "key": "gkey_183",
-        "zh": "异形拼图的外轮廓不是矩形，而是圆形、心形、动物轮廓等，拼块也可能有特殊形状。这类拼图难度更高、趣味性更强，适合已经熟悉常规拼图的玩家。完成后的造型独特，适合作为礼物或装饰。"
+        "zh": "异形拼图的外轮廓不是矩形，而是圆形、心形、动物轮廓等，拼块也可能有特殊形状。这类拼图难度更高、趣味性更强，适合已经熟悉常规拼图的玩家。完成后的造型独特，适合作为礼物或装饰。",
+        "en": "Shaped puzzles have non-rectangular outlines—circles, hearts, animal shapes, etc.—and pieces may also have special shapes. They are more challenging and offer greater novelty, suitable for players already familiar with standard puzzles. The completed shape is unique and makes a great gift or decoration."
     },
     {
         "key": "gkey_184",
-        "zh": "拼图与数学"
+        "zh": "拼图与数学",
+        "en": "Jigsaw Puzzles and Mathematics"
     },
     {
         "key": "gkey_185",
-        "zh": "拼图背后有数学与几何：如何用有限种形状铺满平面、如何设计刀模使每块唯一可拼等。一些拼图会故意设计成\"反直觉\"形状，增加难度。教育类拼图还会结合数学题、迷宫等，让儿童在玩中学习几何与逻辑。"
+        "zh": "拼图背后有数学与几何：如何用有限种形状铺满平面、如何设计刀模使每块唯一可拼等。一些拼图会故意设计成\"反直觉\"形状，增加难度。教育类拼图还会结合数学题、迷宫等，让儿童在玩中学习几何与逻辑。",
+        "en": "Behind puzzles lies mathematics and geometry: how to tile a plane with limited shapes, how to design die-cuts so each piece fits uniquely, etc. Some puzzles are designed with \"counterintuitive\" shapes to increase difficulty. Educational puzzles also incorporate math problems and mazes, allowing children to learn geometry and logic while playing."
     },
     {
         "key": "gkey_186",
-        "zh": "拼图比赛与社群"
+        "zh": "拼图比赛与社群",
+        "en": "Jigsaw Puzzle Competitions and Communities"
     },
     {
         "key": "gkey_187",
-        "zh": "世界各地有拼图竞速赛、接力赛等，选手在限定时间内完成指定拼图。线上则有拼图论坛、社群，爱好者会分享作品、推荐品牌、交流技巧，甚至交换或出清二手拼图。拼图不再只是单人娱乐，也是连接同好的纽带。"
+        "zh": "世界各地有拼图竞速赛、接力赛等，选手在限定时间内完成指定拼图。线上则有拼图论坛、社群，爱好者会分享作品、推荐品牌、交流技巧，甚至交换或出清二手拼图。拼图不再只是单人娱乐，也是连接同好的纽带。",
+        "en": "Around the world, there are puzzle speed competitions and relay races where participants complete specified puzzles within a time limit. Online, there are puzzle forums and communities where enthusiasts share their works, recommend brands, exchange tips, and even trade or sell used puzzles. Puzzling is no longer just solo entertainment; it's also a way to connect with like-minded people."
     },
     {
         "key": "gkey_188",
-        "zh": "木质拼图的特点"
+        "zh": "木质拼图的特点",
+        "en": "Characteristics of Wooden Jigsaw Puzzles"
     },
     {
         "key": "gkey_189",
-        "zh": "木质拼图通常用椴木等切割，手感扎实、不易变形，咬合往往很好。许多木质拼图会有\"异形刀\"——拼块被切割成动物、人物等形状，与画面内容呼应，收藏和观赏价值高。缺点是比较重、价格偏高，且片数通常不会特别多。"
+        "zh": "木质拼图通常用椴木等切割，手感扎实、不易变形，咬合往往很好。许多木质拼图会有\"异形刀\"——拼块被切割成动物、人物等形状，与画面内容呼应，收藏和观赏价值高。缺点是比较重、价格偏高，且片数通常不会特别多。",
+        "en": "Wooden puzzles are usually cut from basswood or similar materials, offering a solid feel, resistance to warping, and often excellent interlock. Many wooden puzzles feature \"whimsy cuts\"—pieces shaped like animals, figures, or other shapes that relate to the image, adding high collectible and display value. Downsides are heavier weight, higher price, and usually lower piece counts."
     },
     {
         "key": "gkey_190",
-        "zh": "拼图与色彩分区"
+        "zh": "拼图与色彩分区",
+        "en": "Jigsaw Puzzles and Color Zoning"
     },
     {
         "key": "gkey_191",
-        "zh": "拼复杂拼图时，按颜色或图案分区能大大提高效率。例如先拼天空、再拼建筑、再拼人物，每一区内再按形状筛选。有些玩家会先按\"大致颜色\"把拼块分到不同盒子或格子，再逐区攻克，这样找块更快、思路更清晰。"
+        "zh": "拼复杂拼图时，按颜色或图案分区能大大提高效率。例如先拼天空、再拼建筑、再拼人物，每一区内再按形状筛选。有些玩家会先按\"大致颜色\"把拼块分到不同盒子或格子，再逐区攻克，这样找块更快、思路更清晰。",
+        "en": "When tackling complex puzzles, sorting by color or pattern greatly improves efficiency. For example, focus on the sky first, then buildings, then figures, and within each zone, further sort by shape. Some players sort pieces into separate boxes or compartments by \"broad color\" and then attack each zone, making piece-finding faster and thinking clearer."
     },
     {
         "key": "gkey_192",
-        "zh": "拼图对儿童发展的意义"
+        "zh": "拼图对儿童发展的意义",
+        "en": "The Significance of Jigsaw Puzzles for Child Development"
     },
     {
         "key": "gkey_193",
-        "zh": "拼图能促进幼儿的精细动作、形状与颜色认知、空间感和问题解决能力。从大块少片开始，随年龄增加片数和难度，有助于建立耐心和专注。与家长或同伴一起拼还能锻炼协作与表达。选择适龄、图案有趣的拼图，是很好的寓教于乐方式。"
+        "zh": "拼图能促进幼儿的精细动作、形状与颜色认知、空间感和问题解决能力。从大块少片开始，随年龄增加片数和难度，有助于建立耐心和专注。与家长或同伴一起拼还能锻炼协作与表达。选择适龄、图案有趣的拼图，是很好的寓教于乐方式。",
+        "en": "Jigsaw puzzles promote fine motor skills, shape and color recognition, spatial awareness, and problem-solving abilities in young children. Starting with large-piece, low-count puzzles and increasing piece count and difficulty with age helps build patience and focus. Puzzling with parents or peers also encourages collaboration and communication. Choosing age-appropriate, visually engaging puzzles is a great way to combine education and fun."
     },
     {
         "key": "gkey_194",
-        "zh": "拼图胶与装裱"
+        "zh": "拼图胶与装裱",
+        "en": "Puzzle Glue and Framing"
     },
     {
         "key": "gkey_195",
-        "zh": "拼图胶一般涂在拼图正面，干后形成透明膜，使整幅拼图成为一体，便于翻转和装框。也有背面胶或双面胶膜。装裱时可选带卡纸的框（留白更有画作感）或满裱。注意框的厚度要能容纳拼图+背板的厚度，拼图才能平整放入。"
+        "zh": "拼图胶一般涂在拼图正面，干后形成透明膜，使整幅拼图成为一体，便于翻转和装框。也有背面胶或双面胶膜。装裱时可选带卡纸的框（留白更有画作感）或满裱。注意框的厚度要能容纳拼图+背板的厚度，拼图才能平整放入。",
+        "en": "Puzzle glue is usually applied to the front; it dries to form a transparent film that binds the whole puzzle, making it easier to flip and frame. There are also back-side adhesive films. When framing, choose a frame with a mat (for a more artistic look) or a full fit. Ensure the frame's depth accommodates the puzzle plus backing so it sits flat."
     },
     {
         "key": "gkey_196",
-        "zh": "拼图与旅行"
+        "zh": "拼图与旅行",
+        "en": "Jigsaw Puzzles and Travel"
     },
     {
         "key": "gkey_197",
-        "zh": "许多拼图爱好者会购买以城市、风景、地图为主题的拼图，作为\"纸上旅行\"或纪念。拼完一幅风景拼图，仿佛重游该地；拼地图拼图则能熟悉地理。旅行时在当地购买特色拼图，回家后拼完装裱，也是很有意义的纪念品。"
+        "zh": "许多拼图爱好者会购买以城市、风景、地图为主题的拼图，作为\"纸上旅行\"或纪念。拼完一幅风景拼图，仿佛重游该地；拼地图拼图则能熟悉地理。旅行时在当地购买特色拼图，回家后拼完装裱，也是很有意义的纪念品。",
+        "en": "Many puzzle enthusiasts buy puzzles themed around cities, landscapes, or maps as \"armchair travel\" or souvenirs. Completing a landscape puzzle feels like revisiting the place; map puzzles help familiarize with geography. Buying a local specialty puzzle while traveling, then framing it at home, makes for a meaningful keepsake."
     },
     {
         "key": "gkey_198",
-        "zh": "拼图的\"屑\"与质量"
+        "zh": "拼图的\"屑\"与质量",
+        "en": "Puzzle Dust and Quality"
     },
     {
         "key": "gkey_199",
-        "zh": "切割拼图时会在切口产生纸屑（俗称\"屑多\"）。质量好的拼图会控制切割工艺，减少纸屑；拼完后抖一抖、用软布轻拂即可清理。屑多虽不影响拼装，但会影响手感和整洁度。选购时可参考品牌口碑和买家评价。"
+        "zh": "切割拼图时会在切口产生纸屑（俗称\"屑多\"）。质量好的拼图会控制切割工艺，减少纸屑；拼完后抖一抖、用软布轻拂即可清理。屑多虽不影响拼装，但会影响手感和整洁度。选购时可参考品牌口碑和买家评价。",
+        "en": "Cutting puzzles generates paper dust at the cut edges (commonly called \"dusty\"). High-quality puzzles control their cutting process to reduce dust; after completion, shaking and gentle wiping with a soft cloth will clean it. While dust doesn't affect assembly, it can impact feel and cleanliness. Check brand reputation and buyer reviews when selecting."
     },
     {
         "key": "gkey_200",
-        "zh": "拼图收纳技巧"
+        "zh": "拼图收纳技巧",
+        "en": "Puzzle Storage Tips"
     },
     {
         "key": "gkey_201",
-        "zh": "未完成的大拼图可放在拼图毯或专用拼图板上，卷起或盖盖保存，避免占桌面。已完成暂不装裱的，可涂胶后卷在卷轴里，或分块装入密封袋并标注。多幅拼图要分盒存放，在盒上注明片数、主题、完成日期，方便日后查找或转手。"
+        "zh": "未完成的大拼图可放在拼图毯或专用拼图板上，卷起或盖盖保存，避免占桌面。已完成暂不装裱的，可涂胶后卷在卷轴里，或分块装入密封袋并标注。多幅拼图要分盒存放，在盒上注明片数、主题、完成日期，方便日后查找或转手。",
+        "en": "Unfinished large puzzles can be placed on a puzzle mat or board, rolled up or covered to save table space. For completed puzzles not yet framed, apply glue and store in a scroll or bag sections in sealed bags with labels. Store multiple puzzles in separate boxes, noting piece count, theme, and completion date for easy future reference or resale."
     },
     {
         "key": "gkey_202",
-        "zh": "拼图与电影、动漫"
+        "zh": "拼图与电影、动漫",
+        "en": "Jigsaw Puzzles and Movies, Anime"
     },
     {
         "key": "gkey_203",
-        "zh": "很多电影、动漫、游戏会推出官方授权拼图，图案来自海报、剧照或插画。这类拼图粉丝向强，拼完如同把喜爱的画面\"定格\"在家中。收藏这类拼图时要注意版权与印刷质量，正版授权通常图案更清晰、色彩更准确。"
+        "zh": "很多电影、动漫、游戏会推出官方授权拼图，图案来自海报、剧照或插画。这类拼图粉丝向强，拼完如同把喜爱的画面\"定格\"在家中。收藏这类拼图时要注意版权与印刷质量，正版授权通常图案更清晰、色彩更准确。",
+        "en": "Many movies, anime, and games release officially licensed puzzles featuring posters, stills, or illustrations. These puzzles have strong fan appeal, and completing them feels like \"freezing\" a beloved scene at home. When collecting such puzzles, pay attention to copyright and print quality; officially licensed ones usually have clearer images and more accurate colors."
     },
     {
         "key": "gkey_204",
-        "zh": "拼图的咬合"
+        "zh": "拼图的咬合",
+        "en": "Puzzle Interlock"
     },
     {
         "key": "gkey_205",
-        "zh": "咬合指拼块之间卡紧的程度。咬合好的拼图，拼好一部分后可以整块拎起而不散；咬合差的则容易一碰就散。木质拼图和部分高端纸板拼图以咬合出色著称。若喜欢拼完后移动或展示，选咬合好的产品体验会更好。"
+        "zh": "咬合指拼块之间卡紧的程度。咬合好的拼图，拼好一部分后可以整块拎起而不散；咬合差的则容易一碰就散。木质拼图和部分高端纸板拼图以咬合出色著称。若喜欢拼完后移动或展示，选咬合好的产品体验会更好。",
+        "en": "Interlock refers to how tightly puzzle pieces fit together. Puzzles with good interlock allow you to lift a completed section without it falling apart; poor interlock means sections easily crumble. Wooden puzzles and some high-end cardboard puzzles are known for excellent interlock. If you like to move or display your puzzles, choose products with good interlock."
     },
     {
         "key": "gkey_206",
-        "zh": "\"贴士：新手可从xxx_1～xxx_2片、图案分区明显的拼图开始，如风景、建筑等。先拼边框建立整体框架，再按颜色或区域逐块填充。拼图时保持光线充足、桌面平整，避免拼块丢失或混淆。\""
+        "zh": "\"贴士：新手可从xxx_1～xxx_2片、图案分区明显的拼图开始，如风景、建筑等。先拼边框建立整体框架，再按颜色或区域逐块填充。拼图时保持光线充足、桌面平整，避免拼块丢失或混淆。\"",
+        "en": "\"Tip: Beginners can start with xxx_1–xxx_2 piece puzzles with clear color zoning, such as landscapes or architecture. First, build the frame, then fill in by color or section. Ensure good lighting and a flat surface to avoid losing or confusing pieces.\""
     },
     {
         "key": "gkey_207",
-        "zh": "\"贴士：选购时根据年龄与经验选择片数：儿童建议几十到一百片；成人入门xxx_1～xxx_2片，进阶xxx_3片以上。注意看盒子上的推荐年龄和片数，避免买到过难或过易的拼图。纸质拼图性价比高，木质拼图更适合收藏。\""
+        "zh": "\"贴士：选购时根据年龄与经验选择片数：儿童建议几十到一百片；成人入门xxx_1～xxx_2片，进阶xxx_3片以上。注意看盒子上的推荐年龄和片数，避免买到过难或过易的拼图。纸质拼图性价比高，木质拼图更适合收藏。\"",
+        "en": "\"Tip: Choose piece count based on age and experience: children—dozens to 100; adult beginners—xxx_1–xxx_2; advanced—xxx_3+. Check the recommended age and piece count on the box to avoid puzzles that are too hard or too easy. Cardboard puzzles offer good value, while wooden puzzles are more collectible.\""
     },
     {
         "key": "gkey_208",
-        "zh": "\"贴士：建议每天拼图xxx_1分钟～xxx_2小时，既能锻炼思维又不会过度用眼。可把拼图放在固定位置，利用碎片时间拼几块。拼图时适当休息，远眺放松眼睛，避免长时间低头导致颈椎疲劳。\""
+        "zh": "\"贴士：建议每天拼图xxx_1分钟～xxx_2小时，既能锻炼思维又不会过度用眼。可把拼图放在固定位置，利用碎片时间拼几块。拼图时适当休息，远眺放松眼睛，避免长时间低头导致颈椎疲劳。\"",
+        "en": "\"Tip: Aim for xxx_1 minutes to xxx_2 hours of puzzling daily—enough to sharpen your mind without straining your eyes. Keep the puzzle in a fixed spot and work on it in short bursts. Take breaks, look into the distance, and avoid prolonged neck bending to prevent strain.\""
     },
     {
         "key": "gkey_209",
-        "zh": "贴士：挑战超大片数拼图前，要预留足够空间（如大桌面或拼图板）和收纳方式。可先完成边框和明显区域，再分块用托盘或袋子保存，避免一次摊开占用过多空间。做好长期作战的心理准备，享受过程而非只追求速度。"
+        "zh": "贴士：挑战超大片数拼图前，要预留足够空间（如大桌面或拼图板）和收纳方式。可先完成边框和明显区域，再分块用托盘或袋子保存，避免一次摊开占用过多空间。做好长期作战的心理准备，享受过程而非只追求速度。",
+        "en": "Tip: Before tackling an ultra-large puzzle, prepare ample space (e.g., a large table or puzzle board) and a storage plan. Complete the border and obvious areas first, then store sections in trays or bags to avoid taking up too much space at once. Prepare for a long-term effort—enjoy the process, not just speed."
     },
     {
         "key": "gkey_210",
-        "zh": "贴士：拼名画拼图时，可把参考图放在手边，按色块和笔触分区。印象派等色彩丰富的画作难度较高，建议选片数适中的版本先练手。拼完后用拼图胶固定再装裱，装框时可选无眩光玻璃以更好还原画作效果。"
+        "zh": "贴士：拼名画拼图时，可把参考图放在手边，按色块和笔触分区。印象派等色彩丰富的画作难度较高，建议选片数适中的版本先练手。拼完后用拼图胶固定再装裱，装框时可选无眩光玻璃以更好还原画作效果。",
+        "en": "Tip: When puzzling famous paintings, keep the reference image nearby and sort by color blocks and brushstrokes. Impressionist works with rich colors are more challenging—start with a moderate piece count to practice. After completion, use puzzle glue and frame with non-glare glass to better preserve the painting's look."
     },
     {
         "key": "gkey_211",
-        "zh": "贴士：立体拼图要按说明书顺序组装，注意区分相似零件。木质立体拼图插接时不要用蛮力，对准卡槽再轻轻压入。拼好的立体拼图避免放在易碰倒或阳光直射处，可放在玻璃柜或稳固的展示架上。"
+        "zh": "贴士：立体拼图要按说明书顺序组装，注意区分相似零件。木质立体拼图插接时不要用蛮力，对准卡槽再轻轻压入。拼好的立体拼图避免放在易碰倒或阳光直射处，可放在玻璃柜或稳固的展示架上。",
+        "en": "Tip: Assemble 3D puzzles following the manual's order and distinguish similar parts carefully. For wooden 3D puzzles, don't force pieces; align slots and press gently. Keep completed 3D puzzles away from high-traffic or direct-sunlight areas; place them in glass cabinets or sturdy display stands."
     },
     {
         "key": "gkey_212",
-        "zh": "贴士：和孩子一起拼图时，选他们喜欢的图案（如卡通、动物），片数要适合年龄。家长可负责找边、分区，让孩子负责拼某一块区域，多鼓励少代劳。设定小目标（如\"今天拼完这一角\"），增加成就感和坚持动力。"
+        "zh": "贴士：和孩子一起拼图时，选他们喜欢的图案（如卡通、动物），片数要适合年龄。家长可负责找边、分区，让孩子负责拼某一块区域，多鼓励少代劳。设定小目标（如\"今天拼完这一角\"），增加成就感和坚持动力。",
+        "en": "Tip: When puzzling with kids, choose themes they like (e.g., cartoons, animals) and age-appropriate piece counts. Parents can handle edge-finding and zoning, while children focus on a specific area—encourage more, do less for them. Set small goals (e.g., \"finish this corner today\") to boost achievement and motivation."
     },
     {
         "key": "gkey_213",
-        "zh": "贴士：拼图胶要均匀涂满正面，按说明静置晾干后再翻转或装框。装框时确保拼图平整、四角压紧，背板要够硬以免变形。挂墙时避免潮湿和阳光直射，可延长色彩保持时间。"
+        "zh": "贴士：拼图胶要均匀涂满正面，按说明静置晾干后再翻转或装框。装框时确保拼图平整、四角压紧，背板要够硬以免变形。挂墙时避免潮湿和阳光直射，可延长色彩保持时间。",
+        "en": "Tip: Apply puzzle glue evenly on the front, let it dry according to instructions, then flip or frame. Ensure the puzzle is flat and corners are pressed tight; the backing should be firm to prevent warping. Hang away from moisture and direct sunlight to preserve color longevity."
     },
     {
         "key": "gkey_214",
-        "zh": "贴士：不同品牌特点不同：追求咬合和手感可考虑德国、西班牙品牌；喜欢动漫联名可看日本品牌；想性价比可选国产或美系。首次尝试某品牌可先买中小片数，确认喜欢再入手大片数或收藏款。"
+        "zh": "贴士：不同品牌特点不同：追求咬合和手感可考虑德国、西班牙品牌；喜欢动漫联名可看日本品牌；想性价比可选国产或美系。首次尝试某品牌可先买中小片数，确认喜欢再入手大片数或收藏款。",
+        "en": "Tip: Different brands have different strengths: for interlock and feel, consider German or Spanish brands; for anime collaborations, look at Japanese brands; for value, choose Chinese or American brands. When trying a new brand for the first time, start with small-to-mid piece counts, then go for larger or collector editions if you like it."
     },
     {
         "key": "gkey_215",
-        "zh": "贴士：拼边框时先按\"两直边\"\"四角\"分类，角块只有四块最容易识别。边框拼好后可按天空、建筑、人物等大色块分区，把疑似该区的拼块放进小碟子，再逐块尝试。遇到瓶颈可休息一下，换一个区域再拼，往往会有新发现。"
+        "zh": "贴士：拼边框时先按\"两直边\"\"四角\"分类，角块只有四块最容易识别。边框拼好后可按天空、建筑、人物等大色块分区，把疑似该区的拼块放进小碟子，再逐块尝试。遇到瓶颈可休息一下，换一个区域再拼，往往会有新发现。",
+        "en": "Tip: When building the border, sort pieces by \"two straight edges\" and \"corners\"—corner pieces are easiest to identify. After the border, zone by broad colors like sky, buildings, people—place potential pieces in small dishes and try them one by one. If stuck, take a break and switch zones—you'll often spot new matches."
     },
     {
         "key": "gkey_216",
-        "zh": "贴士：把拼图安排在固定时段（如晚间或周末），有助于形成放松习惯。拼图时可搭配轻音乐或播客，但避免太分心。若发现越拼越烦躁，可以暂停，改天再继续，拼图本应是享受而非负担。"
+        "zh": "贴士：把拼图安排在固定时段（如晚间或周末），有助于形成放松习惯。拼图时可搭配轻音乐或播客，但避免太分心。若发现越拼越烦躁，可以暂停，改天再继续，拼图本应是享受而非负担。",
+        "en": "Tip: Schedule puzzling at a fixed time (e.g., evenings or weekends) to build a relaxing habit. Pair it with soft music or podcasts, but avoid distractions. If you find yourself getting frustrated, pause and come back another day—puzzling should be enjoyable, not a chore."
     },
     {
         "key": "gkey_217",
-        "zh": "\"贴士：定制拼图要选清晰、色彩对比度高的照片，避免过暗或过曝。注意商家给出的最小分辨率建议，否则放大后可能模糊。片数可根据收礼人水平选择，送孩子可选少片，送拼图爱好者可挑战xxx_1～xxx_2片。\""
+        "zh": "\"贴士：定制拼图要选清晰、色彩对比度高的照片，避免过暗或过曝。注意商家给出的最小分辨率建议，否则放大后可能模糊。片数可根据收礼人水平选择，送孩子可选少片，送拼图爱好者可挑战xxx_1～xxx_2片。\"",
+        "en": "\"Tip: For custom puzzles, choose clear photos with high contrast; avoid underexposed or overexposed images. Follow the seller's minimum resolution recommendations to prevent blurriness when enlarged. Piece count can match the recipient's skill level—fewer for kids, xxx_1–xxx_2 for puzzle enthusiasts.\""
     },
     {
         "key": "gkey_218",
-        "zh": "贴士：异形拼图没有标准矩形边，建议先找特征明显的部分（如人脸、文字、独特图案）再往外扩展。异形块要特别注意朝向，可对照参考图反复比对。完成后装裱时需定制或选择足够大的框以容纳异形轮廓。"
+        "zh": "贴士：异形拼图没有标准矩形边，建议先找特征明显的部分（如人脸、文字、独特图案）再往外扩展。异形块要特别注意朝向，可对照参考图反复比对。完成后装裱时需定制或选择足够大的框以容纳异形轮廓。",
+        "en": "Tip: Shaped puzzles have no standard rectangular edges—start with distinctive features (e.g., faces, text, unique patterns) and expand outward. Pay special attention to the orientation of shaped pieces; compare repeatedly with the reference image. For framing, custom or sufficiently large frames are needed to fit the outline."
     },
     {
         "key": "gkey_219",
-        "zh": "贴士：教育类拼图可结合年龄选择：幼儿选形状、数字、字母拼图；学龄儿童可尝试地图、迷宫类。拼图时引导孩子观察\"这块像什么形状\"\"缺的是哪一块\"，潜移默化锻炼几何与逻辑思维。"
+        "zh": "贴士：教育类拼图可结合年龄选择：幼儿选形状、数字、字母拼图；学龄儿童可尝试地图、迷宫类。拼图时引导孩子观察\"这块像什么形状\"\"缺的是哪一块\"，潜移默化锻炼几何与逻辑思维。",
+        "en": "Tip: Choose educational puzzles by age: toddlers—shapes, numbers, letters; school-age children—maps, mazes. Guide kids with questions like \"What shape does this piece look like?\" and \"Which piece is missing?\" to subtly develop geometric and logical thinking."
     },
     {
         "key": "gkey_220",
-        "zh": "贴士：想参加竞速可从小片数、简单图案练起，熟悉后逐步提高。加入拼图社群能获得推荐、二手交换、装裱经验等。分享作品时注明片数、品牌和完成时间，方便同好参考和交流。"
+        "zh": "贴士：想参加竞速可从小片数、简单图案练起，熟悉后逐步提高。加入拼图社群能获得推荐、二手交换、装裱经验等。分享作品时注明片数、品牌和完成时间，方便同好参考和交流。",
+        "en": "Tip: To get into speed puzzling, start with small, simple designs and gradually increase difficulty. Joining puzzle communities can provide recommendations, second-hand trades, and framing tips. When sharing your work, note piece count, brand, and completion time for fellow enthusiasts."
     },
     {
         "key": "gkey_221",
-        "zh": "贴士：木质拼图开盒后可能有木屑，用软布轻拭即可。拼装时注意不要强行掰扯，木质拼块虽结实但接口精细。收纳时放在干燥处，避免受潮变形。若拼块卡得太紧，可轻敲背面帮助分离。"
+        "zh": "贴士：木质拼图开盒后可能有木屑，用软布轻拭即可。拼装时注意不要强行掰扯，木质拼块虽结实但接口精细。收纳时放在干燥处，避免受潮变形。若拼块卡得太紧，可轻敲背面帮助分离。",
+        "en": "Tip: Wooden puzzles may have sawdust upon opening—wipe gently with a soft cloth. Avoid forcing pieces together; wooden pieces are sturdy but have fine connections. Store in a dry place to prevent moisture damage. If pieces are stuck too tight, tap the back lightly to separate."
     },
     {
         "key": "gkey_222",
-        "zh": "贴士：可用多个小容器（如月饼盒、收纳格）按颜色或区域分装拼块，拼某一块区域时只面对该容器，减少干扰。参考图可打印或放在平板里放大查看细节。同色系多的区域可结合形状（凸凹）来区分。"
+        "zh": "贴士：可用多个小容器（如月饼盒、收纳格）按颜色或区域分装拼块，拼某一块区域时只面对该容器，减少干扰。参考图可打印或放在平板里放大查看细节。同色系多的区域可结合形状（凸凹）来区分。",
+        "en": "Tip: Use multiple small containers (like cookie tins or organizer boxes) to sort pieces by color or zone. When working on a zone, only have that container in front of you to reduce distractions. Reference images can be printed or viewed on a tablet with zoom for details. In areas with similar colors, combine with shape (tabs/blanks) to differentiate."
     },
     {
         "key": "gkey_223",
-        "zh": "贴士：幼儿拼图要选大块、少片、图案简洁的，避免小块误吞。可在拼图背面做简单标记（如分区涂色），方便孩子辨认。完成后及时表扬，并可拍照留念，激励下次再拼。随年龄增长逐步增加片数和难度。"
+        "zh": "贴士：幼儿拼图要选大块、少片、图案简洁的，避免小块误吞。可在拼图背面做简单标记（如分区涂色），方便孩子辨认。完成后及时表扬，并可拍照留念，激励下次再拼。随年龄增长逐步增加片数和难度。",
+        "en": "Tip: For toddlers, choose large-piece, low-count puzzles with simple images to prevent choking hazards. You can add simple markings on the back (e.g., colored zones) to help kids identify. Praise them when done and take a photo to encourage future attempts. Gradually increase piece count and difficulty with age."
     },
     {
         "key": "gkey_224",
-        "zh": "贴士：涂拼图胶时用附赠的刮板或硬卡均匀推开，确保没有遗漏和气泡。完全干透后再移动（通常需数小时）。装框前量好拼图尺寸，框的内径要略大于拼图，留出卡纸或留白更美观。背板用硬纸板或专用背板，避免受潮弯曲。"
+        "zh": "贴士：涂拼图胶时用附赠的刮板或硬卡均匀推开，确保没有遗漏和气泡。完全干透后再移动（通常需数小时）。装框前量好拼图尺寸，框的内径要略大于拼图，留出卡纸或留白更美观。背板用硬纸板或专用背板，避免受潮弯曲。",
+        "en": "Tip: Apply puzzle glue evenly using the included scraper or a hard card, ensuring no gaps or bubbles. Wait until fully dry before moving (usually several hours). Before framing, measure the puzzle; the frame's inner size should be slightly larger, with a mat or white border for a nicer look. Use sturdy cardboard or special backing to prevent warping."
     },
     {
         "key": "gkey_225",
-        "zh": "贴士：旅行时买的拼图要注意行李重量和包装，可拆盒只带拼块和参考图以节省空间。拼完后在当地装裱或带回国装裱均可，装裱时注明地点和日期更有纪念意义。送人时搭配一张旅行照片或明信片，心意更足。"
+        "zh": "贴士：旅行时买的拼图要注意行李重量和包装，可拆盒只带拼块和参考图以节省空间。拼完后在当地装裱或带回国装裱均可，装裱时注明地点和日期更有纪念意义。送人时搭配一张旅行照片或明信片，心意更足。",
+        "en": "Tip: When buying puzzles while traveling, consider luggage weight and packaging—you can unbox and just bring pieces and the reference image to save space. Frame it locally or after returning; noting the location and date adds sentimental value. Pair it with a travel photo or postcard for a thoughtful gift."
     },
     {
         "key": "gkey_226",
-        "zh": "贴士：开盒后先轻轻抖掉纸屑，再在干净桌面上拼，可减少屑粘在拼块上。拼完若仍有屑，用软毛刷或吹气球轻拂即可。选购时多看评价中关于\"屑多不多\"\"咬合如何\"的描述，优先选口碑好的型号。"
+        "zh": "贴士：开盒后先轻轻抖掉纸屑，再在干净桌面上拼，可减少屑粘在拼块上。拼完若仍有屑，用软毛刷或吹气球轻拂即可。选购时多看评价中关于\"屑多不多\"\"咬合如何\"的描述，优先选口碑好的型号。",
+        "en": "Tip: After opening, gently shake off paper dust and puzzle on a clean surface to reduce dust sticking to pieces. If dust remains, use a soft brush or air blower to lightly remove it. Check reviews for \"dust level\" and \"interlock\" when selecting, and prioritize well-regarded models."
     },
     {
         "key": "gkey_227",
-        "zh": "贴士：拼图毯或拼图板可卷起未完成的拼图，避免占桌面。卷时在拼图表面垫一层薄纸或塑料膜，防止摩擦。多幅拼图用密封袋分装并标注片数、主题，再放入收纳箱，防潮防尘。拼图盒可保留用于收纳或转手。"
+        "zh": "贴士：拼图毯或拼图板可卷起未完成的拼图，避免占桌面。卷时在拼图表面垫一层薄纸或塑料膜，防止摩擦。多幅拼图用密封袋分装并标注片数、主题，再放入收纳箱，防潮防尘。拼图盒可保留用于收纳或转手。",
+        "en": "Tip: Puzzle mats or boards let you roll up unfinished puzzles to save table space. Place a thin paper or plastic sheet over the surface before rolling to prevent friction. Store multiple puzzles in sealed bags labeled with piece count and theme, then place in storage bins to keep them dry and dust-free. Keep original boxes for storage or resale."
     },
     {
         "key": "gkey_228",
-        "zh": "贴士：购买授权拼图时认准正版，避免盗版印刷模糊、色差大。拼完后若想展示，可选与房间风格搭配的框色。限量或绝版拼图可考虑不拆封收藏，但若以玩乐为主，拆拼的体验和成就感更值得。"
+        "zh": "贴士：购买授权拼图时认准正版，避免盗版印刷模糊、色差大。拼完后若想展示，可选与房间风格搭配的框色。限量或绝版拼图可考虑不拆封收藏，但若以玩乐为主，拆拼的体验和成就感更值得。",
+        "en": "Tip: When buying licensed puzzles, choose authentic versions to avoid blurry prints and color discrepancies. If you plan to display, pick a frame color that matches your room. Limited or out-of-print puzzles can be kept sealed for collection, but if the goal is fun, the experience and sense of achievement from opening and completing them are more worthwhile."
     },
     {
         "key": "gkey_229",
-        "zh": "贴士：拼图咬合好坏可在拼好一部分后轻轻拎起测试。咬合好的适合拼完即展示或经常移动；咬合一般的建议涂胶固定后再装裱。选购时看商品说明或评价中是否提到\"咬合紧\"\"可拎起\"等，作为参考。"
+        "zh": "贴士：拼图咬合好坏可在拼好一部分后轻轻拎起测试。咬合好的适合拼完即展示或经常移动；咬合一般的建议涂胶固定后再装裱。选购时看商品说明或评价中是否提到\"咬合紧\"\"可拎起\"等，作为参考。",
+        "en": "Tip: Test interlock by gently lifting a finished section. Good interlock is great for display or frequent moving; moderate interlock is better glued and framed. Check product descriptions or reviews for mentions like \"tight interlock\" or \"liftable\" as a reference."
     },
     {
         "key": "gkey_230",
-        "zh": "【作者】：xxx_1"
+        "zh": "【作者】：xxx_1",
+        "en": "[Author]: xxx_1"
     },
     {
         "key": "gkey_231",
-        "zh": "推荐值:xxx_1%"
+        "zh": "推荐值:xxx_1%",
+        "en": "Recommendation: xxx_1%"
     },
     {
         "key": "gkey_232",
-        "zh": "反馈成功"
+        "zh": "反馈成功",
+        "en": "Feedback Successful"
     },
     {
         "key": "gkey_233",
-        "zh": "自动帮你拼出部分图案"
+        "zh": "自动帮你拼出部分图案",
+        "en": "Auto-complete part of the pattern for you"
     },
     {
         "key": "gkey_234",
-        "zh": "帮你拼"
+        "zh": "帮你拼",
+        "en": "Help You Piece"
     },
     {
         "key": "gkey_235",
-        "zh": "整图"
+        "zh": "整图",
+        "en": "Full Image"
     },
     {
         "key": "gkey_236",
-        "zh": "超时了xxx_1"
+        "zh": "超时了xxx_1",
+        "en": "Timed out xxx_1"
     },
     {
         "key": "gkey_237",
-        "zh": "网络超时了，请重试"
+        "zh": "网络超时了，请重试",
+        "en": "Network timed out, please try again"
     },
     {
         "key": "gkey_238",
-        "zh": "成功"
+        "zh": "成功",
+        "en": "Success"
     },
     {
         "key": "gkey_239",
-        "zh": "yid错误或不存在"
+        "zh": "yid错误或不存在",
+        "en": "Invalid or non-existent yid"
     },
     {
         "key": "gkey_240",
-        "zh": "注册成功"
+        "zh": "注册成功",
+        "en": "Registration Successful"
     },
     {
         "key": "gkey_241",
-        "zh": "帮忙拼"
+        "zh": "帮忙拼",
+        "en": "Help Piece"
     },
     {
         "key": "gkey_242",
-        "zh": "通过<color=#E62F2FFF>本关</c>，全部提现"
+        "zh": "通过<color=#E62F2FFF>本关</c>，全部提现",
+        "en": "Complete <color=#E62F2FFF>this level</c> to withdraw all"
     },
     {
         "key": "gkey_243",
-        "zh": "\"通过本关，<color=#E62F2FFF>可xxx_1倍提现</c>\""
+        "zh": "\"通过本关，<color=#E62F2FFF>可xxx_1倍提现</c>\"",
+        "en": "\"Complete this level to <color=#E62F2FFF>withdraw xxx_1x</c>\""
     },
     {
         "key": "gkey_244",
-        "zh": "幸运弹窗金币不领取"
+        "zh": "幸运弹窗金币不领取",
+        "en": "Lucky Popup Coins Not Claimed"
     },
     {
         "key": "gkey_245",
-        "zh": "幸运奖励展示条件计数"
+        "zh": "幸运奖励展示条件计数",
+        "en": "Lucky Reward Display Condition Count"
     },
     {
         "key": "gkey_246",
-        "zh": "奖励强弹频率"
+        "zh": "奖励强弹频率",
+        "en": "Reward Forced Popup Frequency"
     },
     {
         "key": "gkey_247",
-        "zh": "通关弹窗不领取现金"
+        "zh": "通关弹窗不领取现金",
+        "en": "Level Clear Popup Not Claim Cash"
     },
     {
         "key": "gkey_248",
-        "zh": "合成所需数量"
+        "zh": "合成所需数量",
+        "en": "Synthesis Required Quantity"
     },
     {
         "key": "gkey_249",
-        "zh": "多伦多"
+        "zh": "多伦多",
+        "en": "Toronto"
     },
     {
         "key": "gkey_250",
-        "zh": "自动提现"
+        "zh": "自动提现",
+        "en": "Auto Withdraw"
     },
     {
         "key": "gkey_251",
-        "zh": "红包提现"
+        "zh": "红包提现",
+        "en": "Red Packet Withdraw"
     },
     {
         "key": "gkey_252",
-        "zh": "任务提现"
+        "zh": "任务提现",
+        "en": "Task Withdraw"
     },
     {
         "key": "gkey_253",
-        "zh": "未知道具"
+        "zh": "未知道具",
+        "en": "Unknown Item"
     },
     {
         "key": "gkey_254",
-        "zh": "道具不足"
+        "zh": "道具不足",
+        "en": "Insufficient Items"
     },
     {
         "key": "gkey_255",
-        "zh": "\"<color=#FFFCE1>恭喜</c><color=#FBDD19>心***大</c><color=#FFFCE1>，使用提现倍数xxx_1倍成功提现</c><color=#FBDD19>xxx_2元</c>\""
+        "zh": "\"<color=#FFFCE1>恭喜</c><color=#FBDD19>心***大</c><color=#FFFCE1>，使用提现倍数xxx_1倍成功提现</c><color=#FBDD19>xxx_2元</c>\"",
+        "en": "\"<color=#FFFCE1>Congratulations</c> <color=#FBDD19>Xin***Da</c> <color=#FFFCE1>on successfully withdrawing</c> <color=#FBDD19>xxx_2 Yuan</c> <color=#FFFCE1>with a xxx_1x withdrawal multiplier</c>\""
     },
     {
         "key": "gkey_256",
-        "zh": "\"提现了xxx_1元，微信打款已到账\""
+        "zh": "\"提现了xxx_1元，微信打款已到账\"",
+        "en": "\"Withdrew xxx_1 Yuan, WeChat transfer has arrived\""
     },
     {
         "key": "gkey_257",
-        "zh": "只要xxx_1现金"
+        "zh": "只要xxx_1现金",
+        "en": "Only xxx_1 Cash"
     },
     {
         "key": "gkey_258",
-        "zh": "收藏成功"
+        "zh": "收藏成功",
+        "en": "Collected Successfully"
     },
     {
         "key": "gkey_259",
-        "zh": "取消收藏"
+        "zh": "取消收藏",
+        "en": "Uncollect"
     },
     {
         "key": "gkey_260",
-        "zh": "客服通道"
+        "zh": "客服通道",
+        "en": "Customer Service Channel"
     },
     {
         "key": "gkey_261",
-        "zh": "个性化广告"
+        "zh": "个性化广告",
+        "en": "Personalized Ads"
     },
     {
         "key": "gkey_262",
-        "zh": "隐私政策"
+        "zh": "隐私政策",
+        "en": "Privacy Policy"
     },
     {
         "key": "gkey_263",
-        "zh": "该功能已关闭"
+        "zh": "该功能已关闭",
+        "en": "This feature is disabled"
     },
     {
         "key": "gkey_264",
-        "zh": "提现了<color=#FF0000FF>xxx_1</color>元，微信打款已到账"
+        "zh": "提现了<color=#FF0000FF>xxx_1</color>元，微信打款已到账",
+        "en": "Withdrew <color=#FF0000FF>xxx_1</color> Yuan, WeChat transfer has arrived"
     },
     {
         "key": "gkey_265",
-        "zh": "xxx_1元"
+        "zh": "xxx_1元",
+        "en": "xxx_1 Yuan"
     },
     {
         "key": "gkey_266",
-        "zh": "%s年%s月"
+        "zh": "%s年%s月",
+        "en": "%s Year %s Month"
     },
     {
         "key": "gkey_267",
-        "zh": "正在初始化"
+        "zh": "正在初始化",
+        "en": "Initializing"
     },
     {
         "key": "gkey_268",
-        "zh": "正在加载配置"
+        "zh": "正在加载配置",
+        "en": "Loading Configuration"
     },
     {
         "key": "gkey_269",
-        "zh": "正在初始化用户数据"
+        "zh": "正在初始化用户数据",
+        "en": "Initializing User Data"
     },
     {
         "key": "gkey_270",
-        "zh": "加载失败，请重试"
+        "zh": "加载失败，请重试",
+        "en": "Load Failed, Please Retry"
     },
     {
         "key": "gkey_271",
-        "zh": "正在加载场景"
+        "zh": "正在加载场景",
+        "en": "Loading Scene"
     },
     {
         "key": "gkey_272",
-        "zh": "实名认证规则"
+        "zh": "实名认证规则",
+        "en": "Real-Name Verification Rules"
     },
     {
         "key": "gkey_273",
-        "zh": "网络异常，请检查网络~"
+        "zh": "网络异常，请检查网络~",
+        "en": "Network abnormality, please check your connection~"
     }
 ]
