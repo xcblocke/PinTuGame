@@ -692,8 +692,6 @@ class _EngineUtil {
         is_over: o
       }).then(async function (t) {
         const __async_this = d;
-        var m = GlobalApp.MakeMnProcessComp;
-        m && m.levelBorardGrp && m.levelBorardGrp.updateActiveNum(t.data.activity_num);
         t.data && t.data.prop_info && (gameData.startgameData.prop_info = t.data.prop_info);
         const hasPropReward = !!(u && ((u.propCount || 0) > 0 || (u.propCount2 || 0) > 0));
         if (c || !t.data.cash_reward && !t.data.gold_reward && !hasPropReward) {

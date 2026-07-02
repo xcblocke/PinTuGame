@@ -1,6 +1,5 @@
 class n {
   _GameMain = null;
-  _MakeMnProcessComp = null;
   _GameContainer = null;
   static _instance = null;
   get GameMain() {
@@ -8,12 +7,6 @@ class n {
   }
   set GameMain(e) {
     this._GameMain = e;
-  }
-  get MakeMnProcessComp() {
-    return this._MakeMnProcessComp;
-  }
-  set MakeMnProcessComp(e) {
-    this._MakeMnProcessComp = e;
   }
   get GameContainer() {
     return this._GameContainer;

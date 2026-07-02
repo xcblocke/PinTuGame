@@ -29,9 +29,6 @@ export default class GameMain extends cc.Component {
     var e;
     return null === (e = this.guideNode) || void 0 === e ? void 0 : e.getComponent(Guide);
   }
-  get makeMnProcessComp() {
-    return GlobalApp.MakeMnProcessComp;
-  }
   get gameContainerComp() {
     return GlobalApp.GameContainer;
   }
@@ -133,15 +130,7 @@ export default class GameMain extends cc.Component {
     return;
   }
   async startgame(e = 0) {
-    var t = this.makeMnProcessComp;
-    if (t) {
-      await t.excuteRequestStartGameBefore();
-    }
     var o = await GameSystem.startGame(e);
-    if (t) {
-      await t.excuteRequestStartGameAfter(o.data);
-      await t.excuteAfterStartGame(o.data);
-    }
     CommonReport.instance.reportGameStart();
     await this.initGameData(o.data);
   }

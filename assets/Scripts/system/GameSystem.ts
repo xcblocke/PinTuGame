@@ -6,7 +6,6 @@ import GameEventType from "../framework/Event/GameEventType";
 import PlayerDataSys from "../framework/Utils/PlayerDataSys";
 import SdkHelper from "../framework/Utils/SdkHelper";
 import LocalData from "../game/cyll/LocalData";
-import GlobalApp from "../common/GlobalApp";
 import MakeMnGlobalData from "../data/MakeMnGlobalData";
 import PageMgr from "../view/PageMgr";
 class _GameSystem {
@@ -121,18 +120,6 @@ class _GameSystem {
   }
   async handleSubmitGameAfter(e, t = null, o = false) {
     MakeMnGlobalData.submitGameDataInit(e);
-    var n = GlobalApp.MakeMnProcessComp;
-    if (!n) {
-      return;
-    }
-    if (MakeMnGlobalData.startGameData && MakeMnGlobalData.startGameData.game_level > 2) {
-      await n.goldAddChangeAnim(e.gold_reward, t);
-      await n.cashAddChangeAnim(e.cash_reward, t);
-    }
-    if (!o) {
-      n.goldBubbleTip = e.bubble_gold_balance;
-      n.cashBubbleTip = e.bubble_cash_balance;
-    }
   }
   async submitGame(e, t = null) {
     var o = await Service.submitGame({
@@ -177,10 +164,6 @@ class _GameSystem {
   async clearBlock(e = null) {
     if (gameData.isOpenDemo) {
       LocalData.getInstance().setUserCashData(MakeMnGlobalData.goldBalance);
-      var t = GlobalApp.MakeMnProcessComp;
-      if (t) {
-        await t.goldChangeAnim(MakeMnGlobalData.goldBalance + this.getGoldReward(), e);
-      }
       gameData.isOpenDemo && gameData.debugData.isOpenAutoGet && PageMgr.openEventBlock("clearBlock");
       return;
     }
