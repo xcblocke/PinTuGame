@@ -52,7 +52,7 @@ export default class taskPage extends BasePage {
     this.cb = (null == e ? void 0 : e.cb) || null;
     this.isGuide = (null == e ? void 0 : e.isGuide) || false;
     this.containerNode.active = true;
-    this.isGuide && AudioManager.instance.playCash("task_guide");
+    // this.isGuide && AudioManager.instance.playCash("task_guide");
     this.reqData();
   }
   reqData() {
@@ -285,7 +285,7 @@ export default class taskPage extends BasePage {
       __async_this.setView();
       __async_this.checkAllGetReward();
       GlobalApp.MakeMnProcessComp.levelBorardGrp.updateActiveNum(o.data.activity_num);
-      AudioManager.instance.stopCash("task_guide");
+      // AudioManager.instance.stopCash("task_guide");
       if (!(0 !== o.data.extract_status)) {
         await PageMgr.showPageByEnum(PageEnum.rewardToastPage, {
           cashReward: o.data.amount
@@ -320,7 +320,7 @@ export default class taskPage extends BasePage {
   }
   close() {
     AudioManager.instance.playBtn();
-    AudioManager.instance.stopCash("task_guide");
+    // AudioManager.instance.stopCash("task_guide");
     this.cb && this.cb();
     this._hide();
   }

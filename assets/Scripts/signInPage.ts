@@ -39,7 +39,7 @@ export default class signInPage extends BasePage {
     var t;
     this.cb = (null == e ? void 0 : e.cb) || null;
     this.isGuide = (null == e ? void 0 : e.isGuide) || false;
-    this.isGuide && AudioManager.instance.playCash("signin_guide");
+    // this.isGuide && AudioManager.instance.playCash("signin_guide");
     this.handNode.active = false;
     t = await Service.getSignInfo();
     this.listData = t.data.sign_info_list;
@@ -184,7 +184,7 @@ export default class signInPage extends BasePage {
   _onHide() {
     super._onHide.call(this);
     this.cb && this.cb();
-    AudioManager.instance.stopCash("signin_guide");
+    // AudioManager.instance.stopCash("signin_guide");
     EventMgr.trigger(GameEventType.UPDATE_MAIN_BTN_STATE);
   }
   getTotolSignInDays() {

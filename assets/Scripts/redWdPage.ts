@@ -58,7 +58,9 @@ export default class redWdPage extends BasePage {
     await EngineUtil.sleep(200);
     PageMgr.closeEventBlock("redWdPage");
     if (!this.node.active) return;
-    if (cc.sys.localStorage.getItem("redWdPage_guide")) AudioManager.getInstance().playMusic("red_wd_in", false);else {
+    if (cc.sys.localStorage.getItem("redWdPage_guide")) {
+
+    } else {
       this.checkGuide();
       cc.sys.localStorage.setItem("redWdPage_guide", 1);
     }
@@ -225,7 +227,7 @@ export default class redWdPage extends BasePage {
   }
   clickClose() {
     AudioManager.getInstance().playMusic("btntouch");
-    AudioManager.getInstance().stopMusic("red_wd_in", false);
+    // AudioManager.getInstance().stopMusic("red_wd_in", false);
     this._hide();
   }
   checkGuide() {

@@ -90,10 +90,10 @@ export default class AudioManager extends cc.Component {
     this.stopMusic("cashSound/person/" + e);
   }
   playCash(e, t = false, o = false, n?, i = 1) {
-    this.playMusic("makeMnSound/" + e, t, o, n, i);
+    // this.playMusic("makeMnSound/" + e, t, o, n, i);
   }
   stopCash(e) {
-    this.stopMusic("makeMnSound/" + e);
+    // this.stopMusic("makeMnSound/" + e);
   }
   playMusic(e, t = false, o = false, n?, i = 1) {
     if ((0 != this.effectOpen || o) && (0 != this.bgOpen || !o)) {
@@ -203,6 +203,7 @@ export default class AudioManager extends cc.Component {
     if (!cc.sys.isBrowser && cc.sys.isNative) {
       var t = this._nativeAudio.get(e);
       t && SdkHelper.playNativeAudio(t);
-    } else this.playMusic("native/" + e);
+    } 
+   // else this.playMusic("native/" + e);
   }
 }
