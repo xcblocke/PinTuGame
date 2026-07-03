@@ -30,7 +30,9 @@ export default class loading extends cc.Component {
   @property(cc.JsonAsset)
   languageJson: cc.JsonAsset = null;
 
-  totalNum = [0];
+  private readonly MAIN_SCENE = "mainScene";
+  private readonly LOADING_DURATION = 2;
+
   setLoadingLabel(e) {
     if (this.loadingLabel) {
       this.loadingLabel.string = e;
@@ -52,7 +54,7 @@ export default class loading extends cc.Component {
             PageMgr.init();
             GlobalDataSys.init();
             BaseSystem.init();
-            this.setProgress(0);
+            // this.setProgress(0);
             return [4, this.bootstrap()];
           case 1:
             e.sent();
@@ -63,62 +65,44 @@ export default class loading extends cc.Component {
   }
   start() {
     this.setProgress(0);
+    cc.director.preloadScene(this.MAIN_SCENE);
+    this.playLoadingProgress();
+  }
+
+  playLoadingProgress() {
+    cc.tween(this.node)
+      .to(this.LOADING_DURATION, {}, {
+        onUpdate: (target, ratio) => {
+          this.setProgress(ratio);
+        },
+        easing: "linear"
+      })
+      .call(() => {
+        this.setProgress(1);
+        cc.director.loadScene(this.MAIN_SCENE);
+      })
+      .start();
   }
   async bootstrap() {
     try {
       this.setLoadingLabel(`gkey_268`);
-      this.setProgress(0.2);
       var configRes = await BaseSystem.getSystemConfig({});
       GlobaldataMgr.init(configRes.data);
       this.setLoadingLabel(`gkey_269`);
-      this.setProgress(0.4);
       var loginRes = await BaseSystem.touristsLogin({});
       PlayerDataSys.initUserId(loginRes.data);
       var userRes = await BaseSystem.getUserInfo({});
       if (userRes && 1 == userRes.code) {
         PlayerDataSys.setUserInfo(userRes.data);
       }
-      this.setProgress(0.6);
-      await this.loadScene();
+      this.setLoadingLabel(`gkey_271`);
+      AudioManager.getInstance().initNativeUrl();
+      await gameData.loadRemoteLevelData(PlayerDataSys.playerInfo.cueernt_level_url);
+      await Res.loadGameRes();
     } catch (error) {
       console.error("loading bootstrap error", error);
       this.setLoadingLabel(`gkey_270`);
     }
-  }
-  loadScene() {
-    var e = this;
-    this.setLoadingLabel(`gkey_271`);
-    AudioManager.getInstance().initNativeUrl();
-    var t = "mainScene";
-    var o = gameData.loadRemoteLevelData(PlayerDataSys.playerInfo.cueernt_level_url);
-    var n = Res.loadGameRes();
-    cc.director.preloadScene(t, function (t, o) {
-      e.totalNum[0] = t / o / e.totalNum.length;
-      e.setProgress2();
-    }, function () {
-      return __awaiter(e, void 0, void 0, function () {
-        return __generator(this, function (e) {
-          switch (e.label) {
-            case 0:
-              return [4, o];
-            case 1:
-              e.sent();
-              return [4, n];
-            case 2:
-              e.sent();
-              this.setProgress(1);
-              cc.director.loadScene(t);
-              return [2];
-          }
-        });
-      });
-    });
-  }
-  setProgress2() {
-    var e = this.totalNum.reduce(function (e, t) {
-      return e + t;
-    }, 0);
-    this.setProgress(0.6 + 0.4 * e);
   }
   setProgress(e) {
     if (!isNaN(e)) {
