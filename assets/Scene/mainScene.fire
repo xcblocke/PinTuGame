@@ -769,9 +769,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 52,
-      "g": 115,
-      "b": 112,
+      "r": 108,
+      "g": 125,
+      "b": 58,
       "a": 255
     },
     "_contentSize": {
@@ -1727,7 +1727,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 75.97,
+      "width": 295.16,
       "height": 39.28
     },
     "_anchorPoint": {
@@ -1779,8 +1779,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string":"gkey_037??&value1==2",
-    "_N$string":"gkey_037??&value1==2",
+    "_string": "gkey_037??&value1==2",
+    "_N$string": "gkey_037??&value1==2",
     "_fontSize": 28,
     "_lineHeight": 28,
     "_enableWrapText": true,
@@ -3112,7 +3112,7 @@
         "__id__": 85
       }
     ],
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 93
@@ -3327,8 +3327,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string":"gkey_038",
-    "_N$string":"gkey_038",
+    "_string": "gkey_038",
+    "_N$string": "gkey_038",
     "_fontSize": 18,
     "_lineHeight": 24,
     "_enableWrapText": true,
@@ -3682,7 +3682,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 328,
+      "width": 351.75,
       "height": 108.8
     },
     "_anchorPoint": {
@@ -3734,8 +3734,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string":"gkey_039",
-    "_N$string":"gkey_039",
+    "_string": "gkey_039",
+    "_N$string": "gkey_039",
     "_fontSize": 80,
     "_lineHeight": 80,
     "_enableWrapText": true,
@@ -4063,7 +4063,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 40,
+      "width": 85.94,
       "height": 25.2
     },
     "_anchorPoint": {
@@ -4115,8 +4115,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string":"gkey_023",
-    "_N$string":"gkey_023",
+    "_string": "gkey_023",
+    "_N$string": "gkey_023",
     "_fontSize": 20,
     "_lineHeight": 20,
     "_enableWrapText": true,

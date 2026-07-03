@@ -431,13 +431,13 @@
     },
     {
         "key": "gkey_086",
-        "zh": "xxx_1即可完成交换，快拼好整张图片吧",
-        "en": "xxx_1 to complete the swap, hurry and piece together the whole picture"
+        "zh": "拖动碎片即可完成交换，快拼好整张图片吧",
+        "en": "Drag the pieces to complete the swap, hurry and piece together the whole picture"
     },
     {
         "key": "gkey_087",
-        "zh": "遇到难关，可以xxx_1哦",
-        "en": "Stuck on a tough level? You can xxx_1"
+        "zh": "遇到难关，可以使用道具哦",
+        "en": "Stuck on a tough level? You can use prop"
     },
     {
         "key": "gkey_088",

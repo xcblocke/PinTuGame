@@ -28,14 +28,14 @@ GuideConfig[GuideEnum.commonHighlight] = {
   isRepeat: true
 };
 GuideConfig[GuideEnum.gameGuide1] = {
-  des: `gkey_086??&value1==${a("拖动碎片")}`,
+  des: `gkey_086`,
   audioName: "",
   unBindClose: true,
   textPosition: "top",
   reportName: "game_guide_1"
 };
 GuideConfig[GuideEnum.gamePropGuide] = {
-  des: `gkey_087??&value1==${a("使用道具")}`,
+  des: `gkey_087`,
   audioName: "",
   isBlackClose: true,
   textPosition: "center",
