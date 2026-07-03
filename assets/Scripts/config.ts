@@ -39,5 +39,5 @@ export enum developType {
 }
 
 export const ServerConfig = {
-  curServerStatus: 1,
+  curServerStatus: 2,
 };
