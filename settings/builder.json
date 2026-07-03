@@ -1,6 +1,6 @@
 {
-  "title": "sdyptpuzzle",
-  "packageName": "com.logicshapin.snapmes.gallery",
+  "title": "sdypoolcharm",
+  "packageName": "com.replace.industries.article",
   "startScene": "d124e0c4-fc29-49ca-b5ab-c05cf961d84b",
   "excludeScenes": [],
   "orientation": {
@@ -22,7 +22,7 @@
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": "com.logicshapin.snapmes.gallery",
+    "packageName": "com.replace.industries.article",
     "REMOTE_SERVER_ROOT": ""
   },
   "ios": {
