@@ -59,13 +59,11 @@ export default class GameMain extends cc.Component {
     this.startgame(1);
   }
   async overgame() {
-    var e, t;
     gameData.gameState = GameState.gameover;
     this.stopUpdateGameTime();
-    e = GameSystem.submitGame(1);
+    const submitPromise = GameSystem.submitGame(1);
     await PageMgr.showPageByEnum(PageEnum.SettleWholeImgPage);
-    t = await e;
-    await PageMgr.showPageByEnum(PageEnum.SettlementPage, t);
+    await submitPromise;
     this.startgame(0);
     return;
   }
