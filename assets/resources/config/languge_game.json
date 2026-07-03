@@ -1344,5 +1344,10 @@
         "key": "gkey_273",
         "zh": "网络异常，请检查网络~",
         "en": "Network abnormality, please check your connection~"
+    },
+    {
+        "key": "gkey_274",
+        "zh": "下一关",
+        "en": "Next Level"
     }
 ]
