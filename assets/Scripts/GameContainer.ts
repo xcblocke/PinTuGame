@@ -8,6 +8,7 @@ import GlobalApp from "./common/GlobalApp";
 import { TweenEasing } from "./game/config/AnimeConfig";
 import { gameData } from "./data/GameData";
 import MakeMnGlobalData from "./data/MakeMnGlobalData";
+import { hasAnyVisibleProp } from "./config";
 import BgContainer from "./pgtb/BgContainer";
 import SplitSprite from "./pgtb/SplitSprite";
 import PropComp from "./prop/PropComp";
@@ -95,7 +96,8 @@ export default class GameContainer extends cc.Component {
         nodes: [this.splitSprite.node]
       });
     }
-    if (gameData.startgameData.game_level >= 3) {
+    if (hasAnyVisibleProp(gameData.startgameData.game_level)) {
+      this.propComp.init();
       cc.tween(this.propComp.node).to(0.3, {
         scale: 1
       }, {
@@ -110,6 +112,8 @@ export default class GameContainer extends cc.Component {
           nodes: [this.propComp.node]
         });
       }
+    } else {
+      this.propComp.node.scale = 0;
     }
     return;
   }

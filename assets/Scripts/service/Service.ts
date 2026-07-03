@@ -9,6 +9,8 @@ import GlobaldataMgr from "../framework/data/GlobaldataMgr";
 import GlobalDataSys from "../framework/controller/GlobalDataSys";
 import EventMgr from "../framework/Event/EventMgr";
 import GameEventType from "../framework/Event/GameEventType";
+import { PropType } from "../framework/enum/AllEnum";
+import { getPropConfig, isPropUnlimited } from "../config";
 
 export default class Service {
     static genCommonRequestData() {
@@ -258,12 +260,12 @@ export default class Service {
 
     static getDefaultOfflinePropInfo() {
         return [{
-            code: 1,
-            count: 3,
+            code: PropType.helpCombine,
+            count: getPropConfig(PropType.helpCombine).initCount,
             name: `gkey_241`
         }, {
-            code: 2,
-            count: 3,
+            code: PropType.wholeImage,
+            count: getPropConfig(PropType.wholeImage).initCount,
             name: `gkey_235`
         }];
     }
@@ -284,6 +286,14 @@ export default class Service {
             return this.cloneJson(propInfo);
         }
         const mappedPropInfo = this.getDefaultOfflinePropInfo().map((defaultItem) => {
+            const config = getPropConfig(defaultItem.code);
+            if (isPropUnlimited(defaultItem.code)) {
+                return {
+                    code: defaultItem.code,
+                    count: -1,
+                    name: defaultItem.name
+                };
+            }
             const currentItem = propInfo.find((item) => item && item.code == defaultItem.code);
             const count = currentItem && !isNaN(parseInt("" + currentItem.count, 10)) ? Math.max(0, parseInt("" + currentItem.count, 10)) : defaultItem.count;
             return {
@@ -303,7 +313,7 @@ export default class Service {
     static changeOfflinePropCount(code, delta) {
         const propInfo = this.getOfflinePropInfo();
         const propItem = propInfo.find((item) => item && item.code == code);
-        if (!propItem) return propInfo;
+        if (!propItem || isPropUnlimited(code) || propItem.count === -1) return propInfo;
         propItem.count = Math.max(0, propItem.count + delta);
         this.setOfflinePropInfo(propInfo);
         return this.cloneJson(propInfo);
@@ -509,7 +519,7 @@ export default class Service {
                 message: `gkey_253`
             });
         }
-        if (propItem.count <= 0) {
+        if (!isPropUnlimited(code) && propItem.count <= 0) {
             return Promise.resolve({
                 code: -1,
                 data: {
@@ -517,6 +527,16 @@ export default class Service {
                 },
                 ecp: 0,
                 message: `gkey_254`
+            });
+        }
+        if (isPropUnlimited(code) || propItem.count === -1) {
+            return Promise.resolve({
+                code: 1,
+                data: {
+                    prop_info: propInfo
+                },
+                ecp: 0,
+                message: `gkey_238`
             });
         }
         return Promise.resolve({
@@ -533,8 +553,8 @@ export default class Service {
         const videoType = parseInt("" + (null == t ? void 0 : t.video_type), 10);
         const isOver = !!(null == t ? void 0 : t.is_over);
         let propInfo = this.getOfflinePropInfo();
-        if (isOver && 3 == videoType) propInfo = this.changeOfflinePropCount(1, 2);
-        if (isOver && 4 == videoType) propInfo = this.changeOfflinePropCount(2, 2);
+        if (isOver && 3 == videoType && getPropConfig(PropType.helpCombine).canGetByVideo) propInfo = this.changeOfflinePropCount(1, 2);
+        if (isOver && 4 == videoType && getPropConfig(PropType.wholeImage).canGetByVideo) propInfo = this.changeOfflinePropCount(2, 2);
         return Promise.resolve({
             code: 1,
             data: {
