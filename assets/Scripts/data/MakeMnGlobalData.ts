@@ -65,6 +65,8 @@ class f {
     return this.infoType.conf_info.parameter_conf.pass_2_ad_cash.para_value;
   }
   async showLuckReward() {
+    console.log("showLuckReward..............");
+    return;
     if (gameData._isHelpCombine) return;
     if (this.startGameData.game_level <= 2) return;
     this.clearCount++;
