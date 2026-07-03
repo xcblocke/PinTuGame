@@ -1,3 +1,5 @@
+import { developType, ServerConfig } from "./config";
+
 // import HotUpdate from "./framework/Event/HotUpdate";
 const {
   ccclass,
@@ -62,7 +64,7 @@ if (!cc.Node.prototype.getChildByPath) {
 export default class init extends cc.Component {
   onLoad() {
     // HotUpdate.getInstance().getBaseVersion();
-    if (false) {
+    if (ServerConfig.curServerStatus === developType.production) {
       console.log = function () {};
       console.warn = function () {};
       console.info = function () {};
