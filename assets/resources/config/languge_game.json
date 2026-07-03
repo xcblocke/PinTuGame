@@ -229,12 +229,7 @@
         "zh": "点击炮台，可以将其移动到战斗位置，只有第一行的炮台可以移动哦只有第一行的炮台可以移动哦",
         "en": "Tap a turret to move it to a battle position. Only turrets in the first row can be moved. Only turrets in the first row can be moved."
     },
-    
-    {
-        "key": "gkey_049",
-        "zh": "《隐私协议》",
-        "en": "Privacy Policy"
-    },
+
     {
         "key": "gkey_052",
         "zh": "动画组件",
