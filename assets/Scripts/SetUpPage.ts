@@ -17,12 +17,7 @@ const {
 @ccclass
 export default class SetUpPage extends BasePage {
   cb = null;
-  @property(cc.Label)
-  nameLabel: cc.Label = null;
-  @property(cc.Label)
-  IDLabel: cc.Label = null;
-  @property(cc.Sprite)
-  head: cc.Sprite = null;
+
   @property(cc.Sprite)
   musicImg: cc.Sprite = null;
   @property(cc.Sprite)
@@ -31,41 +26,30 @@ export default class SetUpPage extends BasePage {
   gxhImg: cc.Sprite = null;
   @property(cc.Sprite)
   zdImg: cc.Sprite = null;
-  @property(cc.Sprite)
-  dmImg: cc.Sprite = null;
-  @property(cc.Label)
-  helpLb: cc.Label = null;
+ 
+ 
   @property(cc.Label)
   adLb: cc.Label = null;
   @property(cc.SpriteFrame)
   turnImgs: cc.SpriteFrame = [];
-  @property(cc.Node)
-  demoNode: cc.Node = null;
+  
   comeinTime = 0;
   hasBarrageNode() {
     return !!(GlobalApp.GameMain && GlobalApp.GameMain.node && cc.find("unGameNode/barrageTip_move", GlobalApp.GameMain.node));
   }
-  hideBarrageSettingIfNeeded() {
-    if (this.hasBarrageNode() || !this.dmImg) {
-      return;
-    }
-    var e = this.dmImg.node.parent;
-    e && (e.active = false);
-  }
+ 
   start() {
-    this.demoNode.active = gameData.isOpenDemo;
-    this.hideBarrageSettingIfNeeded();
+    
   }
   _init(t) {
     super._init.call(this, t);
-    this.hideBarrageSettingIfNeeded();
     this.setInfo();
   }
   onEnable() {
     super.onEnable.call(this);
-    this.helpLb.string = PlayerDataSys.isTencent() ? `gkey_260` : `gkey_032`;
-    var t = "xiaomi" == SdkHelper.getChannelName().toLowerCase();
-    this.adLb.string = t ? `gkey_261` : `gkey_029`;
+
+   
+    this.adLb.string = `gkey_029`;
     this.comeinTime = new Date().getTime();
     SdkHelper.reportData("b_entry_page", {
       act_page: "setting_page"
@@ -79,16 +63,13 @@ export default class SetUpPage extends BasePage {
   }
   setInfo() {
     PlayerDataSys.nickname;
-    this.IDLabel.string = "ID:" + PlayerDataSys.userid;
-    EngineUtil.setUserNameAndHeadImage(this.nameLabel, this.head);
+   
+  
     this.musicImg.spriteFrame = this.turnImgs[Number(AudioManager.getInstance().getMusicState())];
     this.soundImg.spriteFrame = this.turnImgs[Number(AudioManager.getInstance().getAudioState())];
     this.gxhImg.spriteFrame = this.turnImgs[PlayerDataSys.reco_switch];
     this.zdImg.spriteFrame = this.turnImgs[Number(AudioManager.getInstance().getVibratorState())];
-    if (this.hasBarrageNode() && this.dmImg) {
-      var e = EngineUtil.localStorageGetItem("barrageIsOpen", "open");
-      this.dmImg.spriteFrame = "open" == e ? this.turnImgs[1] : this.turnImgs[0];
-    }
+   
   }
   nameFormat(e) {
     for (var t = e.split(""), o = t.length, n = 0, i = "", a = "", r = new RegExp(`gkey_092`), c = 0; c < o; c++) {
@@ -176,8 +157,6 @@ export default class SetUpPage extends BasePage {
     SdkHelper.reportData("click_barrageTouch", {
       state: t
     });
-    this.dmImg.spriteFrame = this.turnImgs["open" == t ? 1 : 0];
-    EventMgr.trigger(GameEventType.UPDATE_DANMU);
   }
   onLabelBtn(e, t) {
     AudioManager.getInstance().playMusic("btntouch");
