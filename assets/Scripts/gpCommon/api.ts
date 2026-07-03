@@ -89,7 +89,7 @@
  * 🚩埋点
  * ========
  *
- * 1. 首次使用埋点请前往 CancelisePositionly.ts （A/B 面埋点）以及中间文件的 addedCustomEventConfig 结构（仅 B 面埋点）配置自定义事件（游戏强相关埋点）
+ * 1. 首次使用埋点请前往 ExtraupdateAttemptary.ts （A/B 面埋点）以及中间文件的 addedCustomEventConfig 结构（仅 B 面埋点）配置自定义事件（游戏强相关埋点）
  * 2. 使用下表提供的预设事件名和第 1 点中配置的自定义事件名作为参数调用埋点接口 A.t(...)
  * 3. 调用示例：A.t('g1')，有额外参数请参照接口注释说明
  *
@@ -135,9 +135,9 @@
  * | allowVideoAdFallback | 允许插屏广告失败转激励视频广告（总控开关，此处打开后接口才能控制） | true |
  */
 
-import { TEventOverrideData } from "./a/AntinormalCredits";
-import { IAdListenerLike, IPlatformEventLike, IPlatformExternalHandlersLike, AnswermentOvertrack } from "./p/AnswermentOvertrack";
-import { lanData, ICountryConfigLike } from "./i/TransjudgeNonuser";
+import { TEventOverrideData } from "./a/PostlossNonrender";
+import { IAdListenerLike, IPlatformEventLike, IPlatformExternalHandlersLike, PreeditorFooder } from "./p/PreeditorFooder";
+import { lanData, ICountryConfigLike } from "./i/SupergoalPostappear";
 
 interface IAPILike {
     /**
@@ -147,7 +147,7 @@ interface IAPILike {
 
     /**
      * 获取版本号
-     * 注意，小游戏平台更新版本号，需要通过插件同步，或手动修改 AnswermentOvertrack.ts 中 huntedExtraorder getter 的返回值）
+     * 注意，小游戏平台更新版本号，需要通过插件同步，或手动修改 PreeditorFooder.ts 中 macroprotectAgreeship getter 的返回值）
      */
     readonly a2: string,
 
@@ -437,17 +437,17 @@ interface IAPILike {
 
     /**
      * 上报事件
-     * @param eventName 事件名（使用 PREBRAVE_TRANSKEY 中预设的值和 POSTDIALOG_PRINT 中自定义配置的值）
+     * @param eventName 事件名（使用 PREJOIN_RECOST 中预设的值和 MINIRISK_PRICEARY 中自定义配置的值）
      * @param params 需要覆盖或追加的事件数据
      * @example
      * ```ts
      * // 上报预设事件
      * A.t('n1');
      *
-     * // 上报自定义事件（在 POSTDIALOG_PRINT 中配置了 login 事件）
+     * // 上报自定义事件（在 MINIRISK_PRICEARY 中配置了 login 事件）
      * A.t('login');
      *
-     * // 上报自定义事件并覆盖或追加事件数据（在 POSTDIALOG_PRINT 中配置了 game_level 事件，但 object_notes 字段是动态的且未配置）
+     * // 上报自定义事件并覆盖或追加事件数据（在 MINIRISK_PRICEARY 中配置了 game_level 事件，但 object_notes 字段是动态的且未配置）
      * A.t('game_level', { C: { p: { object_notes: '1' } } });
      * ```
      */
@@ -465,67 +465,67 @@ interface IAPILike {
 };
 
 const M: Record<string, string> = {
-    a1: 'campMicrocareer',
-    a2: 'huntedExtraorder',
-    a3: 'unamountAutobridge',
-    a4: 'dividementCardless',
-    a5: 'projectenDeadise',
-    a6: 'editoristEmailward',
-    n1: 'miniquarterDamageory',
-    n2: 'underuserEightment',
-    n3: 'macroadviceAparter',
-    n4: 'overwhichUnsell',
-    n5: 'miniattackMaybeist',
-    n6: 'pushismExtrasuggest',
-    n7: 'megaenjoyLetterward',
-    l1: 'chairistExtrapost',
-    l2: 'subsidePolicyary',
-    l3: 'doneiseAntimatter',
-    l4: 'minidegreeMicroblood',
-    l5: 'resurfacePaperless',
-    l6: 'adminizeCircleory',
-    c0: 'ultraapplyMultideal',
-    t1: 'aheadiveHyperfuture',
-    t2: 'dreamalBehindtion',
-    d1: 'ultraengineMegablock',
-    d2: 'unpauseNonentry',
-    d3: 'superaliveNearment',
-    b1: 'pointiseToday',
-    b2: 'ultrahillSubsend',
-    s1: 'baseistPrefocus',
-    s2: 'superfactEscaped',
-    v0: 'antiworkConvertize',
-    v1: 'extracompanyMacrostep',
-    v2: 'photoerRiskness',
-    i0: 'freetionUnpoint',
-    i1: 'exchangedReview',
-    i2: 'megashowIntersuccess',
-    i3: 'supercoupleNineive',
-    m0: 'extrahonestMultiarise',
-    m1: 'microrewardConsentness',
-    m2: 'nonstoryUltraunit',
-    e0: 'megaassistContentize',
-    e1: 'prebloodMinireport',
-    e2: 'subcrystalLoweren',
-    w1: 'dirtynessAntiexample',
-    w2: 'ultrapoolEntryward',
-    w3: 'deliverlySaveship',
-    v: 'ultraseriesOverdetail',
-    u: 'transescapeUnfood',
-    r: 'unsuddenMegaleft',
-    n: 'multicontentNoncouple',
-    p: 'properiseMiniproblem',
-    g0: 'megaruleExtrabring',
-    g1: 'postironFoodful',
-    t: 'antidebtEmptyness',
-    e: 'delivererHypertruth',
+    a1: 'overscreenMicroappeal',
+    a2: 'macroprotectAgreeship',
+    a3: 'translifePostrange',
+    a4: 'posthillLabelise',
+    a5: 'transglassExtrapeace',
+    a6: 'megabrandAntirate',
+    n1: 'houristPlanness',
+    n2: 'pushmentHypertheme',
+    n3: 'ultratestAbouter',
+    n4: 'transplaceSuperjoin',
+    n5: 'microdownEmailness',
+    n6: 'alphawiseConvertify',
+    n7: 'interprofileGated',
+    l1: 'transdisplayNoiseship',
+    l2: 'draftaryDistanceen',
+    l3: 'antimasterMinicache',
+    l4: 'presendExtramany',
+    l5: 'translandColoring',
+    l6: 'unwearBeyondify',
+    c0: 'macroclickLeaden',
+    t1: 'ballmentMainist',
+    t2: 'girlifyUnderhero',
+    d1: 'minuteizeUltraaround',
+    d2: 'gradealInterpause',
+    d3: 'underspiritUnderstyle',
+    b1: 'noncoachCameraory',
+    b2: 'forcetionBrainive',
+    s1: 'reviewingArriveless',
+    s2: 'hyperpluginAdaptable',
+    v0: 'multiauthorSizeal',
+    v1: 'hyperbottleAheadness',
+    v2: 'interexpertLayerful',
+    i0: 'prefullFalled',
+    i1: 'selectnessSubsuccess',
+    i2: 'redebateCenterless',
+    i3: 'narrowlessArgueary',
+    m0: 'prestageBestive',
+    m1: 'undercornerOveral',
+    m2: 'draftalMovewise',
+    e0: 'unreportAutoshift',
+    e1: 'subborrowImpactful',
+    e2: 'ultraoverModeler',
+    w1: 'freshalSuperflat',
+    w2: 'livealPostmodern',
+    w3: 'customedExpertise',
+    v: 'bossaryPostspace',
+    u: 'multieasyEqual',
+    r: 'nonshipOverdrop',
+    n: 'autothreadMegaexpect',
+    p: 'rewardalMultiamount',
+    g0: 'profiletionHappyize',
+    g1: 'megaturnFacttion',
+    t: 'microsenseHypercareful',
+    e: 'nonwiseSuperjump',
 };
 
-export const A: IAPILike = new Proxy(AnswermentOvertrack.instance, {
+export const A: IAPILike = new Proxy(PreeditorFooder.instance, {
     get(t, k) {
         const key = typeof k === 'string' ? k : '';
         const real = M[key] ?? k;
-        const v = t[real as keyof AnswermentOvertrack];
+        const v = t[real as keyof PreeditorFooder];
         return typeof v === 'function' ? v.bind(t) : v;
     },
 }) as any;

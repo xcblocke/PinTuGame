@@ -1,6 +1,6 @@
 {
-  "title": "sdypoolcharm",
-  "packageName": "com.replace.industries.article",
+  "title": "sdyptpuzzle",
+  "packageName": "com.logicshapin.snapmes.gallery",
   "startScene": "d124e0c4-fc29-49ca-b5ab-c05cf961d84b",
   "excludeScenes": [],
   "orientation": {
@@ -11,18 +11,18 @@
   },
   "webOrientation": "auto",
   "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": false,
+  "inlineSpriteFrames_native": true,
   "mainCompressionType": "default",
   "mainIsRemote": false,
   "optimizeHotUpdate": false,
   "md5Cache": true,
   "nativeMd5Cache": false,
   "encryptJs": false,
-  "xxteaKey": "cagqela1q9QSaFlv",
+  "xxteaKey": "6281dd7f-4aa4-44",
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": "com.replace.industries.article",
+    "packageName": "com.logicshapin.snapmes.gallery",
     "REMOTE_SERVER_ROOT": ""
   },
   "ios": {
@@ -49,11 +49,6 @@
     "host": "",
     "skipRecord": false,
     "recordPath": ""
-  },
-  "harmonyos-next": {
-    "packageName": "org.cocos2d.demo",
-    "REMOTE_SERVER_ROOT": "",
-    "jsEngine": "JSVM"
   },
   "appBundle": false,
   "agreements": {}
