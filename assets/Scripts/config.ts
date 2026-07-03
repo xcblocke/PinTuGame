@@ -22,7 +22,7 @@ export var PageConfig = {
     tip: `gkey_058`
   }]
 };
-export var privacy = `gkey_063??&value1==${2025}&value2==${-07}&value3==${-15}&value4==${1}&value5==${2}&value6==${3}&value7==${4}&value8==${5}&value9==${6}&value10==${7}&value11==${8}&value12==${9}&value13==${10}&value14==${11}`;
+export var privacy = "";
 export var resBasePath = "sceneA/";
 export enum EAppThemeType {
   Theme1 = 0,
@@ -31,3 +31,13 @@ export enum EAppThemeType {
   Theme4 = 3,
 }
 export var appTheme = EAppThemeType.Theme3;
+
+
+export enum developType {
+  develop = 1,  // 开发服
+  production = 2, // 正式服
+}
+
+export const ServerConfig = {
+  curServerStatus: 1,
+};
