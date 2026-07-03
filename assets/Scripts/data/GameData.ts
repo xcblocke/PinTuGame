@@ -47,6 +47,8 @@ export default class GameData {
     verifyCommssionExtractOld = false;
     startgameData = null;
     levelData = {};
+    _levelImgFrames = null;
+    _levelImgListPromise = null;
     stepNum = 0;
     restart_times = 0;
     specifyCarUseCount = 0;
@@ -67,8 +69,54 @@ export default class GameData {
         return this._instance;
     }
 
+    ensureLevelImgList() {
+        var e = this;
+        if (this._levelImgFrames && this._levelImgFrames.length) {
+            return Promise.resolve(this._levelImgFrames);
+        }
+        if (this._levelImgListPromise) {
+            return this._levelImgListPromise;
+        }
+        this._levelImgListPromise = new Promise(function (t) {
+            cc.assetManager.resources.loadDir("LevelImg", cc.SpriteFrame, function (o, n) {
+                e._levelImgListPromise = null;
+                if (o || !n || !n.length) {
+                    console.error("ensureLevelImgList failed", o);
+                    e._levelImgFrames = [];
+                } else {
+                    e._levelImgFrames = n;
+                }
+                t(e._levelImgFrames);
+            });
+        });
+        return this._levelImgListPromise;
+    }
+
+    async getRandomLevelSpriteFrame(t) {
+        var e = this;
+        var o = await this.ensureLevelImgList();
+        if (!o.length) {
+            return null;
+        }
+        var n = o;
+        if (t) {
+            var i = t.substring(0, t.lastIndexOf("."));
+            n = o.filter(function (e) {
+                return e.name !== i;
+            });
+            n.length || (n = o);
+        }
+        var a = n[Math.floor(Math.random() * n.length)];
+        var r = a.name + ".jpg";
+        this.levelData[r] = a;
+        return a;
+    }
+
     async loadRemoteLevelData(e, t = 0) {
         var o = this;
+        if (!e) {
+            return this.getRandomLevelSpriteFrame();
+        }
         if (this.levelData[e]) {
             return this.levelData[e];
         } else {
@@ -80,7 +128,7 @@ export default class GameData {
                             error: JSON.stringify(c || {})
                         });
                         if (3 == t) {
-                            a(c);
+                            a(await o.getRandomLevelSpriteFrame(e));
                             return;
                         }
                         var n = t + 1;
@@ -121,8 +169,14 @@ export default class GameData {
     }
 
     async getLoadLevelData(e) {
+        if (!e) {
+            return this.getRandomLevelSpriteFrame();
+        }
         if (!this.levelData[e]) {
             await this.loadRemoteLevelData(e);
+        }
+        if (!this.levelData[e]) {
+            return this.getRandomLevelSpriteFrame(e);
         }
         return this.levelData[e];
     }
