@@ -31,7 +31,7 @@ export default class loading extends cc.Component {
   languageJson: cc.JsonAsset = null;
 
   private readonly MAIN_SCENE = "mainScene";
-  private readonly LOADING_DURATION = 2;
+  private readonly LOADING_DURATION = 1.5;
 
   setLoadingLabel(e) {
     if (this.loadingLabel) {
