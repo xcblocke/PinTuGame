@@ -1,27 +1,28 @@
 {
+  "group-list": [
+    "default"
+  ],
   "collision-matrix": [
     [
       true
     ]
   ],
-  "excluded-modules": [],
-  "group-list": [
-    "default"
+  "excluded-modules": [
+    "3D Physics/Builtin"
   ],
-  "start-scene": "d124e0c4-fc29-49ca-b5ab-c05cf961d84b",
-  "design-resolution-width": 960,
-  "design-resolution-height": 640,
-  "fit-width": false,
-  "fit-height": true,
+  "preview-port": 10000,
+  "design-resolution-width": 720,
+  "design-resolution-height": 1280,
+  "fit-width": true,
+  "fit-height": false,
   "use-project-simulator-setting": false,
   "simulator-orientation": false,
-  "use-customize-simulator": false,
+  "use-customize-simulator": true,
   "simulator-resolution": {
     "width": 960,
     "height": 640
   },
-  "last-module-event-record-time": 0,
-  "assets-sort-type": "name",
+  "clear-simulator-cache": true,
   "facebook": {
     "enable": false,
     "appID": "",
@@ -32,7 +33,6 @@
       "enable": false
     }
   },
-  "migrate-history": [
-    "cloud-function"
-  ]
+  "start-scene": "d124e0c4-fc29-49ca-b5ab-c05cf961d84b",
+  "last-module-event-record-time": 1782716506280
 }

@@ -1,8 +1,8 @@
 {
-  "engine": "cocos2d-html5",
+  "engine": "cocos-creator-js",
   "packages": "packages",
+  "name": "module",
+  "id": "085d7fa2-7bde-4fbb-bd12-87ce579be5a9",
   "version": "2.4.11",
-  "name": "test_game",
-  "id": "4ecb35fe-f598-4e6f-9422-365b9586ee94",
   "isNew": false
 }

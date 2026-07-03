@@ -1,0 +1,372 @@
+const REMOTE_CONFIG = {
+    // 框架基础配置
+    "MODULE_CONFIG": {
+        "common": {
+            // 本地化配置（包含国家码、语言代码、汇率、货币符号、手机国际码等）
+            "locale": [
+                { "id": 101, "name": "美国", "country": "US", "language": "en", "rate": 1, "symbol": "$", "ad_t": 1, "phone_code": 1 },
+                { "id": 102, "name": "英国", "country": "GB", "language": "en", "rate": 1, "symbol": "£", "ad_t": 1, "phone_code": 44 },
+                { "id": 103, "name": "法国", "country": "FR", "language": "fr", "rate": 1, "symbol": "€", "ad_t": 1, "phone_code": 33 },
+                { "id": 104, "name": "德国", "country": "DE", "language": "de", "rate": 1, "symbol": "€", "ad_t": 1, "phone_code": 49 },
+                { "id": 105, "name": "日本", "country": "JP", "language": "ja", "rate": 100, "symbol": "円", "ad_t": 1, "phone_code": 81 },
+                { "id": 106, "name": "加拿大", "country": "CA", "language": "en", "rate": 1, "symbol": "$", "ad_t": 1, "phone_code": 1 },
+                { "id": 107, "name": "澳大利亚", "country": "AU", "language": "en", "rate": 1, "symbol": "$", "ad_t": 1, "phone_code": 61 },
+                { "id": 108, "name": "新西兰", "country": "NZ", "language": "en", "rate": 1, "symbol": "$", "ad_t": 1, "phone_code": 64 },
+                { "id": 109, "name": "挪威", "country": "NO", "language": "no", "rate": 10, "symbol": "NOK", "ad_t": 1, "phone_code": 47 },
+                { "id": 110, "name": "新加坡", "country": "SG", "language": "en", "rate": 1, "symbol": "$", "ad_t": 1, "phone_code": 65 },
+                { "id": 111, "name": "瑞典", "country": "SE", "language": "se", "rate": 10, "symbol": "SEK", "ad_t": 1, "phone_code": 46 },
+                { "id": 112, "name": "瑞士", "country": "CH", "language": "de", "rate": 1, "symbol": "CHF", "ad_t": 1, "phone_code": 41 },
+                { "id": 201, "name": "西班牙", "country": "ES", "language": "es", "rate": 1, "symbol": "€", "ad_t": 2, "phone_code": 34 },
+                { "id": 202, "name": "阿拉伯", "country": "SA", "language": "ar", "rate": 5, "symbol": "SR", "ad_t": 2, "phone_code": 966 },
+                { "id": 203, "name": "波兰", "country": "PL", "language": "pl", "rate": 5, "symbol": "złote", "ad_t": 2, "phone_code": 48 },
+                { "id": 204, "name": "韩国", "country": "KR", "language": "ko", "rate": 1000, "symbol": "₩", "ad_t": 2, "phone_code": 82 },
+                { "id": 205, "name": "意大利", "country": "IT", "language": "it", "rate": 1, "symbol": "€", "ad_t": 2, "phone_code": 39 },
+                { "id": 206, "name": "比利时", "country": "BE", "language": "nl", "rate": 1, "symbol": "€", "ad_t": 2, "phone_code": 32 },
+                { "id": 207, "name": "荷兰", "country": "NL", "language": "nl", "rate": 1, "symbol": "€", "ad_t": 2, "phone_code": 31 },
+                { "id": 301, "name": "印度", "country": "IN", "language": "hi", "rate": 80, "symbol": "₹", "ad_t": 3, "phone_code": 91 },
+                { "id": 302, "name": "印尼", "country": "ID", "language": "in", "rate": 15000, "symbol": "Rp", "ad_t": 3, "phone_code": 62 },
+                { "id": 303, "name": "葡萄牙", "country": "PT", "language": "pt", "rate": 1, "symbol": "€", "ad_t": 3, "phone_code": 351 },
+                { "id": 304, "name": "泰国", "country": "TH", "language": "th", "rate": 30, "symbol": "฿", "ad_t": 3, "phone_code": 66 },
+                { "id": 305, "name": "菲律宾", "country": "PH", "language": "fil", "rate": 50, "symbol": "₱", "ad_t": 3, "phone_code": 63 },
+                { "id": 306, "name": "马来西亚", "country": "MY", "language": "ms", "rate": 5, "symbol": "RM", "ad_t": 3, "phone_code": 60 },
+                { "id": 307, "name": "哥伦比亚", "country": "CO", "language": "es", "rate": 3000, "symbol": "COP", "ad_t": 3, "phone_code": 57 },
+                { "id": 308, "name": "阿根廷", "country": "AR", "language": "es", "rate": 350, "symbol": "ARS", "ad_t": 3, "phone_code": 54 },
+                { "id": 309, "name": "墨西哥", "country": "MX", "language": "es", "rate": 20, "symbol": "Mex.$", "ad_t": 3, "phone_code": 52 },
+                { "id": 310, "name": "巴西", "country": "BR", "language": "pt", "rate": 5, "symbol": "R$", "ad_t": 3, "phone_code": 55 },
+                { "id": 311, "name": "越南", "country": "VN", "language": "vi", "rate": 20000, "symbol": "₫", "ad_t": 3, "phone_code": 84 },
+                { "id": 312, "name": "土耳其", "country": "TR", "language": "tr", "rate": 8, "symbol": "₺", "ad_t": 3, "phone_code": 90 },
+                { "id": 313, "name": "罗马尼亚", "country": "RO", "language": "ro", "rate": 5, "symbol": "Lei", "ad_t": 3, "phone_code": 40 },
+                { "id": 314, "name": "约旦", "country": "JO", "language": "ar", "rate": 1, "symbol": "$", "ad_t": 3, "phone_code": 962 },
+                { "id": 315, "name": "伊拉克", "country": "IQ", "language": "ar", "rate": 1, "symbol": "$", "ad_t": 3, "phone_code": 964 },
+                { "id": 316, "name": "埃及", "country": "EG", "language": "ar", "rate": 1, "symbol": "$", "ad_t": 3, "phone_code": 20 },
+                { "id": 317, "name": "以色列", "country": "IL", "language": "ar", "rate": 1, "symbol": "$", "ad_t": 3, "phone_code": 972 },
+                { "id": 318, "name": "俄罗斯", "country": "RU", "language": "ru", "rate": 70, "symbol": "₽", "ad_t": 3, "phone_code": 7 },
+                { "id": 319, "name": "乌克兰", "country": "UA", "language": "uk", "rate": 20, "symbol": "₴", "ad_t": 3, "phone_code": 380 },
+                { "id": 400, "name": "SBALL", "country": "SBALL", "language": "en", "rate": 1, "symbol": "$", "ad_t": 3, "phone_code": 1 }
+            ],
+            // 兑换比率（代币 ID -> 兑换比率）
+            "redeemRates": {
+                "1": 10,
+                "2": 1
+            },
+            // 调试码（不配置或配置为空字符串或仅包含空格，则不开启调试功能）
+            "debugCode": ""
+        },
+        // 模块私有配置，按模块 ID 组织
+        "module": {
+            "GN_ZB_01_00_00": {
+                /**luck_type:表示 类型 这里的类型 由 开发自己 确定1默认是现金奖励（这个不能改）
+                 * luck_num：奖励的数量
+                 * luck_mix：权重
+                 * luck_first：首轮的奖励顺序
+                 * luck_big：这个值 只有3 种 （1大奖2中奖3小奖）影响 奖品的底框展示样式以及（奖励图标）
+                 */
+                "rewardList": [
+                    { "luck_id": 101, "luck_type": 1, "luck_num": 2000, "luck_mix": 100, "luck_first": 3, "luck_big": 1 },
+                    { "luck_id": 102, "luck_type": 1, "luck_num": 1000, "luck_mix": 200, "luck_first": 1, "luck_big": 3 },
+                    { "luck_id": 103, "luck_type": 1, "luck_num": 600, "luck_mix": 300, "luck_first": 7, "luck_big": 3 },
+                    { "luck_id": 104, "luck_type": 1, "luck_num": 300, "luck_mix": 400, "luck_first": 5, "luck_big": 3 },
+                    { "luck_id": 105, "luck_type": 3, "luck_num": 30, "luck_mix": 150, "luck_first": 8, "luck_big": 3 },
+                    { "luck_id": 106, "luck_type": 3, "luck_num": 15, "luck_mix": 350, "luck_first": 2, "luck_big": 3 },
+                    { "luck_id": 107, "luck_type": 1, "luck_num": 1500, "luck_mix": 100, "luck_first": 12, "luck_big": 2 },
+                    { "luck_id": 108, "luck_type": 1, "luck_num": 1000, "luck_mix": 200, "luck_first": 10, "luck_big": 3 },
+                    { "luck_id": 109, "luck_type": 1, "luck_num": 600, "luck_mix": 300, "luck_first": 4, "luck_big": 3 },
+                    { "luck_id": 110, "luck_type": 1, "luck_num": 300, "luck_mix": 400, "luck_first": 9, "luck_big": 3 },
+                    { "luck_id": 111, "luck_type": 2, "luck_num": 400, "luck_mix": 150, "luck_first": 6, "luck_big": 3 },
+                    { "luck_id": 112, "luck_type": 2, "luck_num": 200, "luck_mix": 350, "luck_first": 11, "luck_big": 3 }
+                ],
+                /**轮盘激活时间规则，每日重置（需求次数对于时间可线上配置） 单位/分钟*/
+                "timeList": [5, 10, 20, 30, 60, 120],
+                /**白包恢复时间 / 分钟 */
+                "timeWhite": 120,
+                /**视频抽奖次数 */
+                "videoDrawTimeAll": 5,
+                /**领取奖励 每次 弹出插屏 间隔次数（每日首次免费 但计入次数） */
+                "getRewardShowInterDeltaDrawTime": 3
+            },
+            /**
+             * B 面配置表（保持 json 格式，方便复制到后台配置）
+             *
+             * 字段说明：{
+             * tokenID:货币id
+             * baseNumber:奖励基础值
+             * multiple：三个卡片的倍数
+             * adStart_value:开启广告的条件 例如：type=1 adStart_value 代表关卡数 type=2 adStart_value 代表货币余额 type=3 adStart_value 代表免费次数
+             * type:这个是用于判断是否开启广告的条件类型 1是关卡 2是货币余额 3是免费次数，具体是跟策划对齐
+             * }
+             */
+            "GN_CC_04_01_00": {
+                "tokenID": 1,
+                "baseNumber": 100,
+                "multiple": [6, 10],
+                "adStart_value": 5,
+                "type": 1
+            },
+            /**
+             * 配置表（保持 json 格式，方便后台配置）
+             *
+             * 字段说明：{
+             * doubleReard双倍奖励配置
+             *  "deploy_id": 奖励ID 1
+             *  "deploy_typer": 奖励类型 1金币 2纸币
+             *  "deploy_mult": 奖励倍率
+             *  "deploy_time": 奖励时间 小时
+             *  "deploy_start": 奖励开始关卡
+             *  "deploy_target": 奖励目标关卡
+             * }
+             */
+            "GN_ZB_03_01_01": {
+                "doubleReard": { "deploy_id": 1, "deploy_typer": 1, "deploy_mult": 2, "deploy_time": 24, "deploy_start": 3, "deploy_target": 10 }
+            },
+            /**
+             * B 面配置表（保持 json 格式，方便复制到后台配置）
+             *
+             * 字段说明：{
+             *  compensation: {
+             *      tokenID: 补偿的代币 ID
+             *      amount: 补偿的代币数量
+             *  }
+             * }
+             */
+            "GN_FK_01_00_00": {
+                "compensation": {
+                    "tokenID": 1,
+                    "amount": 1000
+                }
+            },
+            /**
+             * 配置表（保持 json 格式，方便后台配置）
+             *
+             * 字段说明：{
+             * tokenID 代币ID
+             * baseNumber 基础倍率
+             * multiple 倍率范围
+             * adStart_value:开启广告的条件 例如：type=1 adStart_value 代表关卡数 type=2 adStart_value 代表货币余额 type=3 adStart_value 代表免费次数
+             * type:这个是用于判断是否开启广告的条件类型 1是关卡 2是货币余额 3是免费次数，具体是跟策划对齐
+             * }
+             */
+            "GN_CC_04_00_00": {
+                "tokenID": 1,
+                "baseNumber": 100,
+                "multiple": [2, 3, 5],
+                "adStart_value": 5,
+                "type": 1
+            },
+            /**
+             * 配置表（保持 json 格式，方便后台配置）
+             *
+             * 字段说明：{
+             * GN_CC_01_00_00 模块名称
+             * new 最大的卡片也是新手实际拿的奖励数值
+             * newRandom 另外两个卡片奖励随机范围
+             * rateCoin 这个是多语言提示兑换比例的数值 100 =$10 默认100想改就配不改就不管他
+             * }
+             * //后台配这个格式
+             * "GN_CC_01_00_00": {
+                    "tokenID": 1,
+                    "new": 5000,
+                    "newRandom": [500, 2000],
+                },
+             */
+            "GN_CC_01_00_00": {
+                "tokenID": 1,
+                "new": 5000,
+                "newRandom": [500, 2000],
+                "rateCoin": 100
+            },
+            /**
+             * 配置表（保持 json 格式，方便后台配置）
+             *
+             * 字段说明：{
+             *  "AB_multiple":奖励系数 废除
+             *  "AB_time_multiple":AB面奖励时间系数 废除
+             *  "online":累计在线奖励配置 {deploy_id:奖励id,deploy_typer:奖励类型,deploy_num:奖励数量,deploy_time:需要时长/s}
+             * }
+             */
+            "GN_ZB_02_01_01": {
+                "AB_multiple": 1,
+                "AB_time_multiple": 1,
+                "online": [
+                    { "deploy_id": 1, "deploy_typer": [1, 2], "deploy_num": [1000, 100], "deploy_time": 60 },
+                    { "deploy_id": 2, "deploy_typer": [1, 2], "deploy_num": [2000, 200], "deploy_time": 300 },
+                    { "deploy_id": 3, "deploy_typer": [1, 2], "deploy_num": [3000, 300], "deploy_time": 900 },
+                    { "deploy_id": 4, "deploy_typer": [1, 2], "deploy_num": [5000, 500], "deploy_time": 1800 },
+                    { "deploy_id": 5, "deploy_typer": [1, 2], "deploy_num": [8000, 800], "deploy_time": 2700 },
+                    { "deploy_id": 6, "deploy_typer": [1, 2], "deploy_num": [10000, 1000], "deploy_time": 4200 }
+                ]
+            },
+            "GN_ZB_04_00_00": {
+                /**奖励区间 */
+                "rewardArea": [1000, 3000],
+                "lockLimit": {
+                    /**任务 间隔时间 【单位 秒】 */
+                    "time": 7200,
+                    /**视频/插屏 次数限制 （任务的目标次数） */
+                    "videoAndInterLimit": 15
+                }
+            },
+            /**
+             * B 面配置表（保持 json 格式，方便复制到后台配置）
+             *
+             * 字段说明：{
+             *  tokenID: 当前模块使用的游戏代币 ID
+             *  goal1: 第一阶段目标数值
+             *  goal2Factor: 第二阶段代币目标系数，代币目标 = (开启第二阶段时持有的代币数量 / 兑换比率 / goal2CeilBase) * goal2Factor * 兑换比率 * goal2CeilBase，实际上就是转换成现金再（按某一数位）向上取整并翻倍
+             *  goal2CeilBase: 第二阶段代币目标向上取整基数（100 表示百位向上取整）
+             *  goal2Indemnity: 第二阶段补偿的代币数量
+             *  locale: 提现渠道配置数组 [
+             *      {
+             *          country: 国家码（ISO 3166-1 中的二位代码）
+             *          cash_id: 提现渠道 ID 数组
+             *      }
+             *  ]
+             *  task: 七日任务配置数组 [
+             *      {
+             *          dh_day_id: 递增 ID，无实际用途
+             *          dh_day：第几天
+             *          dh_task_id: 任务 ID 数组，其中 101-103 是固定任务，从 201 开始是自定义任务，具体内容由策划决定
+             *          dh_task_num: 任务目标数值数组，对应 dh_task_id，表示完成对应任务需要达到多少数值
+             *      }
+             *  ]
+             * }
+             */
+            "DH_WZ_01_00_00": {
+                "tokenID": 1,
+                "goal1": 15,
+                "goal2Factor": 2,
+                "goal2CeilBase": 100,
+                "goal2Indemnity": 5000,
+                "locale": [
+                    { "country": "US", "cash_id": [101, 102, 103, 108] },
+                    { "country": "GB", "cash_id": [101, 105, 108, 103] },
+                    { "country": "FR", "cash_id": [101, 105, 108, 103] },
+                    { "country": "DE", "cash_id": [101, 105, 103, 108] },
+                    { "country": "JP", "cash_id": [101, 105, 108, 103] },
+                    { "country": "CA", "cash_id": [101, 105, 108, 103] },
+                    { "country": "AU", "cash_id": [101, 105, 108, 103] },
+                    { "country": "NZ", "cash_id": [101, 105, 108, 103] },
+                    { "country": "NO", "cash_id": [101, 108, 105, 103] },
+                    { "country": "SG", "cash_id": [101, 108, 103, 105] },
+                    { "country": "SE", "cash_id": [101, 108, 105, 103] },
+                    { "country": "CH", "cash_id": [101, 103, 108, 105] },
+                    { "country": "ES", "cash_id": [101, 105, 108, 104] },
+                    { "country": "SA", "cash_id": [101, 108, 105, 104] },
+                    { "country": "PL", "cash_id": [101, 108, 105, 104] },
+                    { "country": "KR", "cash_id": [101, 105, 108, 103] },
+                    { "country": "IT", "cash_id": [101, 105, 108, 103] },
+                    { "country": "BE", "cash_id": [101, 105, 108, 103] },
+                    { "country": "NL", "cash_id": [101, 108, 105, 103] },
+                    { "country": "IN", "cash_id": [104, 101, 105, 108] },
+                    { "country": "ID", "cash_id": [107, 104, 101, 108] },
+                    { "country": "PT", "cash_id": [101, 105, 108, 104] },
+                    { "country": "TH", "cash_id": [104, 101, 108, 105] },
+                    { "country": "PH", "cash_id": [101, 104, 108, 105] },
+                    { "country": "MY", "cash_id": [101, 104, 108, 105] },
+                    { "country": "CO", "cash_id": [101, 104, 108, 105] },
+                    { "country": "AR", "cash_id": [104, 101, 108, 105] },
+                    { "country": "MX", "cash_id": [101, 104, 108, 105] },
+                    { "country": "BR", "cash_id": [106, 101, 104, 108] },
+                    { "country": "VN", "cash_id": [104, 101, 108, 105] },
+                    { "country": "TR", "cash_id": [104, 101, 108, 105] },
+                    { "country": "RO", "cash_id": [101, 108, 104, 105] },
+                    { "country": "JO", "cash_id": [101, 108, 105, 104] },
+                    { "country": "IQ", "cash_id": [104, 101, 108, 105] },
+                    { "country": "EG", "cash_id": [104, 101, 108, 105] },
+                    { "country": "IL", "cash_id": [101, 103, 108, 105] },
+                    { "country": "RU", "cash_id": [104, 108, 105, 101] },
+                    { "country": "UA", "cash_id": [104, 101, 108, 105] },
+                    { "country": "SBALL", "cash_id": [101, 102, 103, 108] }
+                ],
+                "task": [
+                    { "dh_day_id": 101, "dh_day": 1, "dh_task_id": [101, 102, 103, 201], "dh_task_num": [6000, 1000, 10, 120] },
+                    { "dh_day_id": 102, "dh_day": 2, "dh_task_id": [101, 102, 103, 201], "dh_task_num": [6000, 1000, 10, 120] },
+                    { "dh_day_id": 103, "dh_day": 3, "dh_task_id": [101, 102, 103, 201], "dh_task_num": [6000, 1000, 10, 120] },
+                    { "dh_day_id": 104, "dh_day": 4, "dh_task_id": [101, 102, 103, 201], "dh_task_num": [6000, 1000, 10, 120] },
+                    { "dh_day_id": 105, "dh_day": 5, "dh_task_id": [101, 102, 103, 201], "dh_task_num": [6000, 1000, 10, 120] },
+                    { "dh_day_id": 106, "dh_day": 6, "dh_task_id": [101, 102, 103, 201], "dh_task_num": [6000, 1000, 10, 120] },
+                    { "dh_day_id": 107, "dh_day": 7, "dh_task_id": [101, 102, 103, 201], "dh_task_num": [6000, 1000, 10, 120] }
+                ]
+            },
+            /**
+             * 配置表（保持 json 格式，方便后台配置）
+             *
+             * 字段说明：{
+             *  "AB_multiple":奖励系数 废除
+             *  "multiple":视频领取奖励倍数
+             *  "signIn": 7天奖励配置
+             * }
+             */
+            "GN_QD_01_01_01": {
+                "AB_multiple": 1,
+                "multiple_video": 2,
+                "signIn": [
+                    { "deploy_id": 1, "deploy_typer": [1], "deploy_num": [100], "deploy_day": 1 },
+                    { "deploy_id": 2, "deploy_typer": [1], "deploy_num": [200], "deploy_day": 2 },
+                    { "deploy_id": 3, "deploy_typer": [1], "deploy_num": [300], "deploy_day": 3 },
+                    { "deploy_id": 4, "deploy_typer": [1], "deploy_num": [400], "deploy_day": 4 },
+                    { "deploy_id": 5, "deploy_typer": [1], "deploy_num": [500], "deploy_day": 5 },
+                    { "deploy_id": 6, "deploy_typer": [1], "deploy_num": [600], "deploy_day": 6 },
+                    { "deploy_id": 7, "deploy_typer": [1, 2], "deploy_num": [700, 70], "deploy_day": 7 }
+                ]
+            },
+            /**
+             * B 面配置表（保持 json 格式，方便复制到后台配置）
+             *
+             * 字段说明：{
+             *  tokenID: 当前模块展示用的游戏代币 ID
+             *  payments: 展示的提现渠道 ID 列表
+             *  goal: 目标数值
+             *  min_currency_reward: 最低现金奖励
+             * }
+             */
+            "GN_XS_01_00_00": {
+                "tokenID": 1,
+                "payments": [101, 102, 103, 108],
+                "goal": 15,
+                "min_currency_reward": 3000
+            },
+            /**
+             * B 面配置表（保持 json 格式，方便复制到后台配置）
+             *
+             * 字段说明：{
+             *  payments: 展示的提现渠道 ID 列表
+             *  min_currency_reward: 最低现金奖励
+             *  rewards: 奖励列表，支持多种代币奖励 [
+             *      {
+             *          id: 游戏代币 ID
+             *          num: 代币数量
+             *      }
+             *  ]
+             * }
+             */
+            "GN_XS_02_00_00": {
+                "payments": [101, 102, 103, 108],
+                "min_currency_reward": 3000,
+                "rewards": [
+                    { "id": 1, "num": 10000 }
+                ]
+            },
+            /**
+             * B 面配置表（保持 json 格式，方便复制到后台配置）
+             *
+             * 字段说明：{
+             * tokenID:货币id
+             * baseNumber:奖励基础值
+             * multiple：三个卡片的倍数
+             * freeAdNum:免费次数
+             * maxCoin:底部提示最多可获得
+             * maxMultiple:开完三个牌可额外获得的倍数
+             * }
+             */
+            "GN_CC_05_00_00": {
+                "tokenID": 1,
+                "baseNumber": 100,
+                "multiple": [0.3, 0.7, 1],
+                "freeAdNum": 1,
+                "maxCoin": 5000,
+                "maxMultiple": 0.5,
+                "type": 1
+            }
+        }
+    }
+};

@@ -8,8 +8,8 @@
   "premultiplyAlpha": false,
   "genMipmaps": false,
   "packable": false,
-  "width": 720,
-  "height": 1560,
+  "width": 1024,
+  "height": 1600,
   "platformSettings": {},
   "subMetas": {
     "loading_bg": {
