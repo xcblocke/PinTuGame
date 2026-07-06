@@ -628,9 +628,6 @@
       },
       {
         "__id__": 27
-      },
-      {
-        "__id__": 39
       }
     ],
     "_active": true,
@@ -1300,6 +1297,9 @@
     "_children": [
       {
         "__id__": 28
+      },
+      {
+        "__id__": 39
       }
     ],
     "_active": true,
@@ -1862,7 +1862,7 @@
     "_name": "New Button",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 13
+      "__id__": 27
     },
     "_children": [],
     "_active": true,
@@ -1895,7 +1895,7 @@
       "ctor": "Float64Array",
       "array": [
         0,
-        -703.738,
+        -516.201,
         0,
         0,
         0,

@@ -47,7 +47,7 @@ export default class loading extends cc.Component {
             var duplicateLoading = this.node.getChildByName("for_loading copy");
             duplicateLoading && (duplicateLoading.active = false);
             this.setLoadingLabel(`gkey_267`);
-            if (this.showLogin) this.showLogin.active = false;
+            if (this.showLogin) this.showLogin.active = true;
             if (this.loading) this.loading.active = true;
             AudioManager.getInstance().init();
             LocalData.getInstance().initData();
