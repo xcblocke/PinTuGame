@@ -231,6 +231,12 @@
     },
 
     {
+        "key": "gkey_046",
+        "zh": "恭喜!",
+        "en": "Congrats!"
+    },
+
+    {
         "key": "gkey_052",
         "zh": "动画组件",
         "en": "Animation Component"
