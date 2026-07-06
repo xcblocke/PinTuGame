@@ -7,7 +7,7 @@ import GlobalDataSys from "../framework/controller/GlobalDataSys";
 import { Res } from "../common/ResourcesManager";
 import { gameData } from "../data/GameData";
 import LocalData from "../game/cyll/LocalData";
-import i18 from "../framework/LanguageMgr";
+import { A } from "../gpCommon/api";
 const {
   ccclass,
   property
@@ -39,7 +39,7 @@ export default class loading extends cc.Component {
     }
   }
   onLoad() {
-    i18.init(this.languageJson.json,cc.sys.languageCode)
+    A.n1(this.languageJson.json, cc.sys.languageCode);
     return __awaiter(this, void 0, void 0, function () {
       return __generator(this, function (e) {
         switch (e.label) {
