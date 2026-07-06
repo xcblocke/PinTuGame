@@ -1,1 +1,24 @@
-{"__type__":"cc.Material","_name":"radius_btm","_objFlags":0,"_native":"","_effectAsset":{"__uuid__":"367fb5e6-58c0-46bb-aab6-363a72cadf62"},"_techniqueIndex":0,"_techniqueData":{"0":{"defines":{},"props":{"borderColor":{"__type__":"cc.Color","r":"44","g":"98","b":"95","a":"255"}}}}}
+{
+  "__type__": "cc.Material",
+  "_name": "radius_btm",
+  "_objFlags": 0,
+  "_native": "",
+  "_effectAsset": {
+    "__uuid__": "367fb5e6-58c0-46bb-aab6-363a72cadf62"
+  },
+  "_techniqueIndex": 0,
+  "_techniqueData": {
+    "0": {
+      "defines": {},
+      "props": {
+        "borderColor": {
+          "__type__": "cc.Color",
+          "r": 228,
+          "g": 218,
+          "b": 240,
+          "a": 255
+        }
+      }
+    }
+  }
+}

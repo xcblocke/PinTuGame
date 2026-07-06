@@ -1,0 +1,20 @@
+
+hecheng_big.png
+size: 250,206
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+quan
+  rotate: false
+  xy: 2, 2
+  size: 202, 202
+  orig: 202, 202
+  offset: 0, 0
+  index: -1
+star1
+  rotate: false
+  xy: 206, 162
+  size: 42, 42
+  orig: 46, 46
+  offset: 2, 2
+  index: -1
