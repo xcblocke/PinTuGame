@@ -13,13 +13,13 @@ import { SupergoalPostappear, lanData, ICountryConfigLike } from "../i/Supergoal
  * 外部处理器函数
  */
 export interface IPlatformExternalHandlersLike {
-    /** 静音函数（播放广告开启静音，结束广告关闭静音） */
+    // 静音函数（播放广告开启静音，结束广告关闭静音）
     m?: (mute: boolean) => any,
 
-    /** 加载遮罩控制函数（播放广告开启遮罩，结束广告关闭遮罩） */
+    // 加载遮罩控制函数（播放广告开启遮罩，结束广告关闭遮罩）
     l?: (visible: boolean) => any,
 
-    /** 确认播放广告函数（此处只控制流程，二次确认框需要自行实现，记得回调） */
+    // 确认播放广告函数（此处只控制流程，二次确认框需要自行实现，记得回调）
     a?: (callback: (shouldShowAd: boolean) => any) => any,
 };
 
@@ -31,36 +31,33 @@ export interface IPlatformExternalHandlersLike {
  * 3. 每个回调会传入当前真实的广告类型 type（v: 激励视频 / i: 插屏 / b: 横幅 / s: 开屏）
  */
 export interface IAdListenerLike {
-    /** 最终播放结果，不适用于横幅广告（-1: 失败 / 0: 取消 / 1: 成功） */
+    // 最终播放结果，不适用于横幅广告（-1: 失败 / 0: 取消 / 1: 成功）
     onResult?: (result: -1 | 0 | 1, type: 'v' | 'i' | 'b' | 's') => any,
 
-    /** 开始（true: 开始播放成功，流程继续并有其他回调 / false: 开始播放失败，流程结束且不再有回调） */
+    // 开始（true: 开始播放成功，流程继续并有其他回调 / false: 开始播放失败，流程结束且不再有回调）
     onStart?: (success: boolean, type: 'v' | 'i' | 'b' | 's') => any,
 
-    /** 结束（true: 完整播放成功，流程结束且不再有回调 / false: 播放中途失败，流程结束且不再有回调） */
+    // 结束（true: 完整播放成功，流程结束且不再有回调 / false: 播放中途失败，流程结束且不再有回调）
     onEnd?: (success: boolean, type: 'v' | 'i' | 'b' | 's') => any,
 
-    /** 取消（true: 播放中途手动取消，流程结束且不再有回调 / false: 播放之前手动取消，一般是二次确认时取消，流程结束且不再有回调） */
+    // 取消（true: 播放中途手动取消，流程结束且不再有回调 / false: 播放之前手动取消，一般是二次确认时取消，流程结束且不再有回调）
     onCancel?: (started: boolean, type: 'v' | 'i' | 'b' | 's') => any,
 
-    /** 点击 */
+    // 点击
     onClick?: (type: 'v' | 'i' | 'b' | 's') => any,
 
-    /** 收益 */
+    // 收益
     onRevenue?: (type: 'v' | 'i' | 'b' | 's') => any,
 };
 
 type TAdListenerBridge = Omit<IAdListenerLike, 'onResult'> & { onFinish?: (type: 'v' | 'i' | 'b' | 's') => any };
 
-/**
- * 事件定义
- */
 export interface IPlatformEventLike {
-    /** 开屏广告播放完成 */
+    // 开屏广告播放完成
     s: string,
-    /** 激励视频广告播放完成 */
+    // 激励视频广告播放完成
     v: string,
-    /** 插屏广告播放完成 */
+    // 插屏广告播放完成
     i: string,
 };
 
@@ -133,35 +130,6 @@ export class PreeditorFooder {
      */
     get transglassExtrapeace(): boolean {
         return false;
-    }
-
-    /**
-     * 获取设备信息（model: 设备型号 / os: 系统及其版本）
-     */
-    get megabrandAntirate(): Readonly<{ model: string, os: string }> {
-        if (!CC_JSB) {
-            return {
-                model: 'unknown',
-                os: 'unknown',
-            };
-        }
-
-        const deviceInfoStr = jsb.reflection.callStaticMethod('org/cocos2dx/javascript/NonplaceAutosoft', 'multilayerSubwhat', '()Ljava/lang/String;') ?? '{}';
-        let deviceInfo: { [key: string]: any } = {};
-
-        try {
-            deviceInfo = JSON.parse(deviceInfoStr);
-        } catch (error) {
-        }
-
-        const manufacturer = typeof deviceInfo.manufacturer === 'string' ? deviceInfo.manufacturer : null;
-        const model = typeof deviceInfo.model === 'string' ? deviceInfo.model : null;
-        const release = typeof deviceInfo.release === 'string' ? deviceInfo.release : null;
-
-        return {
-            model: (manufacturer ? manufacturer + ' ' : '') + (model ? model : 'unknown'),
-            os: 'Android ' + (release ? release : 'unknown'),
-        };
     }
 
     /**
@@ -260,13 +228,6 @@ export class PreeditorFooder {
     }
 
     /**
-     * 获取 APP 模式（-2: 不可登录模式 / -1: A 面审核模式 / 0: A 面纯玩法模式 / 1: B 面可投包模式）
-     */
-    get unwearBeyondify(): -2 | -1 | 0 | 1 {
-        return 0;
-    }
-
-    /**
      * 获取邀请码
      */
     get macroclickLeaden(): string {
@@ -341,13 +302,6 @@ export class PreeditorFooder {
      */
     gradealInterpause(value: boolean): void {
         this.narrowizeHypertest = value;
-    }
-
-    /**
-     * 获取是否正在播放全屏广告（包括开屏、激励视频、插屏广告）
-     */
-    get underspiritUnderstyle(): boolean {
-        return false;
     }
 
     /**
@@ -432,13 +386,6 @@ export class PreeditorFooder {
         listener?.onStart?.(true, 'i');
         listener?.onEnd?.(true, 'i');
         listener?.onResult?.(1, 'i');
-    }
-
-    /**
-     * 获取插屏广告冷却开始时间（毫秒）
-     */
-    get narrowlessArgueary(): number {
-        return 0;
     }
 
     /**

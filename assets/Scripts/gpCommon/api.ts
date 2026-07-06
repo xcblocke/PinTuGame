@@ -10,31 +10,28 @@
  *
  * | 接口名 | 必接要求（可多接不可少接） | 描述 |
  * | :---: | :---: | :---: |
- * | a1 | 🔍getter | 获取是否 Debug（测试服）版本（原生平台：App 是否 Debug 版本，其中 iOS 白包 SDK 未提供接口默认 false / 小游戏平台：是否开启调试模式构建 ） |
- * | a2 | 🔍getter | 获取版本号（注意，小游戏平台需通过插件同步或手动修改来更新版本号，参见接口注释说明） |
- * | a3 | 🔍getter | 获取包名 |
- * | a4 | 🔍getter | 获取当前平台（g: Google Play / a: Apple App Store / t: TikTok Mini Games） |
- * | a5 | 🔍getter | 获取是否完整可投包（true: 完整可投包 / false: 白包） |
- * | a6 | 🔍getter | 获取设备信息（model: 设备型号 / os: 系统及其版本） |
+ * | a1 | *️⃣按需 | 获取是否 Debug（测试服）版本（原生平台：App 是否 Debug 版本，其中 iOS 白包 SDK 未提供接口默认 false / 小游戏平台：是否开启调试模式构建 ） |
+ * | a2 | ✅必接 | 获取版本号（注意，小游戏平台需通过插件同步或手动修改来更新版本号，参见接口注释说明） |
+ * | a3 | ✅必接 | 获取包名 |
+ * | a4 | ✅必接 | 获取当前平台（g: Google Play / a: Apple App Store / t: TikTok Mini Games） |
+ * | a5 | ✅必接 | 获取是否完整可投包（true: 完整可投包 / false: 白包） |
  * | n1 | ✅可投包必接 | 加载多语言（在首个场景的 onLoad 中调用） |
- * | n2 | 🔍getter | 获取当前语言代号（应用在多语言中） |
+ * | n2 | *️⃣按需 | 获取当前语言代号（应用在多语言中） |
  * | n3 | *️⃣按需 | 添加多语言数据 |
  * | n4 | *️⃣按需 | 设置当前语言（应用在多语言中） |
  * | n5 | *️⃣按需 | 刷新所有多语言 UI （cc.Label/cc.RichText） |
  * | n6 | *️⃣按需 | 加密字符串（可用于简单加密或混淆源字符串） |
  * | n7 | *️⃣按需 | 解密字符串 |
  * | l1 | ✅必接 | 登录（成功才回调，可在此后调用 l2、l3、l4 和 l5） |
- * | l2 | 🔍getter | 获取当前是否 B 面（白包始终为 false，小游戏平台始终为 true） |
- * | l3 | 🔍getter | 获取后台配置 launchInfoConfig（A/B 面都有效，登录成功后才可能有值，白包不接入登录文件为空） |
- * | l4 | 🔍getter | 获取后台所有配置（仅 B 面有效，登录成功后才可能有值，白包不接入登录文件为空） |
- * | l5 | 🔍getter | 获取当前登录 IP 对应的国家码（登录成功后才有效，小游戏平台暂不支持） |
- * | l6 | 🔍getter | 获取 APP 模式（-2: 不可登录模式 / -1: A 面审核模式 / 0: A 面纯玩法模式 / 1: B 面可投包模式） |
- * | c0 | 🔍getter | 获取邀请码（一般作为用户 ID） |
+ * | l2 | ✅必接 | 获取当前是否 B 面（白包始终为 false，小游戏平台始终为 true） |
+ * | l3 | *️⃣按需 | 获取后台配置 launchInfoConfig（A/B 面都有效，登录成功后才可能有值，白包不接入登录文件为空） |
+ * | l4 | *️⃣按需 | 获取后台所有配置（仅 B 面有效，登录成功后才可能有值，白包不接入登录文件为空） |
+ * | l5 | ✅必接 | 获取当前登录 IP 对应的国家码（登录成功后才有效，小游戏平台暂不支持） |
+ * | c0 | *️⃣按需 | 获取邀请码（一般作为用户 ID） |
  * | t1 | *️⃣按需 | 添加兑换开关监听 |
  * | t2 | *️⃣按需 | 移除兑换开关监听 |
  * | d1 | *️⃣按需 | 获取是否跳过广告（可用于 GM 工具） |
  * | d2 | *️⃣按需 | 设置是否跳过广告（可用于 GM 工具） |
- * | d3 | 🔍getter | 获取是否正在播放全屏广告（包括开屏、激励视频、插屏广告） |
  * | b1 | *️⃣按需 | 显示横幅广告（预留接口，部分平台未实现） |
  * | b2 | *️⃣按需 | 隐藏横幅广告（预留接口，部分平台未实现） |
  * | s1 | *️⃣按需 | 开屏广告是否已填充（预留接口，部分平台未实现） |
@@ -45,7 +42,6 @@
  * | i0 | ✅有插屏广告时必接 | 通知已显示插屏广告按钮 |
  * | i1 | ✅有插屏广告时必接 | 插屏广告是否已填充 |
  * | i2 | ✅有插屏广告时必接 | 播放插屏广告（监听器参见 IAdListenerLike 的定义和注释，播放失败的默认行为参见接口注释） |
- * | i3 | ✅有插屏广告时必接 | 获取插屏广告冷却开始时间（毫秒） |
  * | m0 | ✅小游戏平台有快捷入口任务时必接 | 获取快捷入口任务状态（异步） |
  * | m1 | ✅小游戏平台有快捷入口任务时必接 | 添加快捷入口 |
  * | m2 | ✅小游戏平台有快捷入口任务时必接 | 通知已发放快捷入口任务奖励 |
@@ -58,12 +54,12 @@
  * | v  | ✅必接（代替 jsb.device.vibrate） | 振动 |
  * | u  | ✅必接（代替 cc.sys.openURL） | 打开指定的 URL |
  * | r  | ✅原生必接 | 打开评星 |
- * | n  | 🔍getter | 获取 vpn 或代理类型（0: 未开启 VPN 或代理 / 1: 已开启 VPN / 2: 已开启代理） |
- * | p  | 🔍getter | 隐私协议 URL |
- * | g0 | 🔍getter | 是否有更多游戏 |
- * | g1 | 🔍getter | 随机获取一个更多游戏 URL (不存在时返回空字符串) |
+ * | n  | *️⃣按需 | 获取 vpn 或代理类型（0: 未开启 VPN 或代理 / 1: 已开启 VPN / 2: 已开启代理） |
+ * | p  | ✅必接 | 隐私协议 URL |
+ * | g0 | ✅必接 | 是否有更多游戏 |
+ * | g1 | ✅必接 | 随机获取一个更多游戏 URL (不存在时返回空字符串) |
  * | t  | ✅必接 | 上报事件（埋点） |
- * | e  | 🔍getter | 获取事件定义（可通过 cc.director.on 注册监听） |
+ * | e  | *️⃣按需 | 获取事件定义（可通过 cc.director.on 注册监听） |
  *
  *
  * 🌏多语言
@@ -159,17 +155,12 @@ interface IAPILike {
     /**
      * 获取当前平台（g: Google Play / a: Apple App Store / t: TikTok Mini Games）
      */
-    readonly a4: 'g' | 'a' | 't',
+    readonly a4: 'g'|'a'|'t',
 
     /**
      * 获取是否完整可投包（true: 完整可投包 / false: 白包）
      */
     readonly a5: boolean,
-
-    /**
-     * 获取设备信息（model: 设备型号 / os: 系统及其版本）
-     */
-    readonly a6: Readonly<{ model: string, os: string }>,
 
     /**
      * 加载多语言（在首个场景的 onLoad 中调用）
@@ -243,11 +234,6 @@ interface IAPILike {
     readonly l5: string,
 
     /**
-     * 获取 APP 模式（-2: 不可登录模式 / -1: A 面审核模式 / 0: A 面纯玩法模式 / 1: B 面可投包模式）
-     */
-    readonly l6: -2 | -1 | 0 | 1,
-
-    /**
      * 获取邀请码
      */
     readonly c0: string,
@@ -272,11 +258,6 @@ interface IAPILike {
      * 设置是否跳过广告（可用于 GM 工具）
      */
     d2: (value: boolean) => void,
-
-    /**
-     * 获取是否正在播放全屏广告（包括开屏、激励视频、插屏广告）
-     */
-    readonly d3: boolean,
 
     /**
      * 显示横幅广告
@@ -339,11 +320,6 @@ interface IAPILike {
      * @param allowVideoAdFallback 允许失败转激励视频广告（默认为 true）
      */
     i2: (tag: string, listener?: IAdListenerLike, allowVideoAdFallback?: boolean) => void,
-
-    /**
-     * 获取插屏广告冷却开始时间（毫秒）
-     */
-    readonly i3: number,
 
     /**
      * 获取快捷入口任务状态（异步）（当前平台不支持）
@@ -470,7 +446,6 @@ const M: Record<string, string> = {
     a3: 'translifePostrange',
     a4: 'posthillLabelise',
     a5: 'transglassExtrapeace',
-    a6: 'megabrandAntirate',
     n1: 'houristPlanness',
     n2: 'pushmentHypertheme',
     n3: 'ultratestAbouter',
@@ -483,13 +458,11 @@ const M: Record<string, string> = {
     l3: 'antimasterMinicache',
     l4: 'presendExtramany',
     l5: 'translandColoring',
-    l6: 'unwearBeyondify',
     c0: 'macroclickLeaden',
     t1: 'ballmentMainist',
     t2: 'girlifyUnderhero',
     d1: 'minuteizeUltraaround',
     d2: 'gradealInterpause',
-    d3: 'underspiritUnderstyle',
     b1: 'noncoachCameraory',
     b2: 'forcetionBrainive',
     s1: 'reviewingArriveless',
@@ -500,7 +473,6 @@ const M: Record<string, string> = {
     i0: 'prefullFalled',
     i1: 'selectnessSubsuccess',
     i2: 'redebateCenterless',
-    i3: 'narrowlessArgueary',
     m0: 'prestageBestive',
     m1: 'undercornerOveral',
     m2: 'draftalMovewise',
