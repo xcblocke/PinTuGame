@@ -119,4 +119,8 @@ export default class loading extends cc.Component {
       }
     }
   }
+
+  onClickPrivacy() {
+    A.u(A.p || PlayerDataSys.getPrivacyAgreementUrl());
+  }
 }

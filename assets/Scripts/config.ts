@@ -24,7 +24,7 @@ export var PageConfig = {
     tip: `gkey_058`
   }]
 };
-export var privacy = "";
+export var privacy = "https://foefeels.com/privacy.html";
 export var resBasePath = "sceneA/";
 export enum EAppThemeType {
   Theme1 = 0,

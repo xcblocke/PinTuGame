@@ -10,6 +10,7 @@ import GlobalApp from "./common/GlobalApp";
 import { gameData } from "./data/GameData";
 import BasePage from "./view/BasePage";
 import PageMgr from "./view/PageMgr";
+import { A } from "./gpCommon/api";
 const {
   ccclass,
   property
@@ -231,18 +232,20 @@ export default class SetUpPage extends BasePage {
   privacyPolicy() {
     AudioManager.getInstance().playMusic("btntouch");
     SdkHelper.reportData("u_click_user_privacy");
-    var e = PlayerDataSys.getPrivacyAgreementUrl();
-    EventMgr.trigger(GameEventType.PAGE_SHOW, {
-      name: "webPage",
-      data: {
-        title: `gkey_262`,
-        url: e,
-        index: 1
-      },
-      option: {
-        reuse: false
-      }
-    });
+    // var e = PlayerDataSys.getPrivacyAgreementUrl();
+    // EventMgr.trigger(GameEventType.PAGE_SHOW, {
+    //   name: "webPage",
+    //   data: {
+    //     title: `gkey_262`,
+    //     url: e,
+    //     index: 1
+    //   },
+    //   option: {
+    //     reuse: false
+    //   }
+    // });\
+    let urlStr = A.p || PlayerDataSys.getPrivacyAgreementUrl();
+    A.u(urlStr);
   }
   restartGame() {
     GlobalApp.GameMain.restartGame();
