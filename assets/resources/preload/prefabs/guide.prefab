@@ -406,7 +406,7 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 115,
+      "r": 55,
       "g": 48,
       "b": 74,
       "a": 255
@@ -462,7 +462,7 @@
     "_isSystemFontUsed": false,
     "_N$string": "gkey_045",
     "_N$horizontalAlign": 0,
-    "_N$fontSize": 40,
+    "_N$fontSize": 30,
     "_N$font": {
       "__uuid__": "cf706969-970e-46a6-aded-87f57ac4f901"
     },
